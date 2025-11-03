@@ -13,13 +13,36 @@ const translations = {
 
         // Homepage
         home: {
+            hero_badge: 'Trusted by Fortune 500 Companies',
             hero_title: 'Transform Your Business with Intelligent EDI Integration',
             hero_subtitle: 'Enterprise-grade AI-powered EDI solutions with agentic systems, Python automation, and n8n workflows. Join the top 1% of organizations leveraging next-generation data exchange.',
+            hero_cta_primary: 'Request a Demo',
             hero_cta: 'Discover Our Solutions',
 
-            section_title: 'Revolutionize Your EDI Integration Strategy',
-            section_content_1: 'Quantum Gaze delivers cutting-edge Electronic Data Interchange (EDI) solutions powered by artificial intelligence and agentic systems. Our platform combines Python-based automation with n8n workflow orchestration to create seamless, intelligent data exchange ecosystems.',
-            section_content_2: 'Experience unprecedented efficiency with our autonomous AI agents that learn, adapt, and optimize your EDI workflows in real-time. From X12 and EDIFACT to modern API integrations, we bridge the gap between legacy systems and tomorrow\'s technology.'
+            stat_1: 'Uptime Guarantee',
+            stat_2: 'Transactions Monthly',
+            stat_3: 'Enterprise Clients',
+            stat_4: 'Cost Reduction',
+
+            features_title: 'Why Industry Leaders Choose Quantum Gaze',
+            features_subtitle: 'Cutting-edge technology meets enterprise reliability',
+
+            feature_1_title: 'AI-Powered EDI Translation',
+            feature_1_desc: 'Neural networks that understand context, handle exceptions, and continuously improve with 99.97% accuracy.',
+            feature_2_title: 'Agentic System Architecture',
+            feature_2_desc: 'Autonomous AI agents that self-heal, optimize, and manage your EDI infrastructure without human intervention.',
+            feature_3_title: 'Python Integration Framework',
+            feature_3_desc: 'Production-ready SDKs and APIs that seamlessly connect with SAP, Oracle, Microsoft Dynamics, and custom systems.',
+            feature_4_title: 'n8n Workflow Orchestration',
+            feature_4_desc: 'Visual workflow builder for no-code EDI customization with complex data transformation pipelines.',
+
+            tech_title: 'Enterprise-Grade Technology Stack',
+            tech_subtitle: 'Built on industry-leading standards and protocols',
+
+            cta_title: 'Ready to Transform Your EDI Operations?',
+            cta_subtitle: 'Join 500+ enterprise organizations leveraging AI-powered EDI integration',
+            cta_button: 'Schedule a Demo',
+            cta_button_2: 'View Solutions'
         },
 
         // About page
@@ -183,13 +206,36 @@ const translations = {
 
         // Homepage
         home: {
+            hero_badge: 'Approuvé par les Entreprises Fortune 500',
             hero_title: 'Transformez Votre Entreprise avec l\'Intégration EDI Intelligente',
             hero_subtitle: 'Solutions EDI d\'entreprise alimentées par l\'IA avec systèmes agentiques, automatisation Python et workflows n8n. Rejoignez le top 1% des organisations exploitant l\'échange de données de nouvelle génération.',
+            hero_cta_primary: 'Demander une Démo',
             hero_cta: 'Découvrir Nos Solutions',
 
-            section_title: 'Révolutionnez Votre Stratégie d\'Intégration EDI',
-            section_content_1: 'Quantum Gaze offre des solutions d\'échange de données informatisé (EDI) de pointe alimentées par l\'intelligence artificielle et les systèmes agentiques. Notre plateforme combine l\'automatisation basée sur Python avec l\'orchestration de workflows n8n pour créer des écosystèmes d\'échange de données intelligents et transparents.',
-            section_content_2: 'Découvrez une efficacité sans précédent avec nos agents IA autonomes qui apprennent, s\'adaptent et optimisent vos workflows EDI en temps réel. De X12 et EDIFACT aux intégrations API modernes, nous comblons le fossé entre les systèmes existants et la technologie de demain.'
+            stat_1: 'Garantie de Disponibilité',
+            stat_2: 'Transactions Mensuelles',
+            stat_3: 'Clients Entreprise',
+            stat_4: 'Réduction des Coûts',
+
+            features_title: 'Pourquoi les Leaders de l\'Industrie Choisissent Quantum Gaze',
+            features_subtitle: 'Technologie de pointe rencontre fiabilité d\'entreprise',
+
+            feature_1_title: 'Traduction EDI Alimentée par l\'IA',
+            feature_1_desc: 'Réseaux neuronaux qui comprennent le contexte, gèrent les exceptions et s\'améliorent continuellement avec une précision de 99,97%.',
+            feature_2_title: 'Architecture de Systèmes Agentiques',
+            feature_2_desc: 'Agents IA autonomes qui s\'auto-réparent, optimisent et gèrent votre infrastructure EDI sans intervention humaine.',
+            feature_3_title: 'Cadre d\'Intégration Python',
+            feature_3_desc: 'SDK et API prêts pour la production qui se connectent de manière transparente avec SAP, Oracle, Microsoft Dynamics et systèmes personnalisés.',
+            feature_4_title: 'Orchestration de Workflows n8n',
+            feature_4_desc: 'Créateur de workflows visuels pour la personnalisation EDI sans code avec des pipelines complexes de transformation de données.',
+
+            tech_title: 'Stack Technologique de Niveau Entreprise',
+            tech_subtitle: 'Construit sur des normes et protocoles leaders de l\'industrie',
+
+            cta_title: 'Prêt à Transformer Vos Opérations EDI?',
+            cta_subtitle: 'Rejoignez 500+ organisations d\'entreprise exploitant l\'intégration EDI alimentée par l\'IA',
+            cta_button: 'Planifier une Démo',
+            cta_button_2: 'Voir les Solutions'
         },
 
         // About page
