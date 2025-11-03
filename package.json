@@ -1,0 +1,24 @@
+{
+  "name": "quantum-gaze-website",
+  "version": "1.0.0",
+  "description": "Quantum Gaze Software Inc. - AI-powered document processing and intelligence",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server .",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "echo 'Deploy to Cloudflare Pages'"
+  },
+  "keywords": [
+    "quantum-gaze",
+    "ai",
+    "document-processing",
+    "machine-learning"
+  ],
+  "author": "Quantum Gaze Software Inc.",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quantum-gaze/quantum-gaze.git"
+  }
+}

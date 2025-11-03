@@ -1,0 +1,8 @@
+# Cloudflare Pages redirects
+
+# Language redirects (optional - uncomment if needed)
+# /fr/* /index.html 200
+# /en/* /index.html 200
+
+# Fallback for 404
+/* /index.html 404
