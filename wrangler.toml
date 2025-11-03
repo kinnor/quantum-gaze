@@ -1,0 +1,40 @@
+# Cloudflare Pages configuration
+name = "quantum-gaze"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "."
+
+# Build configuration for Cloudflare Pages
+# No build command needed for static HTML sites
+[build]
+command = ""
+directory = "."
+
+# Environment variables (if needed)
+[env.production]
+
+# Custom headers for security
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache static assets
+[[headers]]
+for = "/css/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/js/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/images/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
