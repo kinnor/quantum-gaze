@@ -72,6 +72,14 @@ Core Services:
 5. Legacy System Modernization - Transform old systems to modern platforms
 6. Multilingual Solutions - Software in EN/FR/DE with documentation
 
+Technology Stack:
+- EDI Standards: X12, EDIFACT, TRADACOMS, AS2, SFTP
+- Programming: Python, Java, .NET, Node.js
+- Workflow Automation: n8n, Logic Apps, MuleSoft
+- Enterprise Integration: IBM Sterling, SAP PI/PO
+- Infrastructure: Kubernetes, Docker, Azure, AWS
+- Modern & Legacy: Seamless integration of old and new systems
+
 Industries Served:
 - Retail & E-Commerce (Amazon, Walmart integration)
 - Logistics & Transportation (shipment tracking, TMS/WMS)

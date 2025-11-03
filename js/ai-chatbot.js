@@ -17,7 +17,7 @@ class AIChat {
 3. Legacy System Modernization - Transforming legacy systems into modern, scalable applications
 4. Multilingual Solutions - Software development in English, French, and German
 5. Python API Integration - Enterprise-grade SDKs and RESTful APIs
-6. n8n Workflow Automation - Visual workflow builder for no-code customization
+6. Workflow Automation - n8n and Logic Apps for visual no-code/low-code customization
 
 Key Facts:
 - Location: Quebec, Canada
