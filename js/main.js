@@ -22,9 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Simulate form submission (replace with actual API call)
             setTimeout(() => {
                 const messageDiv = document.getElementById('formMessage');
-                messageDiv.textContent = currentLang === 'fr'
-                    ? 'Message envoyé! Nous vous répondrons bientôt.'
-                    : 'Message sent! We will get back to you soon.';
+                let successMessage = 'Message sent! We will get back to you soon.';
+                if (currentLang === 'fr') {
+                    successMessage = 'Message envoyé! Nous vous répondrons bientôt.';
+                } else if (currentLang === 'de') {
+                    successMessage = 'Nachricht gesendet! Wir werden uns bald bei Ihnen melden.';
+                }
+                messageDiv.textContent = successMessage;
                 messageDiv.className = 'form-message success';
 
                 // Reset form

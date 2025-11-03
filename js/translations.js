@@ -13,15 +13,15 @@ const translations = {
 
         // Homepage
         home: {
-            hero_badge: 'Quebec-Based • Bilingual Excellence • 35+ Years Experience',
+            hero_badge: 'Quebec-Based • Multilingual Excellence • 35+ Years Experience',
             hero_title: 'AI-Powered Solutions & Legacy Modernization',
-            hero_subtitle: '35+ years of software engineering expertise meets cutting-edge AI. We help Canadian organizations modernize legacy systems, automate with AI, and innovate with truly bilingual solutions.',
+            hero_subtitle: '35+ years of software engineering expertise meets cutting-edge AI. We help government and enterprise organizations in Canada and internationally modernize legacy systems, automate with AI, and innovate with multilingual solutions.',
             hero_cta_primary: 'Schedule a Consultation',
             hero_cta: 'Explore Our Services',
 
             stat_1: 'Years of Experience',
             stat_2: 'Open Source',
-            stat_3: 'Official Languages',
+            stat_3: 'Languages Supported',
             stat_4: 'Quebec-Based',
 
             features_title: 'Three Core Service Pillars',
@@ -31,8 +31,8 @@ const translations = {
             feature_1_desc: 'Document intelligence, predictive analytics, NLP, and computer vision. We build AI that delivers measurable ROI, from concept to production deployment.',
             feature_2_title: 'Legacy System Modernization',
             feature_2_desc: 'Transform aging systems into modern, cloud-ready applications. API development, incremental migration, and integration with new technologies while preserving business logic.',
-            feature_3_title: 'Bilingual AI Excellence',
-            feature_3_desc: 'True French-English AI capabilities. Bilingual chatbots, document processing, and NLP solutions built for Canadian organizations and government requirements.',
+            feature_3_title: 'Multilingual AI Excellence',
+            feature_3_desc: 'True multilingual AI capabilities in English, French, and German. Multilingual chatbots, document processing, and NLP solutions for government and enterprise requirements worldwide.',
             feature_4_title: 'Full-Stack Development',
             feature_4_desc: 'End-to-end software development from database design to user interfaces. Web applications, APIs, microservices, and system integration using modern open-source technologies.',
 
@@ -51,7 +51,7 @@ const translations = {
             subtitle: '35+ years of software engineering expertise applied to modern AI challenges',
 
             mission_title: 'Our Story',
-            mission_content: 'Founded in 2023 and based in Quebec, Quantum Gaze Software Inc. brings over three decades of software engineering excellence to the modern AI era. Led by a seasoned full-stack architect with 35+ years of experience spanning mainframes to microservices, we specialize in helping Canadian organizations leverage AI and modern technology while respecting our bilingual heritage and values.',
+            mission_content: 'Founded in 2023 and based in Quebec, Canada, Quantum Gaze Software Inc. brings over three decades of software engineering excellence to the modern AI era. Led by a seasoned full-stack architect with 35+ years of experience spanning mainframes to microservices, we serve government and enterprise organizations in Canada and internationally. Our multilingual capabilities (English, French, German) and focus on practical AI solutions set us apart.',
 
             expertise_title: 'Our Core Capabilities',
             expertise_1_title: 'Custom AI Development',
@@ -60,27 +60,27 @@ const translations = {
             expertise_2_title: 'Legacy System Modernization',
             expertise_2_content: 'Transform aging systems into modern applications. With 35+ years of experience across technologies from COBOL to React, we understand legacy systems and how to migrate them safely and incrementally.',
 
-            expertise_3_title: 'Bilingual AI Solutions',
-            expertise_3_content: 'True French-English bilingual AI capabilities built for Canadian government and enterprise needs. Not machine translation, but native understanding of both languages.',
+            expertise_3_title: 'Multilingual AI Solutions',
+            expertise_3_content: 'True multilingual AI capabilities in English, French, and German. Not machine translation, but native understanding of multiple languages for government and enterprise needs worldwide.',
 
             expertise_4_title: 'Full-Stack Development',
             expertise_4_content: 'Complete software development services: web applications, APIs, databases, microservices, and system integration using modern open-source technologies.',
 
             expertise_5_title: 'Government-Ready Partner',
-            expertise_5_content: 'Quebec-based with bilingual capability, security focus, and Canadian data sovereignty. Ready to work with government procurement processes and requirements.',
+            expertise_5_content: 'Based in Quebec, Canada with multilingual capability, security focus, and data sovereignty options. Ready to work with government procurement processes and requirements in Canada and internationally.',
 
             why_title: 'Why Choose Quantum Gaze',
             why_1_title: '35+ Years of Real Experience',
-            why_1_content: 'Deep technical expertise across the entire technology evolution - from mainframes and client-server to cloud and AI. We\'ve seen what works and what doesn\'t.',
+            why_1_content: 'Deep technical expertise across the entire technology evolution - from mainframes and client-server to cloud and AI. We\'ve seen what works and what doesn\'t across diverse industries and regions.',
 
-            why_2_title: 'Bilingual by Design',
-            why_2_content: 'True French-English capability for AI, applications, and documentation. Essential for Canadian government and Quebec market.',
+            why_2_title: 'Multilingual by Design',
+            why_2_content: 'True multilingual capability (English, French, German) for AI, applications, and documentation. Essential for Canadian government, European markets, and global enterprises.',
 
             why_3_title: 'Pragmatic AI Approach',
-            why_3_content: 'We focus on AI implementations that deliver measurable ROI. No hype, no buzzwords - just practical solutions that solve real business problems.',
+            why_3_content: 'We focus on AI implementations that deliver measurable ROI. No hype, no buzzwords - just practical solutions that solve real business problems worldwide.',
 
-            why_4_title: 'Quebec-Based, Canadian Values',
-            why_4_content: 'Local company supporting the Quebec economy. Canadian data sovereignty, accessibility standards, and commitment to bilingual excellence.',
+            why_4_title: 'Global Reach, Local Excellence',
+            why_4_content: 'Based in Quebec, Canada, serving clients internationally. We combine local expertise with global standards, offering data sovereignty options and commitment to multilingual excellence.',
 
             cta_title: 'Ready to Work Together?',
             cta_subtitle: 'Let\'s discuss how our experience and expertise can help your project succeed',
@@ -90,7 +90,7 @@ const translations = {
         // Services page
         services: {
             title: 'Software Development & AI Services',
-            subtitle: 'Comprehensive technology solutions for Canadian organizations',
+            subtitle: 'Comprehensive technology solutions for government and enterprise',
 
             service_1_title: 'Custom AI Development',
             service_1_content: 'Build AI solutions that deliver measurable business value: document intelligence for automated data extraction, natural language processing for customer service and content analysis, predictive analytics for forecasting, and computer vision for image analysis. From prototype to production deployment.',
@@ -98,8 +98,8 @@ const translations = {
             service_2_title: 'Legacy System Modernization',
             service_2_content: 'Transform aging systems into modern, maintainable applications. Comprehensive assessment and roadmapping, incremental migration strategies that minimize risk, API development to expose legacy functionality, cloud migration and containerization, and integration with modern technologies.',
 
-            service_3_title: 'Bilingual AI Solutions',
-            service_3_content: 'Specialized French-English AI solutions for Canadian government and enterprise. Bilingual chatbots and virtual assistants, document processing in both official languages, translation with business context awareness, bilingual search and knowledge management, and content moderation for French and English.',
+            service_3_title: 'Multilingual AI Solutions',
+            service_3_content: 'Specialized multilingual AI solutions in English, French, and German for government and enterprise worldwide. Multilingual chatbots and virtual assistants, document processing in multiple languages, translation with business context awareness, multilingual search and knowledge management, and content moderation across languages.',
 
             service_4_title: 'Full-Stack Web Development',
             service_4_content: 'Complete web application development using modern frameworks and best practices. Single-page applications (React, Vue.js), RESTful APIs and microservices, database design and optimization, authentication and security implementation, and responsive design for all devices.',
@@ -119,15 +119,15 @@ const translations = {
             solution_1_title: 'Document Intelligence Platform',
             solution_1_subtitle: 'AI-powered document processing and data extraction',
             solution_1_content: 'Automated extraction and processing of business documents: invoices, purchase orders, receipts, forms, and contracts. Reduce manual data entry, improve accuracy, and accelerate document workflows with AI-powered OCR and intelligent extraction.',
-            solution_1_feature_1: 'Bilingual document processing (French and English)',
+            solution_1_feature_1: 'Multilingual document processing (English, French, German)',
             solution_1_feature_2: 'REST API for easy integration',
             solution_1_feature_3: 'Pre-trained models for common document types',
             solution_1_feature_4: 'Custom training for specialized document formats',
 
-            solution_2_title: 'Bilingual AI Toolkit',
-            solution_2_subtitle: 'French-English NLP and language solutions',
-            solution_2_content: 'Complete toolkit for building bilingual AI applications. Includes bilingual chatbot framework, translation API with business context, sentiment analysis, entity recognition, and text classification for both French and English content.',
-            solution_2_feature_1: 'Native French and English language understanding',
+            solution_2_title: 'Multilingual AI Toolkit',
+            solution_2_subtitle: 'English, French, German NLP and language solutions',
+            solution_2_content: 'Complete toolkit for building multilingual AI applications. Includes multilingual chatbot framework, translation API with business context, sentiment analysis, entity recognition, and text classification for English, French, and German content.',
+            solution_2_feature_1: 'Native English, French, and German language understanding',
             solution_2_feature_2: 'Easy integration with existing applications',
             solution_2_feature_3: 'Government-ready compliance and data sovereignty',
             solution_2_feature_4: 'Flexible deployment options (cloud or on-premise)',
@@ -140,13 +140,13 @@ const translations = {
         // Industries page
         industries: {
             title: 'Target Markets & Sectors',
-            subtitle: 'Specialized solutions for government and enterprise',
+            subtitle: 'Serving clients in Canada, United States, Europe, and beyond',
 
             industry_1_title: 'Government & Public Sector',
-            industry_1_content: 'Quebec and Canadian government agencies at federal, provincial, and municipal levels. Legacy system modernization for critical infrastructure, bilingual citizen-facing applications meeting accessibility standards, document processing and automation for permits and forms, API development for data exchange, and secure solutions respecting Canadian data sovereignty.',
+            industry_1_content: 'Government agencies in Canada, Europe, and internationally at federal, provincial/state, and municipal levels. Legacy system modernization for critical infrastructure, multilingual citizen-facing applications meeting accessibility standards, document processing and automation for permits and forms, API development for data exchange, and secure solutions with data sovereignty options.',
 
             industry_2_title: 'Healthcare & Social Services',
-            industry_2_content: 'Healthcare providers, hospitals, and social service organizations. HIPAA-compliant solutions, patient data management systems, appointment scheduling and management, bilingual patient portals and communication tools, integration with existing EMR/EHR systems, and document processing for medical records and insurance claims.',
+            industry_2_content: 'Healthcare providers, hospitals, and social service organizations worldwide. HIPAA and GDPR-compliant solutions, patient data management systems, appointment scheduling and management, multilingual patient portals and communication tools, integration with existing EMR/EHR systems, and document processing for medical records and insurance claims.',
 
             industry_3_title: 'Financial Services & Insurance',
             industry_3_content: 'Banks, credit unions, insurance companies, and fintech startups. Secure transaction processing, regulatory compliance and reporting, document intelligence for claims and applications, fraud detection and risk assessment, bilingual customer service chatbots, and legacy banking system modernization.',
@@ -164,7 +164,7 @@ const translations = {
         // Contact page
         contact: {
             title: 'Let\'s Discuss Your Project',
-            subtitle: 'AI solutions and software development for Canadian organizations',
+            subtitle: 'AI solutions and software development for organizations worldwide',
 
             get_in_touch: 'Contact Information',
             phone: 'Phone',
@@ -173,7 +173,7 @@ const translations = {
             hours_content: 'Monday - Thursday: 9:00 AM - 6:00 PM\nFriday: 8:00 AM - 4:00 PM\nSaturday: Closed\nSunday: 10:00 AM - 4:00 PM',
 
             who_we_are: 'About Quantum Gaze',
-            who_content: 'Quantum Gaze Software Inc. is a Quebec-based software development company founded in 2023. With over 35 years of software engineering experience, we specialize in custom AI development, legacy system modernization, and bilingual solutions for Canadian government and enterprise clients. We combine deep technical expertise with modern AI capabilities to deliver practical, production-ready solutions.',
+            who_content: 'Quantum Gaze Software Inc. is a Quebec-based software development company founded in 2023, serving clients in Canada and internationally. With over 35 years of software engineering experience, we specialize in custom AI development, legacy system modernization, and multilingual solutions (English, French, German) for government and enterprise clients worldwide. We combine deep technical expertise with modern AI capabilities to deliver practical, production-ready solutions.',
 
             form_title: 'Start a Conversation',
             first_name: 'First Name',
@@ -191,7 +191,7 @@ const translations = {
             email: 'Email',
             follow: 'Follow Us',
             who_title: 'About Our Platform',
-            who_content: 'Quantum Gaze Software Inc. delivers enterprise-grade EDI integration powered by AI and agentic systems. Our platform combines Python automation, n8n workflows, and machine learning to transform B2B data exchange for global organizations.',
+            who_content: 'Quantum Gaze Software Inc. delivers AI-powered solutions and legacy system modernization for government and enterprise clients worldwide. Based in Quebec, Canada, we combine 35+ years of software engineering expertise with modern AI capabilities and multilingual support (English, French, German).',
             copyright: '© 2024 Quantum Gaze Software Inc. All rights reserved.',
             neq: 'QC Business Number',
             sitemap: 'Sitemap',
@@ -212,15 +212,15 @@ const translations = {
 
         // Homepage
         home: {
-            hero_badge: 'Basé au Québec • Excellence Bilingue • Plus de 35 ans d\'expérience',
+            hero_badge: 'Basé au Québec • Excellence Multilingue • Plus de 35 ans d\'expérience',
             hero_title: 'Solutions IA et Modernisation de Systèmes Patrimoniaux',
-            hero_subtitle: 'Plus de 35 ans d\'expertise en génie logiciel rencontre l\'IA de pointe. Nous aidons les organisations canadiennes à moderniser leurs systèmes patrimoniaux, automatiser avec l\'IA et innover avec des solutions véritablement bilingues.',
+            hero_subtitle: 'Plus de 35 ans d\'expertise en génie logiciel rencontre l\'IA de pointe. Nous aidons les organisations gouvernementales et d\'entreprise au Canada et à l\'international à moderniser leurs systèmes patrimoniaux, automatiser avec l\'IA et innover avec des solutions multilingues.',
             hero_cta_primary: 'Planifier une Consultation',
             hero_cta: 'Découvrir Nos Services',
 
             stat_1: 'Années d\'Expérience',
             stat_2: 'Open Source',
-            stat_3: 'Langues Officielles',
+            stat_3: 'Langues Supportées',
             stat_4: 'Basé au Québec',
 
             features_title: 'Trois Piliers de Services Principaux',
@@ -230,8 +230,8 @@ const translations = {
             feature_1_desc: 'Intelligence documentaire, analytique prédictive, traitement du langage naturel et vision par ordinateur. Nous développons de l\'IA qui génère un ROI mesurable, du concept au déploiement en production.',
             feature_2_title: 'Modernisation de Systèmes Patrimoniaux',
             feature_2_desc: 'Transformez les systèmes vieillissants en applications modernes prêtes pour le cloud. Développement d\'API, migration incrémentale et intégration avec les nouvelles technologies tout en préservant la logique métier.',
-            feature_3_title: 'Excellence IA Bilingue',
-            feature_3_desc: 'Véritables capacités IA français-anglais. Chatbots bilingues, traitement de documents et solutions de traitement du langage naturel conçues pour les exigences des organisations canadiennes et gouvernementales.',
+            feature_3_title: 'Excellence IA Multilingue',
+            feature_3_desc: 'Véritables capacités IA multilingues en anglais, français et allemand. Chatbots multilingues, traitement de documents et solutions de traitement du langage naturel pour les exigences gouvernementales et d\'entreprise mondiales.',
             feature_4_title: 'Développement Full-Stack',
             feature_4_desc: 'Développement logiciel de bout en bout, de la conception de bases de données aux interfaces utilisateur. Applications web, API, microservices et intégration de systèmes utilisant des technologies open-source modernes.',
 
@@ -250,7 +250,7 @@ const translations = {
             subtitle: 'Plus de 35 ans d\'expertise en génie logiciel appliquée aux défis IA modernes',
 
             mission_title: 'Notre Histoire',
-            mission_content: 'Fondée en 2023 et basée au Québec, Logiciel Quantum Gaze Inc. apporte plus de trois décennies d\'excellence en génie logiciel à l\'ère moderne de l\'IA. Dirigée par un architecte full-stack chevronné avec plus de 35 ans d\'expérience, du mainframe aux microservices, nous nous spécialisons dans l\'aide aux organisations canadiennes pour tirer parti de l\'IA et de la technologie moderne tout en respectant notre héritage et nos valeurs bilingues.',
+            mission_content: 'Fondée en 2023 et basée au Québec, Canada, Logiciel Quantum Gaze Inc. apporte plus de trois décennies d\'excellence en génie logiciel à l\'ère moderne de l\'IA. Dirigée par un architecte full-stack chevronné avec plus de 35 ans d\'expérience, du mainframe aux microservices, nous servons les organisations gouvernementales et d\'entreprise au Canada et à l\'international. Nos capacités multilingues (anglais, français, allemand) et notre concentration sur des solutions IA pratiques nous distinguent.',
 
             expertise_title: 'Nos Capacités Principales',
             expertise_1_title: 'Développement IA Personnalisé',
@@ -259,8 +259,8 @@ const translations = {
             expertise_2_title: 'Modernisation de Systèmes Patrimoniaux',
             expertise_2_content: 'Transformez les systèmes vieillissants en applications modernes. Avec plus de 35 ans d\'expérience dans les technologies de COBOL à React, nous comprenons les systèmes patrimoniaux et comment les migrer de manière sécuritaire et incrémentale.',
 
-            expertise_3_title: 'Solutions IA Bilingues',
-            expertise_3_content: 'Véritables capacités IA bilingues français-anglais conçues pour les besoins du gouvernement canadien et des entreprises. Pas de traduction automatique, mais une compréhension native des deux langues.',
+            expertise_3_title: 'Solutions IA Multilingues',
+            expertise_3_content: 'Véritables capacités IA multilingues en anglais, français et allemand. Pas de traduction automatique, mais une compréhension native de plusieurs langues pour les besoins gouvernementaux et d\'entreprise mondiaux.',
 
             expertise_4_title: 'Développement Full-Stack',
             expertise_4_content: 'Services complets de développement logiciel : applications web, API, bases de données, microservices et intégration de systèmes utilisant des technologies open-source modernes.',
@@ -395,6 +395,205 @@ const translations = {
             neq: 'NEQ',
             sitemap: 'Plan du site',
             contact_us: 'Contactez-nous'
+        }
+    },
+
+    de: {
+        // Navigation
+        nav: {
+            home: 'Startseite',
+            services: 'Dienstleistungen',
+            solutions: 'Lösungen',
+            industries: 'Märkte',
+            about: 'Über uns',
+            contact: 'Kontakt'
+        },
+
+        // Homepage
+        home: {
+            hero_badge: 'Québec-Ansässig • Mehrsprachige Exzellenz • Über 35 Jahre Erfahrung',
+            hero_title: 'KI-Lösungen & Legacy-System-Modernisierung',
+            hero_subtitle: 'Über 35 Jahre Software-Engineering-Expertise trifft auf modernste KI. Wir helfen Regierungs- und Unternehmensorganisationen in Kanada und international, Legacy-Systeme zu modernisieren, mit KI zu automatisieren und mit mehrsprachigen Lösungen zu innovieren.',
+            hero_cta_primary: 'Beratungsgespräch vereinbaren',
+            hero_cta: 'Unsere Dienstleistungen',
+
+            stat_1: 'Jahre Erfahrung',
+            stat_2: 'Open Source',
+            stat_3: 'Unterstützte Sprachen',
+            stat_4: 'Québec-Ansässig',
+
+            features_title: 'Drei Kern-Dienstleistungssäulen',
+            features_subtitle: 'Umfassende Lösungen für moderne Herausforderungen',
+
+            feature_1_title: 'Maßgeschneiderte KI-Lösungen',
+            feature_1_desc: 'Dokumentenintelligenz, Predictive Analytics, NLP und Computer Vision. Wir entwickeln KI mit messbarem ROI, vom Konzept bis zur Produktionsbereitstellung.',
+            feature_2_title: 'Legacy-System-Modernisierung',
+            feature_2_desc: 'Transformieren Sie veraltete Systeme in moderne, cloud-fähige Anwendungen. API-Entwicklung, inkrementelle Migration und Integration neuer Technologien unter Beibehaltung der Geschäftslogik.',
+            feature_3_title: 'Mehrsprachige KI-Exzellenz',
+            feature_3_desc: 'Echte mehrsprachige KI-Fähigkeiten in Englisch, Französisch und Deutsch. Mehrsprachige Chatbots, Dokumentenverarbeitung und NLP-Lösungen für behördliche und unternehmerische Anforderungen weltweit.',
+            feature_4_title: 'Full-Stack-Entwicklung',
+            feature_4_desc: 'End-to-End-Softwareentwicklung von Datenbankdesign bis zu Benutzeroberflächen. Webanwendungen, APIs, Microservices und Systemintegration mit modernen Open-Source-Technologien.',
+
+            tech_title: 'Moderner Open-Source-Technologie-Stack',
+            tech_subtitle: 'Branchenführende Tools und Frameworks',
+
+            cta_title: 'Bereit zu modernisieren und innovieren?',
+            cta_subtitle: 'Lassen Sie uns besprechen, wie wir Ihrem Unternehmen helfen können, KI und moderne Technologie zu nutzen',
+            cta_button: 'Jetzt starten',
+            cta_button_2: 'Fallstudien ansehen'
+        },
+
+        // About page
+        about: {
+            title: 'Erfahrung trifft Innovation',
+            subtitle: 'Über 35 Jahre Software-Engineering-Expertise auf moderne KI-Herausforderungen angewandt',
+
+            mission_title: 'Unsere Geschichte',
+            mission_content: 'Quantum Gaze Software Inc. wurde 2023 gegründet und hat seinen Sitz in Québec, Kanada. Wir bringen über drei Jahrzehnte Software-Engineering-Exzellenz in die moderne KI-Ära ein. Geleitet von einem erfahrenen Full-Stack-Architekten mit über 35 Jahren Erfahrung von Mainframes bis Microservices, bedienen wir Regierungs- und Unternehmensorganisationen in Kanada und international. Unsere mehrsprachigen Fähigkeiten (Englisch, Französisch, Deutsch) und unser Fokus auf praktische KI-Lösungen zeichnen uns aus.',
+
+            expertise_title: 'Unsere Kernkompetenzen',
+            expertise_1_title: 'Maßgeschneiderte KI-Entwicklung',
+            expertise_1_content: 'Dokumentenintelligenz, natürliche Sprachverarbeitung, Predictive Analytics und Computer-Vision-Lösungen. Wir implementieren KI dort, wo sie echten Geschäftswert liefert, nicht KI für Marketingzwecke.',
+
+            expertise_2_title: 'Legacy-System-Modernisierung',
+            expertise_2_content: 'Transformieren Sie veraltete Systeme in moderne Anwendungen. Mit über 35 Jahren Erfahrung mit Technologien von COBOL bis React verstehen wir Legacy-Systeme und wie man sie sicher und schrittweise migriert.',
+
+            expertise_3_title: 'Mehrsprachige KI-Lösungen',
+            expertise_3_content: 'Echte mehrsprachige KI-Fähigkeiten in Englisch, Französisch und Deutsch. Keine maschinelle Übersetzung, sondern natives Verständnis mehrerer Sprachen für behördliche und unternehmerische Bedürfnisse weltweit.',
+
+            expertise_4_title: 'Full-Stack-Entwicklung',
+            expertise_4_content: 'Komplette Softwareentwicklungsdienste: Webanwendungen, APIs, Datenbanken, Microservices und Systemintegration mit modernen Open-Source-Technologien.',
+
+            expertise_5_title: 'Behördengeeigneter Partner',
+            expertise_5_content: 'Ansässig in Québec, Kanada mit mehrsprachiger Kompetenz, Sicherheitsfokus und Datensouveränitätsoptionen. Bereit für Beschaffungsprozesse und Anforderungen von Behörden in Kanada und international.',
+
+            why_title: 'Warum Quantum Gaze wählen',
+            why_1_title: 'Über 35 Jahre reale Erfahrung',
+            why_1_content: 'Tiefe technische Expertise über die gesamte Technologieentwicklung hinweg - von Mainframes und Client-Server bis Cloud und KI. Wir haben gesehen, was funktioniert und was nicht, über verschiedene Branchen und Regionen hinweg.',
+
+            why_2_title: 'Mehrsprachig konzipiert',
+            why_2_content: 'Echte mehrsprachige Fähigkeiten (Englisch, Französisch, Deutsch) für KI, Anwendungen und Dokumentation. Unerlässlich für kanadische Regierungen, europäische Märkte und globale Unternehmen.',
+
+            why_3_title: 'Pragmatischer KI-Ansatz',
+            why_3_content: 'Wir konzentrieren uns auf KI-Implementierungen, die messbaren ROI liefern. Kein Hype, keine Schlagworte - nur praktische Lösungen, die echte Geschäftsprobleme weltweit lösen.',
+
+            why_4_title: 'Globale Reichweite, Lokale Exzellenz',
+            why_4_content: 'Ansässig in Québec, Kanada, bedienen wir Kunden international. Wir kombinieren lokale Expertise mit globalen Standards und bieten Datensouveränitätsoptionen und Engagement für mehrsprachige Exzellenz.',
+
+            cta_title: 'Bereit zusammenzuarbeiten?',
+            cta_subtitle: 'Lassen Sie uns besprechen, wie unsere Erfahrung und Expertise Ihrem Projekt zum Erfolg verhelfen können',
+            cta_button: 'Beratung vereinbaren'
+        },
+
+        // Services page
+        services: {
+            title: 'Softwareentwicklung & KI-Dienstleistungen',
+            subtitle: 'Umfassende Technologielösungen für Behörden und Unternehmen',
+
+            service_1_title: 'Maßgeschneiderte KI-Entwicklung',
+            service_1_content: 'Entwickeln Sie KI-Lösungen mit messbarem Geschäftswert: Dokumentenintelligenz für automatisierte Datenextraktion, natürliche Sprachverarbeitung für Kundenservice und Inhaltsanalyse, Predictive Analytics für Prognosen und Computer Vision für Bildanalyse. Vom Prototyp bis zur Produktionsbereitstellung.',
+
+            service_2_title: 'Legacy-System-Modernisierung',
+            service_2_content: 'Transformieren Sie veraltete Systeme in moderne, wartbare Anwendungen. Umfassende Bewertung und Roadmapping, inkrementelle Migrationsstrategien zur Risikominimierung, API-Entwicklung zur Offenlegung von Legacy-Funktionalität, Cloud-Migration und Containerisierung sowie Integration mit modernen Technologien.',
+
+            service_3_title: 'Mehrsprachige KI-Lösungen',
+            service_3_content: 'Spezialisierte mehrsprachige KI-Lösungen in Englisch, Französisch und Deutsch für Behörden und Unternehmen weltweit. Mehrsprachige Chatbots und virtuelle Assistenten, Dokumentenverarbeitung in mehreren Sprachen, Übersetzung mit Geschäftskontextbewusstsein, mehrsprachige Suche und Wissensmanagement sowie Inhaltsmoderation über Sprachen hinweg.',
+
+            service_4_title: 'Full-Stack-Webentwicklung',
+            service_4_content: 'Komplette Webanwendungsentwicklung mit modernen Frameworks und Best Practices. Single-Page-Anwendungen (React, Vue.js), RESTful APIs und Microservices, Datenbankdesign und -optimierung, Authentifizierungs- und Sicherheitsimplementierung sowie responsives Design für alle Geräte.',
+
+            service_5_title: 'Systemintegration & APIs',
+            service_5_content: 'Verbinden Sie disparate Systeme und ermöglichen Sie den Datenfluss in Ihrem Unternehmen. API-Design und -Entwicklung (REST, GraphQL), Integration von Drittanbieterdiensten, ETL- und Daten-Pipeline-Entwicklung, Message-Queue-Implementierung und Wrapper-APIs für Legacy-Systeme.',
+
+            service_6_title: 'Technische Beratung & Architektur',
+            service_6_content: 'Expertenrat für Technologieentscheidungen und Systemdesign. Auswahl und Bewertung von Technologie-Stacks, Systemarchitekturdesign und -überprüfung, Code-Review und Qualitätsbewertung, Leistungsoptimierung sowie Team-Mentoring und Wissenstransfer.'
+        },
+
+        // Solutions page
+        solutions: {
+            title: 'Produkte & Lösungsangebote',
+            subtitle: 'Wiederverwendbare Lösungen und verpackte Dienstleistungen für gängige Geschäftsanforderungen',
+
+            solution_1_title: 'Dokumentenintelligenz-Plattform',
+            solution_1_subtitle: 'KI-gestützte Dokumentenverarbeitung und Datenextraktion',
+            solution_1_content: 'Automatisierte Extraktion und Verarbeitung von Geschäftsdokumenten: Rechnungen, Bestellungen, Quittungen, Formulare und Verträge. Reduzieren Sie manuelle Dateneingabe, verbessern Sie die Genauigkeit und beschleunigen Sie Dokumenten-Workflows mit KI-gestützter OCR und intelligenter Extraktion.',
+            solution_1_feature_1: 'Mehrsprachige Dokumentenverarbeitung (Englisch, Französisch, Deutsch)',
+            solution_1_feature_2: 'REST-API für einfache Integration',
+            solution_1_feature_3: 'Vortrainierte Modelle für gängige Dokumenttypen',
+            solution_1_feature_4: 'Benutzerdefiniertes Training für spezialisierte Dokumentformate',
+
+            solution_2_title: 'Mehrsprachiges KI-Toolkit',
+            solution_2_subtitle: 'Englisch, Französisch, Deutsch NLP und Sprachlösungen',
+            solution_2_content: 'Komplettes Toolkit zum Erstellen mehrsprachiger KI-Anwendungen. Enthält mehrsprachiges Chatbot-Framework, Übersetzungs-API mit Geschäftskontext, Stimmungsanalyse, Entitätserkennung und Textklassifizierung für englische, französische und deutsche Inhalte.',
+            solution_2_feature_1: 'Natives Englisch-, Französisch- und Deutschsprachverständnis',
+            solution_2_feature_2: 'Einfache Integration in bestehende Anwendungen',
+            solution_2_feature_3: 'Behördengeeignete Compliance und Datensouveränität',
+            solution_2_feature_4: 'Flexible Bereitstellungsoptionen (Cloud oder On-Premise)',
+
+            cta_title: 'Interessiert an unseren Lösungen?',
+            cta_content: 'Kontaktieren Sie uns, um zu besprechen, wie diese Lösungen für Ihre spezifischen Anforderungen angepasst werden können, oder erkundigen Sie sich nach maßgeschneiderten Entwicklungsdienstleistungen.',
+            cta_button: 'Kontakt aufnehmen'
+        },
+
+        // Industries page
+        industries: {
+            title: 'Zielmärkte & Sektoren',
+            subtitle: 'Bedienung von Kunden in Kanada, den Vereinigten Staaten, Europa und darüber hinaus',
+
+            industry_1_title: 'Regierung & Öffentlicher Sektor',
+            industry_1_content: 'Regierungsbehörden in Kanada, Europa und international auf föderaler, provinzieller/bundesstaatlicher und kommunaler Ebene. Legacy-System-Modernisierung für kritische Infrastruktur, mehrsprachige bürgerorientierte Anwendungen mit Barrierefreiheitsstandards, Dokumentenverarbeitung und -automatisierung für Genehmigungen und Formulare, API-Entwicklung für Datenaustausch und sichere Lösungen mit Datensouveränitätsoptionen.',
+
+            industry_2_title: 'Gesundheitswesen & Soziale Dienste',
+            industry_2_content: 'Gesundheitsdienstleister, Krankenhäuser und Sozialdienstorganisationen weltweit. HIPAA- und DSGVO-konforme Lösungen, Patientendatenmanagementsysteme, Terminplanung und -verwaltung, mehrsprachige Patientenportale und Kommunikationstools, Integration mit bestehenden EMR/EHR-Systemen und Dokumentenverarbeitung für Krankenakten und Versicherungsansprüche.',
+
+            industry_3_title: 'Finanzdienstleistungen & Versicherungen',
+            industry_3_content: 'Banken, Kreditgenossenschaften, Versicherungsgesellschaften und Fintech-Startups. Sichere Transaktionsverarbeitung, Regulierungskonformität und Berichterstattung, Dokumentenintelligenz für Ansprüche und Anträge, Betrugserkennung und Risikobewertung, mehrsprachige Kundenservice-Chatbots und Modernisierung von Legacy-Banksystemen.',
+
+            industry_4_title: 'Fertigung & Vertrieb',
+            industry_4_content: 'Hersteller, Händler und Supply-Chain-Organisationen. Bestandsverwaltung und -optimierung, Lieferanten- und Partnerintegration, Qualitätskontroll- und Rückverfolgbarkeitssysteme, vorausschauende Wartung mit KI, Legacy-ERP-Modernisierung und mehrsprachige Dokumentations- und Schulungssysteme.',
+
+            industry_5_title: 'Professionelle Dienstleistungen',
+            industry_5_content: 'Anwaltskanzleien, Wirtschaftsprüfungsgesellschaften, Beratungsunternehmen und Dienstleister. Dokumentenmanagement und -automatisierung, Kundenportalentwicklung, Abrechnungs- und Zeiterfassungssysteme, Fallmanagementsysteme, mehrsprachige Berichterstattung und Kundenkommunikation sowie Integration mit branchenspezifischer Software.',
+
+            industry_6_title: 'Bildung & Forschung',
+            industry_6_content: 'Universitäten, Hochschulen, Forschungseinrichtungen und Schulungsorganisationen. Studenteninformationssysteme, Lernmanagementsysteme, mehrsprachige Kursinhalte und -materialien, Forschungsdatenverwaltung und -analyse, Stipendienverwaltungssysteme und Integration mit behördlichen Berichtsanforderungen.'
+        },
+
+        // Contact page
+        contact: {
+            title: 'Lassen Sie uns über Ihr Projekt sprechen',
+            subtitle: 'KI-Lösungen und Softwareentwicklung für Organisationen weltweit',
+
+            get_in_touch: 'Kontaktinformationen',
+            phone: 'Telefon',
+            email: 'E-Mail',
+            hours: 'Geschäftszeiten',
+            hours_content: 'Montag - Donnerstag: 9:00 - 18:00 Uhr\nFreitag: 8:00 - 16:00 Uhr\nSamstag: Geschlossen\nSonntag: 10:00 - 16:00 Uhr',
+
+            who_we_are: 'Über Quantum Gaze',
+            who_content: 'Quantum Gaze Software Inc. ist ein in Québec ansässiges Softwareentwicklungsunternehmen, das 2023 gegründet wurde und Kunden in Kanada und international bedient. Mit über 35 Jahren Software-Engineering-Erfahrung spezialisieren wir uns auf maßgeschneiderte KI-Entwicklung, Legacy-System-Modernisierung und mehrsprachige Lösungen (Englisch, Französisch, Deutsch) für Regierungs- und Unternehmenskunden weltweit. Wir kombinieren tiefe technische Expertise mit modernen KI-Fähigkeiten, um praktische, produktionsreife Lösungen zu liefern.',
+
+            form_title: 'Gespräch beginnen',
+            first_name: 'Vorname',
+            last_name: 'Nachname',
+            email_label: 'E-Mail-Adresse',
+            message: 'Erzählen Sie uns von Ihrem Projekt oder Ihrer Herausforderung',
+            send: 'Nachricht senden',
+            success: 'Vielen Dank! Wir werden innerhalb von 24 Geschäftsstunden antworten.'
+        },
+
+        // Footer
+        footer: {
+            contact: 'Kontakt',
+            phone: 'Telefon',
+            email: 'E-Mail',
+            follow: 'Folgen Sie uns',
+            who_title: 'Über unsere Plattform',
+            who_content: 'Quantum Gaze Software Inc. liefert KI-gestützte Lösungen und Legacy-System-Modernisierung für Regierungs- und Unternehmenskunden weltweit. Mit Sitz in Québec, Kanada, kombinieren wir über 35 Jahre Software-Engineering-Expertise mit modernen KI-Fähigkeiten und mehrsprachiger Unterstützung (Englisch, Französisch, Deutsch).',
+            copyright: '© 2024 Quantum Gaze Software Inc. Alle Rechte vorbehalten.',
+            neq: 'QC Geschäftsnummer',
+            sitemap: 'Sitemap',
+            contact_us: 'Kontakt'
         }
     }
 };
