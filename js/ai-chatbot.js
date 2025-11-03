@@ -61,7 +61,7 @@ Key Facts:
 
 Industries Served:
 - Retail & E-Commerce (Amazon, Walmart integration)
-- Logistics & Transportation (shipment tracking, TMS/WMS)
+- Logistics & Transportation (shipment tracking, CargoWise, Oracle TMS, SAP TM, Blue Yonder, Manhattan WMS)
 - Healthcare & Pharma (HIPAA-compliant, claims processing)
 - Manufacturing & Distribution (supply chain, JIT inventory)
 - Automotive & Aerospace (OEM integration, AIAG standards)

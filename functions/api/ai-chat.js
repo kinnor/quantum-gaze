@@ -111,7 +111,7 @@ Technology Stack:
 
 Industries Served (7+):
 - Retail & E-Commerce (Amazon, Walmart integration)
-- Logistics & Transportation (shipment tracking, TMS/WMS, international freight)
+- Logistics & Transportation (shipment tracking, CargoWise, Oracle TMS, SAP TM, Blue Yonder, Manhattan WMS, international freight)
 - Healthcare & Pharma (HIPAA-compliant, claims processing, Byk Gulden)
 - Manufacturing & Distribution (supply chain, JIT inventory)
 - Automotive & Aerospace (BMW, OEM integration, AIAG standards)
