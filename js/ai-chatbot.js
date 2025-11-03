@@ -14,7 +14,7 @@ class AIChat {
 
 FOUNDER'S EXPERIENCE:
 - 24+ years hands-on experience in software development
-- Fortune 500 clients: BMW, Delmar International, Traffic Tech, Byk Gulden GmbH
+- Fortune 500 clients: BMW, Byk Gulden GmbH, and multi-billion dollar freight forwarding and customs brokerage companies
 - Long-term client partnerships with proven track record
 - International experience: Canada, Germany, Italy, Bulgaria
 - Leadership: IT Manager, Senior Project Manager, Team Lead roles
