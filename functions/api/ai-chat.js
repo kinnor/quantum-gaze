@@ -132,7 +132,8 @@ Important:
                 'Authorization': `Bearer ${openaiApiKey}`
             },
             body: JSON.stringify({
-                model: 'gpt-4',
+                model: 'gpt-3.5-turbo', // Use gpt-3.5-turbo (faster, cheaper, works with all API keys)
+                                        // Switch to 'gpt-4' once you have access ($1+ API usage)
                 messages: messages,
                 temperature: 0.7,
                 max_tokens: 500,

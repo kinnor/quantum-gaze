@@ -67,7 +67,7 @@ Please provide helpful, accurate information about our services. Be professional
                             <h3>Quantum AI Assistant</h3>
                             <div class="ai-chat-status">
                                 <span class="ai-status-dot"></span>
-                                <span>Online - Powered by GPT-4</span>
+                                <span>Online - Powered by OpenAI</span>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ Please provide helpful, accurate information about our services. Be professional
 
                 <!-- Powered By -->
                 <div class="ai-powered-by">
-                    Powered by <a href="https://openai.com" target="_blank">OpenAI GPT-4</a>
+                    Powered by <a href="https://openai.com" target="_blank">OpenAI</a>
                 </div>
             </div>
         `;
