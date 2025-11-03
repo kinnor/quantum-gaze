@@ -15,7 +15,7 @@ const translations = {
         home: {
             hero_badge: 'Trusted by Fortune 500 Companies',
             hero_title: 'Transform Your Business with Intelligent EDI Integration',
-            hero_subtitle: 'Enterprise-grade AI-powered EDI solutions with agentic systems, Python automation, and n8n workflows. Join the top 1% of organizations leveraging next-generation data exchange.',
+            hero_subtitle: 'Enterprise-grade AI-powered EDI solutions with agentic systems, intelligent workflows, and best-in-class integration technologies. Bridging legacy enterprise tools with modern cloud-native approaches.',
             hero_cta_primary: 'Request a Demo',
             hero_cta: 'Discover Our Solutions',
 
@@ -31,13 +31,13 @@ const translations = {
             feature_1_desc: 'Neural networks that understand context, handle exceptions, and continuously improve with 99.97% accuracy.',
             feature_2_title: 'Agentic System Architecture',
             feature_2_desc: 'Autonomous AI agents that self-heal, optimize, and manage your EDI infrastructure without human intervention.',
-            feature_3_title: 'Python Integration Framework',
-            feature_3_desc: 'Production-ready SDKs and APIs that seamlessly connect with SAP, Oracle, Microsoft Dynamics, and custom systems.',
-            feature_4_title: 'n8n Workflow Orchestration',
-            feature_4_desc: 'Visual workflow builder for no-code EDI customization with complex data transformation pipelines.',
+            feature_3_title: 'Modern Integration Technologies',
+            feature_3_desc: 'Python, Java, .NET, Node.js SDKs with RESTful APIs that seamlessly connect legacy systems with cloud-native architectures.',
+            feature_4_title: 'AI-Powered Workflow Automation',
+            feature_4_desc: 'Intelligent workflow orchestration with visual builders, complex data transformation pipelines, and adaptive routing.',
 
             tech_title: 'Enterprise-Grade Technology Stack',
-            tech_subtitle: 'Built on industry-leading standards and protocols',
+            tech_subtitle: 'Legacy integration tools meet modern cloud-native approaches',
 
             cta_title: 'Ready to Transform Your EDI Operations?',
             cta_subtitle: 'Join 500+ enterprise organizations leveraging AI-powered EDI integration',
@@ -60,11 +60,11 @@ const translations = {
             expertise_2_title: 'Agentic System Architecture',
             expertise_2_content: 'Autonomous AI agents that monitor, optimize, and self-heal EDI workflows without human intervention, ensuring 99.9% uptime.',
 
-            expertise_3_title: 'Python Integration Framework',
-            expertise_3_content: 'Production-ready Python SDKs and APIs for seamless integration with your existing ERP, WMS, and business systems.',
+            expertise_3_title: 'Modern Integration Technologies',
+            expertise_3_content: 'Production-ready SDKs in Python, Java, .NET, Node.js with RESTful APIs for seamless integration with legacy and modern systems.',
 
-            expertise_4_title: 'n8n Workflow Orchestration',
-            expertise_4_content: 'Visual workflow automation with n8n integration, enabling no-code EDI process customization and rapid deployment.',
+            expertise_4_title: 'AI-Powered Workflow Automation',
+            expertise_4_content: 'Intelligent workflow orchestration with visual builders, enabling no-code EDI process customization and rapid deployment.',
 
             expertise_5_title: 'Real-Time Analytics & Monitoring',
             expertise_5_content: 'Advanced dashboards with predictive analytics, anomaly detection, and automated alerting for proactive EDI management.',
@@ -208,7 +208,7 @@ const translations = {
         home: {
             hero_badge: 'Approuvé par les Entreprises Fortune 500',
             hero_title: 'Transformez Votre Entreprise avec l\'Intégration EDI Intelligente',
-            hero_subtitle: 'Solutions EDI d\'entreprise alimentées par l\'IA avec systèmes agentiques, automatisation Python et workflows n8n. Rejoignez le top 1% des organisations exploitant l\'échange de données de nouvelle génération.',
+            hero_subtitle: 'Solutions EDI d\'entreprise alimentées par l\'IA avec systèmes agentiques, workflows intelligents et technologies d\'intégration de pointe. Reliant les outils d\'entreprise existants aux approches cloud-natives modernes.',
             hero_cta_primary: 'Demander une Démo',
             hero_cta: 'Découvrir Nos Solutions',
 
@@ -224,13 +224,13 @@ const translations = {
             feature_1_desc: 'Réseaux neuronaux qui comprennent le contexte, gèrent les exceptions et s\'améliorent continuellement avec une précision de 99,97%.',
             feature_2_title: 'Architecture de Systèmes Agentiques',
             feature_2_desc: 'Agents IA autonomes qui s\'auto-réparent, optimisent et gèrent votre infrastructure EDI sans intervention humaine.',
-            feature_3_title: 'Cadre d\'Intégration Python',
-            feature_3_desc: 'SDK et API prêts pour la production qui se connectent de manière transparente avec SAP, Oracle, Microsoft Dynamics et systèmes personnalisés.',
-            feature_4_title: 'Orchestration de Workflows n8n',
-            feature_4_desc: 'Créateur de workflows visuels pour la personnalisation EDI sans code avec des pipelines complexes de transformation de données.',
+            feature_3_title: 'Technologies d\'Intégration Modernes',
+            feature_3_desc: 'SDK Python, Java, .NET, Node.js avec API RESTful connectant de manière transparente les systèmes existants aux architectures cloud-natives.',
+            feature_4_title: 'Automatisation de Workflows IA',
+            feature_4_desc: 'Orchestration intelligente de workflows avec créateurs visuels, pipelines complexes de transformation et routage adaptatif.',
 
             tech_title: 'Stack Technologique de Niveau Entreprise',
-            tech_subtitle: 'Construit sur des normes et protocoles leaders de l\'industrie',
+            tech_subtitle: 'Outils d\'intégration existants rencontrent approches cloud-natives modernes',
 
             cta_title: 'Prêt à Transformer Vos Opérations EDI?',
             cta_subtitle: 'Rejoignez 500+ organisations d\'entreprise exploitant l\'intégration EDI alimentée par l\'IA',
@@ -253,11 +253,11 @@ const translations = {
             expertise_2_title: 'Architecture de Systèmes Agentiques',
             expertise_2_content: 'Agents IA autonomes qui surveillent, optimisent et auto-réparent les workflows EDI sans intervention humaine, garantissant 99,9% de disponibilité.',
 
-            expertise_3_title: 'Cadre d\'Intégration Python',
-            expertise_3_content: 'SDK Python et API prêts pour la production pour une intégration transparente avec vos systèmes ERP, WMS et commerciaux existants.',
+            expertise_3_title: 'Technologies d\'Intégration Modernes',
+            expertise_3_content: 'SDK prêts pour la production en Python, Java, .NET, Node.js avec API RESTful pour une intégration transparente avec les systèmes existants et modernes.',
 
-            expertise_4_title: 'Orchestration de Workflows n8n',
-            expertise_4_content: 'Automatisation visuelle des workflows avec intégration n8n, permettant la personnalisation des processus EDI sans code et un déploiement rapide.',
+            expertise_4_title: 'Automatisation de Workflows IA',
+            expertise_4_content: 'Orchestration intelligente de workflows avec créateurs visuels, permettant la personnalisation des processus EDI sans code et un déploiement rapide.',
 
             expertise_5_title: 'Analytique et Surveillance en Temps Réel',
             expertise_5_content: 'Tableaux de bord avancés avec analyses prédictives, détection d\'anomalies et alertes automatisées pour une gestion EDI proactive.',
