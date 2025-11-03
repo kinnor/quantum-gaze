@@ -96,11 +96,15 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-left: 20px;
+    position: relative;
 }
 
 .nav-brand {
     display: flex;
     align-items: center;
+    position: absolute;
+    left: 20px;
 }
 
 .nav-brand img {
@@ -115,6 +119,7 @@ img {
     flex: 1;
     justify-content: center;
     margin: 0 2rem;
+    margin-left: 150px;
 }
 
 .nav-menu a {
@@ -214,6 +219,7 @@ body {
     align-items: center;
     color: var(--white);
     padding: 6rem 0;
+    background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -226,7 +232,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
@@ -274,6 +280,49 @@ body {
    =========================== */
 .content-section {
     padding: 4rem 0;
+}
+
+.middle-section {
+    position: relative;
+    background-color: var(--white);
+}
+
+.middle-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://storage.googleapis.com/production-domaincom-v1-0-4/644/1738644/HznIGtf2/c6c6843a379f4ccebf022e015e9349f6');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.middle-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Curved divider between sections */
+.section-divider {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+}
+
+.section-divider::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    clip-path: ellipse(70% 100% at 50% 100%);
 }
 
 .text-center {
@@ -534,7 +583,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NTEzfDB8MXxzZWFyY2h8MTB8fEFJJTIwZG9jdW1lbnQlMjBpbnRlbGVnYW5jZXxlbnwwfHx8fDE3MDY3MTA1MDV8MA&ixlib=rb-4.0.3&q=80&w=1080');
+    background-image: url('https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -704,6 +753,12 @@ body {
     .navbar .container {
         flex-direction: column;
         gap: 1rem;
+        padding-left: 1rem;
+    }
+
+    .nav-brand {
+        position: relative;
+        left: 0;
     }
 
     .nav-brand img {
@@ -714,6 +769,7 @@ body {
         flex-direction: column;
         gap: 0.5rem;
         margin: 0;
+        margin-left: 0;
     }
 
     .hero {
