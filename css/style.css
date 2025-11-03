@@ -81,39 +81,59 @@ img {
 .navbar {
     background: var(--white);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
-    padding: 1rem 0;
+    height: 125px;
+    display: flex;
+    align-items: center;
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-.nav-brand a {
-    font-family: var(--heading-font);
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    font-weight: 700;
+.nav-brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-brand img {
+    height: 80px;
+    width: auto;
 }
 
 .nav-menu {
     display: flex;
     gap: 2rem;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    margin: 0 2rem;
 }
 
 .nav-menu a {
     color: var(--text-dark);
     font-weight: 400;
+    font-size: 1rem;
     transition: color 0.3s;
+    text-decoration: none;
 }
 
 .nav-menu a:hover,
 .nav-menu a.active {
     color: var(--primary-color);
+}
+
+.nav-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .lang-switch {
@@ -122,11 +142,11 @@ img {
 }
 
 .lang-selector {
-    padding: 0.5rem;
-    border: 1px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    border: none;
     border-radius: 5px;
-    background: var(--white);
-    color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white);
     font-family: var(--body-font);
     font-weight: 600;
     cursor: pointer;
@@ -134,13 +154,17 @@ img {
 }
 
 .lang-selector:hover {
-    background: var(--primary-color);
-    color: var(--white);
+    background: #0f679d;
 }
 
 .lang-selector:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(20, 125, 191, 0.2);
+}
+
+/* Offset body to account for fixed navbar */
+body {
+    padding-top: 125px;
 }
 
 /* ===========================
@@ -168,27 +192,66 @@ img {
     box-shadow: 0 4px 12px rgba(20, 125, 191, 0.3);
 }
 
+.btn-ghost {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn-ghost:hover {
+    background: var(--white);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
 /* ===========================
    Hero Section
    =========================== */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
     color: var(--white);
     padding: 6rem 0;
-    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+}
+
+.hero-content {
+    max-width: 600px;
 }
 
 .hero h1 {
     color: var(--white);
     margin-bottom: 1.5rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    color: var(--white);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* ===========================
@@ -507,13 +570,37 @@ img {
         font-size: 1.5rem;
     }
 
-    .nav-menu {
+    .navbar {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .navbar .container {
         flex-direction: column;
         gap: 1rem;
     }
 
+    .nav-brand img {
+        height: 60px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 0;
+    }
+
     .hero {
         padding: 4rem 0;
+        min-height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
     }
 
     .contact-grid {
@@ -522,6 +609,14 @@ img {
 
     .features-grid {
         grid-template-columns: 1fr;
+    }
+
+    .content-section [style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    body {
+        padding-top: 180px;
     }
 }
 
