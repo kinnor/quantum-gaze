@@ -41,6 +41,8 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home-modern.css">
+    <link rel="stylesheet" href="css/ux-enhancements.css">
+    <link rel="stylesheet" href="css/ai-chatbot.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
@@ -57,9 +59,11 @@
                 <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
                 <li><a href="services.html" data-i18n="nav.services">Services</a></li>
                 <li><a href="solutions.html" data-i18n="nav.solutions">Solutions</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="industries.html" data-i18n="nav.industries">Industries</a></li>
                 <li><a href="about.html" data-i18n="nav.about">About</a></li>
                 <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
             <div class="nav-actions">
                 <select id="languageSelector" class="lang-selector">
@@ -177,6 +181,8 @@
                     <div class="tech-badge">Java</div>
                     <div class="tech-badge">.NET</div>
                     <div class="tech-badge">Node.js</div>
+                    <div class="tech-badge">n8n</div>
+                    <div class="tech-badge">Logic Apps</div>
                     <div class="tech-badge">MuleSoft</div>
                     <div class="tech-badge">IBM Sterling</div>
                     <div class="tech-badge">SAP PI/PO</div>
@@ -184,6 +190,49 @@
                     <div class="tech-badge">Docker</div>
                     <div class="tech-badge">Azure</div>
                     <div class="tech-badge">AWS</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories Section -->
+        <section class="content-section-modern">
+            <div class="container">
+                <div class="section-header-center">
+                    <h2 class="section-title">Proven Success Stories</h2>
+                    <p class="section-subtitle">Real results from 24+ years delivering enterprise solutions for Fortune 500 clients</p>
+                </div>
+
+                <div class="card-grid-modern" style="margin-bottom: 2rem;">
+                    <!-- Success Story 1 -->
+                    <div class="card-modern">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">85% Faster Processing</h3>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 1rem;">Automated Booking Confirmation System</h4>
+                        <p style="margin-bottom: 1rem;"><strong>Client:</strong> Leading International Freight Forwarder</p>
+                        <p style="margin-bottom: 0.5rem;"><strong>Challenge:</strong> Manual booking confirmations causing delays and errors in high-volume operations.</p>
+                        <p><strong>Impact:</strong> Real-time communication, 95% reduction in errors, enhanced customer satisfaction</p>
+                    </div>
+
+                    <!-- Success Story 2 -->
+                    <div class="card-modern">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">70% Fewer Delays</h3>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 1rem;">Customs Brokerage API Integration</h4>
+                        <p style="margin-bottom: 1rem;"><strong>Client:</strong> Global Customs Brokerage Provider</p>
+                        <p style="margin-bottom: 0.5rem;"><strong>Challenge:</strong> Customs clearance delays costing millions annually.</p>
+                        <p><strong>Impact:</strong> 100% regulatory compliance, automated declaration process, real-time tracking</p>
+                    </div>
+
+                    <!-- Success Story 3 -->
+                    <div class="card-modern">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">6+ Year Partnership</h3>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 1rem;">BMW Enterprise Integration</h4>
+                        <p style="margin-bottom: 1rem;"><strong>Client:</strong> BMW (Fortune 500 Automotive)</p>
+                        <p style="margin-bottom: 0.5rem;"><strong>Challenge:</strong> Complex enterprise integration across multiple business units.</p>
+                        <p><strong>Impact:</strong> On-time/budget delivery, enterprise-grade reliability, long-term trusted partnership</p>
+                    </div>
+                </div>
+
+                <div class="section-header-center" style="margin-top: 2rem;">
+                    <p><a href="portfolio.html" class="btn btn-primary-modern" style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.3s ease;">View All 19+ Projects →</a></p>
                 </div>
             </div>
         </section>
@@ -266,8 +315,16 @@
         </div>
     </footer>
 
+    <!-- Quick Contact FAB -->
+    <a href="contact.html" class="quick-contact-fab" aria-label="Contact Us">
+        ✉️
+        <span class="tooltip">Contact Us</span>
+    </a>
+
     <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
     <script src="js/seo.js"></script>
+    <script src="js/ux-enhancements.js"></script>
+    <script src="js/ai-chatbot.js"></script>
 </body>
 </html>
