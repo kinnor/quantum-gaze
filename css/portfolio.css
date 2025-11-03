@@ -6,7 +6,7 @@
 /* Page Header Enhancement */
 .page-header-modern {
     position: relative;
-    background: linear-gradient(135deg, #147dbf 0%, #10b8ce 100%);
+    background: linear-gradient(135deg, #1CA9C9 0%, #00B8CE 100%);
     overflow: hidden;
     padding: 6rem 0;
     min-height: 350px;
@@ -34,7 +34,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(20, 125, 191, 0.85) 0%, rgba(16, 184, 206, 0.85) 100%);
+    background: linear-gradient(135deg, rgba(28, 169, 201, 0.90) 0%, rgba(0, 184, 206, 0.90) 100%);
     z-index: 0;
 }
 
