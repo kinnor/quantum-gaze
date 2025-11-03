@@ -1,4 +1,6 @@
-# Cloudflare Workers configuration (optional)
-# For Cloudflare Pages, configure build settings in the dashboard
-name = "quantum-gaze"
-compatibility_date = "2024-01-01"
+# Cloudflare Workers static site configuration
+name = "quantum-gaze-website"
+compatibility_date = "2025-11-03"
+
+[assets]
+directory = "."
