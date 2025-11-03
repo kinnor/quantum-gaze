@@ -14,7 +14,8 @@ class AIChat {
 
 FOUNDER'S EXPERIENCE:
 - 24+ years hands-on experience in software development
-- Fortune 500 clients: BMW (6+ year partnership), Delmar International (9-year partnership), Traffic Tech, Byk Gulden GmbH
+- Fortune 500 clients: BMW, Byk Gulden GmbH, and multi-billion dollar freight forwarding and customs brokerage companies
+- Long-term client partnerships with proven track record
 - International experience: Canada, Germany, Italy, Bulgaria
 - Leadership: IT Manager, Senior Project Manager, Team Lead roles
 - Education: Master's Degree in Computer Science & Technology
@@ -22,9 +23,7 @@ FOUNDER'S EXPERIENCE:
 - Certifications: X12 EDI Certified, multi-platform expertise (Microsoft, Oracle, IBM, MuleSoft)
 
 TECHNICAL EXPERTISE:
-- MuleSoft: 12+ years
-- C#/.NET: 15+ years
-- SQL Server: 14+ years
+- MuleSoft, C#/.NET, SQL Server - Extensive expertise
 - Java, Python, BizTalk, Azure Logic Apps, Oracle PL/SQL
 - EDI Standards: X12 (Certified), EDIFACT, TRADACOMS
 - Integration: IBM Sterling B2B, SAP PI/PO, n8n, Azure, AWS
@@ -40,7 +39,7 @@ CORE SERVICES:
 PROVEN SUCCESS STORIES (19+ major projects):
 1. Automated Booking Confirmation System - 85% faster processing, 95% error reduction
 2. Customs Brokerage API Integration - 70% delay reduction, 100% compliance
-3. BMW Enterprise Integration - Fortune 500 client, 6+ year partnership
+3. BMW Enterprise Integration - Fortune 500 client, long-term partnership
 4. Container Management & Tracking - 30% reduction in transit times
 5. Purchase Order Automation - 60% efficiency improvement
 6. Retail Supply Chain Platform - Seamless e-commerce integration
@@ -52,7 +51,7 @@ KEY DIFFERENTIATORS:
 - 7+ industries served
 - 60% average cost reduction for clients
 - 99.9% uptime guarantee
-- Long-term client partnerships (up to 9 years)
+- Long-term client partnerships with Fortune 500 companies
 
 Key Facts:
 - Location: Quebec, Canada (serving global markets)
@@ -62,7 +61,7 @@ Key Facts:
 
 Industries Served:
 - Retail & E-Commerce (Amazon, Walmart integration)
-- Logistics & Transportation (shipment tracking, TMS/WMS)
+- Logistics & Transportation (shipment tracking, CargoWise, Oracle TMS, SAP TM, Blue Yonder, Manhattan WMS)
 - Healthcare & Pharma (HIPAA-compliant, claims processing)
 - Manufacturing & Distribution (supply chain, JIT inventory)
 - Automotive & Aerospace (OEM integration, AIAG standards)
