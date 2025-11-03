@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="css/pages-modern.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="js/config.js"></script>
+    <script>
+        // Load reCAPTCHA dynamically with site key from config
+        (function() {
+            const script = document.createElement('script');
+            script.src = `https://www.google.com/recaptcha/api.js?render=${window.RECAPTCHA_SITE_KEY || 'YOUR_RECAPTCHA_SITE_KEY'}`;
+            script.async = true;
+            script.defer = true;
+            document.head.appendChild(script);
+        })();
+    </script>
 </head>
 <body>
     <nav class="navbar">
