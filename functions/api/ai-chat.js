@@ -59,7 +59,8 @@ export async function onRequestPost(context) {
 FOUNDER'S PROVEN TRACK RECORD:
 - 24+ years hands-on software development experience
 - 19+ major projects successfully delivered
-- Fortune 500 clients: BMW (6+ year partnership), Delmar International (9-year partnership), Traffic Tech, Byk Gulden GmbH
+- Fortune 500 clients: BMW, Delmar International, Traffic Tech, Byk Gulden GmbH
+- Long-term client partnerships with proven track record
 - International experience: Canada, Germany, Italy, Bulgaria
 - Leadership roles: IT Manager, Senior Project Manager, Team Lead
 - Master's Degree in Computer Science & Technology
@@ -67,9 +68,7 @@ FOUNDER'S PROVEN TRACK RECORD:
 - Languages: Fluent in English, French, and German
 
 TECHNICAL MASTERY:
-- MuleSoft: 12+ years expertise
-- C#/.NET: 15+ years
-- MS SQL Server: 14+ years
+- MuleSoft, C#/.NET, MS SQL Server - Extensive expertise
 - X12 EDI: Certified professional
 - Java, Python, Oracle PL/SQL, C++
 - BizTalk Server, Azure Logic Apps, IBM Sterling B2B
@@ -79,7 +78,7 @@ TECHNICAL MASTERY:
 PROVEN SUCCESS STORIES:
 1. Automated Booking Confirmation System - 85% faster processing, 95% error reduction (Freight Forwarding)
 2. Customs Brokerage API Integration - 70% delay reduction, 100% compliance (Global Customs)
-3. BMW Enterprise Integration - 6+ year partnership, Fortune 500 delivery (Automotive)
+3. BMW Enterprise Integration - Long-term partnership, Fortune 500 delivery (Automotive)
 4. Container Management & Tracking - 30% transit time reduction (Logistics)
 5. Purchase Order Automation - 60% efficiency improvement (Procurement)
 6. Retail Supply Chain Platform - E-commerce integration with payment processing
@@ -95,18 +94,18 @@ Company Information:
 Core Services:
 1. AI-Powered EDI Translation - Neural networks for X12, EDIFACT, TRADACOMS standards
 2. Agentic System Implementation - Autonomous AI agents for workflow management
-3. MuleSoft Integration - 12+ years expertise, enterprise-grade solutions
+3. MuleSoft Integration - Extensive expertise, enterprise-grade solutions
 4. Python API Integration - Enterprise SDKs and RESTful APIs
 5. n8n & Logic Apps - Visual workflow automation, no-code/low-code solutions
 6. Legacy System Modernization - Transform old systems to modern platforms
-7. Database Engineering - SQL Server (14+ years), Oracle PL/SQL expertise
+7. Database Engineering - SQL Server, Oracle PL/SQL expertise
 8. Multilingual Development - Software in English/French/German
 
 Technology Stack:
 - EDI Standards: X12 (Certified), EDIFACT, TRADACOMS, AS2, SFTP
-- Programming: Python, Java, .NET (15+ years), Node.js, C++
-- Integration: MuleSoft (12+ years), Azure Logic Apps, n8n, BizTalk, IBM Sterling, SAP PI/PO
-- Databases: MS SQL Server (14+ years), Oracle PL/SQL, MySQL, NoSQL
+- Programming: Python, Java, .NET, Node.js, C++
+- Integration: MuleSoft, Azure Logic Apps, n8n, BizTalk, IBM Sterling, SAP PI/PO
+- Databases: MS SQL Server, Oracle PL/SQL, MySQL, NoSQL
 - Infrastructure: Kubernetes, Docker, Azure, AWS
 - Modern & Legacy: Seamless bridging of old and new systems
 
@@ -122,8 +121,8 @@ Industries Served (7+):
 Key Differentiators:
 - 24+ years proven track record
 - 19+ successfully delivered major projects
-- Long-term partnerships (up to 9 years with single client)
-- Fortune 500 experience (BMW)
+- Long-term partnerships with Fortune 500 companies
+- Fortune 500 experience (BMW, Delmar, Traffic Tech)
 - 99.9% uptime guarantee
 - Enterprise-grade reliability
 - Infinite scalability (100 to 10M transactions/day)
