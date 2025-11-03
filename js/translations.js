@@ -6,182 +6,182 @@ const translations = {
             home: 'Home',
             services: 'Services',
             solutions: 'Solutions',
-            industries: 'Industries',
+            industries: 'Markets',
             about: 'About',
             contact: 'Contact'
         },
 
         // Homepage
         home: {
-            hero_badge: 'Trusted by Fortune 500 Companies',
-            hero_title: 'Transform Your Business with Intelligent EDI Integration',
-            hero_subtitle: 'Enterprise-grade AI-powered EDI solutions with agentic systems, intelligent workflows, and best-in-class integration technologies. Bridging legacy enterprise tools with modern cloud-native approaches.',
-            hero_cta_primary: 'Request a Demo',
-            hero_cta: 'Discover Our Solutions',
+            hero_badge: 'Quebec-Based • Bilingual Excellence • 35+ Years Experience',
+            hero_title: 'AI-Powered Solutions & Legacy Modernization',
+            hero_subtitle: '35+ years of software engineering expertise meets cutting-edge AI. We help Canadian organizations modernize legacy systems, automate with AI, and innovate with truly bilingual solutions.',
+            hero_cta_primary: 'Schedule a Consultation',
+            hero_cta: 'Explore Our Services',
 
-            stat_1: 'Uptime Guarantee',
-            stat_2: 'Transactions Monthly',
-            stat_3: 'Enterprise Clients',
-            stat_4: 'Cost Reduction',
+            stat_1: 'Years of Experience',
+            stat_2: 'Open Source',
+            stat_3: 'Official Languages',
+            stat_4: 'Quebec-Based',
 
-            features_title: 'Why Industry Leaders Choose Quantum Gaze',
-            features_subtitle: 'Cutting-edge technology meets enterprise reliability',
+            features_title: 'Three Core Service Pillars',
+            features_subtitle: 'Comprehensive solutions for modern challenges',
 
-            feature_1_title: 'AI-Powered EDI Translation',
-            feature_1_desc: 'Neural networks that understand context, handle exceptions, and continuously improve with 99.97% accuracy.',
-            feature_2_title: 'Agentic System Architecture',
-            feature_2_desc: 'Autonomous AI agents that self-heal, optimize, and manage your EDI infrastructure without human intervention.',
-            feature_3_title: 'Modern Integration Technologies',
-            feature_3_desc: 'Python, Java, .NET, Node.js SDKs with RESTful APIs that seamlessly connect legacy systems with cloud-native architectures.',
-            feature_4_title: 'AI-Powered Workflow Automation',
-            feature_4_desc: 'Intelligent workflow orchestration with visual builders, complex data transformation pipelines, and adaptive routing.',
+            feature_1_title: 'Custom AI Solutions',
+            feature_1_desc: 'Document intelligence, predictive analytics, NLP, and computer vision. We build AI that delivers measurable ROI, from concept to production deployment.',
+            feature_2_title: 'Legacy System Modernization',
+            feature_2_desc: 'Transform aging systems into modern, cloud-ready applications. API development, incremental migration, and integration with new technologies while preserving business logic.',
+            feature_3_title: 'Bilingual AI Excellence',
+            feature_3_desc: 'True French-English AI capabilities. Bilingual chatbots, document processing, and NLP solutions built for Canadian organizations and government requirements.',
+            feature_4_title: 'Full-Stack Development',
+            feature_4_desc: 'End-to-end software development from database design to user interfaces. Web applications, APIs, microservices, and system integration using modern open-source technologies.',
 
-            tech_title: 'Enterprise-Grade Technology Stack',
-            tech_subtitle: 'Legacy integration tools meet modern cloud-native approaches',
+            tech_title: 'Modern, Open-Source Technology Stack',
+            tech_subtitle: 'Industry-leading tools and frameworks',
 
-            cta_title: 'Ready to Transform Your EDI Operations?',
-            cta_subtitle: 'Join 500+ enterprise organizations leveraging AI-powered EDI integration',
-            cta_button: 'Schedule a Demo',
-            cta_button_2: 'View Solutions'
+            cta_title: 'Ready to Modernize and Innovate?',
+            cta_subtitle: 'Let\'s discuss how we can help your organization leverage AI and modern technology',
+            cta_button: 'Get Started',
+            cta_button_2: 'View Case Studies'
         },
 
         // About page
         about: {
-            title: 'Leading the Future of Intelligent EDI Integration',
-            subtitle: 'Pioneering AI-driven EDI solutions for enterprise transformation',
+            title: 'Experience Meets Innovation',
+            subtitle: '35+ years of software engineering expertise applied to modern AI challenges',
 
-            mission_title: 'Our Mission',
-            mission_content: 'At Quantum Gaze, we empower global enterprises with intelligent EDI integration platforms that combine traditional electronic data interchange with cutting-edge AI, agentic systems, and modern automation. We transform complex B2B data exchange into strategic competitive advantages.',
+            mission_title: 'Our Story',
+            mission_content: 'Founded in 2023 and based in Quebec, Quantum Gaze Software Inc. brings over three decades of software engineering excellence to the modern AI era. Led by a seasoned full-stack architect with 35+ years of experience spanning mainframes to microservices, we specialize in helping Canadian organizations leverage AI and modern technology while respecting our bilingual heritage and values.',
 
-            expertise_title: 'Our Expertise',
-            expertise_1_title: 'AI-Powered EDI Translation',
-            expertise_1_content: 'Intelligent parsing and transformation of EDI standards (X12, EDIFACT, TRADACOMS) using machine learning models trained on millions of transactions.',
+            expertise_title: 'Our Core Capabilities',
+            expertise_1_title: 'Custom AI Development',
+            expertise_1_content: 'Document intelligence, natural language processing, predictive analytics, and computer vision solutions. We implement AI where it delivers real business value, not AI for marketing purposes.',
 
-            expertise_2_title: 'Agentic System Architecture',
-            expertise_2_content: 'Autonomous AI agents that monitor, optimize, and self-heal EDI workflows without human intervention, ensuring 99.9% uptime.',
+            expertise_2_title: 'Legacy System Modernization',
+            expertise_2_content: 'Transform aging systems into modern applications. With 35+ years of experience across technologies from COBOL to React, we understand legacy systems and how to migrate them safely and incrementally.',
 
-            expertise_3_title: 'Modern Integration Technologies',
-            expertise_3_content: 'Production-ready SDKs in Python, Java, .NET, Node.js with RESTful APIs for seamless integration with legacy and modern systems.',
+            expertise_3_title: 'Bilingual AI Solutions',
+            expertise_3_content: 'True French-English bilingual AI capabilities built for Canadian government and enterprise needs. Not machine translation, but native understanding of both languages.',
 
-            expertise_4_title: 'AI-Powered Workflow Automation',
-            expertise_4_content: 'Intelligent workflow orchestration with visual builders, enabling no-code EDI process customization and rapid deployment.',
+            expertise_4_title: 'Full-Stack Development',
+            expertise_4_content: 'Complete software development services: web applications, APIs, databases, microservices, and system integration using modern open-source technologies.',
 
-            expertise_5_title: 'Real-Time Analytics & Monitoring',
-            expertise_5_content: 'Advanced dashboards with predictive analytics, anomaly detection, and automated alerting for proactive EDI management.',
+            expertise_5_title: 'Government-Ready Partner',
+            expertise_5_content: 'Quebec-based with bilingual capability, security focus, and Canadian data sovereignty. Ready to work with government procurement processes and requirements.',
 
-            why_title: 'Why Industry Leaders Choose Us',
-            why_1_title: 'Enterprise-Grade Reliability',
-            why_1_content: 'Mission-critical infrastructure with guaranteed 99.9% uptime, supporting billions of transactions annually for Fortune 500 companies.',
+            why_title: 'Why Choose Quantum Gaze',
+            why_1_title: '35+ Years of Real Experience',
+            why_1_content: 'Deep technical expertise across the entire technology evolution - from mainframes and client-server to cloud and AI. We\'ve seen what works and what doesn\'t.',
 
-            why_2_title: 'Infinite Scalability',
-            why_2_content: 'Cloud-native architecture that scales from 100 to 10 million transactions per day without performance degradation.',
+            why_2_title: 'Bilingual by Design',
+            why_2_content: 'True French-English capability for AI, applications, and documentation. Essential for Canadian government and Quebec market.',
 
-            why_3_title: 'Compliance & Security',
-            why_3_content: 'SOC 2 Type II, HIPAA, and PCI DSS certified with end-to-end encryption and comprehensive audit trails.',
+            why_3_title: 'Pragmatic AI Approach',
+            why_3_content: 'We focus on AI implementations that deliver measurable ROI. No hype, no buzzwords - just practical solutions that solve real business problems.',
 
-            why_4_title: 'ROI-Driven Results',
-            why_4_content: 'Average 60% reduction in EDI operational costs and 85% faster transaction processing within 90 days of deployment.',
+            why_4_title: 'Quebec-Based, Canadian Values',
+            why_4_content: 'Local company supporting the Quebec economy. Canadian data sovereignty, accessibility standards, and commitment to bilingual excellence.',
 
-            cta_title: 'Ready to Experience Best-in-Class EDI Integration?',
-            cta_subtitle: 'Discover how Quantum Gaze can transform your EDI operations',
-            cta_button: 'Contact Our Team'
+            cta_title: 'Ready to Work Together?',
+            cta_subtitle: 'Let\'s discuss how our experience and expertise can help your project succeed',
+            cta_button: 'Schedule a Consultation'
         },
 
         // Services page
         services: {
-            title: 'Enterprise EDI & AI Integration Services',
-            subtitle: 'Comprehensive solutions for modern B2B data exchange',
+            title: 'Software Development & AI Services',
+            subtitle: 'Comprehensive technology solutions for Canadian organizations',
 
-            service_1_title: 'AI-Powered EDI Translation',
-            service_1_content: 'Transform traditional EDI standards (X12, EDIFACT, TRADACOMS, XML) into modern formats using neural networks. Our AI understands context, handles exceptions, and continuously improves accuracy through machine learning.',
+            service_1_title: 'Custom AI Development',
+            service_1_content: 'Build AI solutions that deliver measurable business value: document intelligence for automated data extraction, natural language processing for customer service and content analysis, predictive analytics for forecasting, and computer vision for image analysis. From prototype to production deployment.',
 
-            service_2_title: 'Agentic System Implementation',
-            service_2_content: 'Deploy autonomous AI agents that manage your entire EDI ecosystem. These intelligent systems handle partner onboarding, document validation, error resolution, and compliance monitoring without human intervention.',
+            service_2_title: 'Legacy System Modernization',
+            service_2_content: 'Transform aging systems into modern, maintainable applications. Comprehensive assessment and roadmapping, incremental migration strategies that minimize risk, API development to expose legacy functionality, cloud migration and containerization, and integration with modern technologies.',
 
-            service_3_title: 'Python API Integration',
-            service_3_content: 'Enterprise-grade Python SDKs and RESTful APIs for seamless integration with SAP, Oracle, Microsoft Dynamics, and custom systems. Production-ready libraries with comprehensive documentation and support.',
+            service_3_title: 'Bilingual AI Solutions',
+            service_3_content: 'Specialized French-English AI solutions for Canadian government and enterprise. Bilingual chatbots and virtual assistants, document processing in both official languages, translation with business context awareness, bilingual search and knowledge management, and content moderation for French and English.',
 
-            service_4_title: 'n8n Workflow Automation',
-            service_4_content: 'Visual workflow builder powered by n8n for no-code EDI process customization. Create complex data transformation pipelines, conditional routing, and multi-system orchestration in minutes.',
+            service_4_title: 'Full-Stack Web Development',
+            service_4_content: 'Complete web application development using modern frameworks and best practices. Single-page applications (React, Vue.js), RESTful APIs and microservices, database design and optimization, authentication and security implementation, and responsive design for all devices.',
 
-            service_5_title: 'AS2/SFTP/API Gateway',
-            service_5_content: 'Secure data transmission protocols including AS2, SFTP, HTTPS, and modern API gateways. Multi-protocol support ensures connectivity with any trading partner worldwide.',
+            service_5_title: 'System Integration & APIs',
+            service_5_content: 'Connect disparate systems and enable data flow across your organization. API design and development (REST, GraphQL), third-party service integration, ETL and data pipeline development, message queue implementation, and legacy system wrapper APIs.',
 
-            service_6_title: 'Managed EDI Services',
-            service_6_content: '24/7/365 managed services with dedicated integration specialists. We handle partner setup, testing, monitoring, and ongoing optimization while you focus on core business.'
+            service_6_title: 'Technical Consulting & Architecture',
+            service_6_content: 'Expert guidance for technology decisions and system design. Technology stack selection and evaluation, system architecture design and review, code review and quality assessment, performance optimization, and team mentoring and knowledge transfer.'
         },
 
         // Solutions page
         solutions: {
-            title: 'Intelligent EDI Solutions Portfolio',
-            subtitle: 'Purpose-built platforms for every integration challenge',
+            title: 'Products & Solution Offerings',
+            subtitle: 'Reusable solutions and packaged services for common business needs',
 
-            solution_1_title: 'EDI Translation Engine',
-            solution_1_subtitle: 'AI-powered document transformation at scale',
-            solution_1_content: 'Our proprietary EDI translation engine processes millions of documents daily with 99.97% accuracy. Machine learning models understand business context, handle edge cases, and adapt to partner-specific requirements automatically.',
-            solution_1_feature_1: 'Multi-Standard Support: X12, EDIFACT, TRADACOMS, XML, JSON, CSV',
-            solution_1_feature_2: 'Real-Time Processing: Sub-second latency for time-critical transactions',
-            solution_1_feature_3: 'Intelligent Validation: Context-aware error detection and auto-correction',
-            solution_1_feature_4: 'Custom Mapping: Visual mapper with 500+ pre-built transformations',
+            solution_1_title: 'Document Intelligence Platform',
+            solution_1_subtitle: 'AI-powered document processing and data extraction',
+            solution_1_content: 'Automated extraction and processing of business documents: invoices, purchase orders, receipts, forms, and contracts. Reduce manual data entry, improve accuracy, and accelerate document workflows with AI-powered OCR and intelligent extraction.',
+            solution_1_feature_1: 'Bilingual document processing (French and English)',
+            solution_1_feature_2: 'REST API for easy integration',
+            solution_1_feature_3: 'Pre-trained models for common document types',
+            solution_1_feature_4: 'Custom training for specialized document formats',
 
-            solution_2_title: 'Agentic Integration Platform',
-            solution_2_subtitle: 'Autonomous EDI management powered by AI',
-            solution_2_content: 'Revolutionary agentic system that operates your EDI infrastructure autonomously. AI agents handle partner onboarding, document routing, exception management, and continuous optimization without human intervention.',
-            solution_2_feature_1: 'Self-Healing Workflows: Automatic detection and resolution of integration issues',
-            solution_2_feature_2: 'Predictive Maintenance: ML-powered forecasting prevents failures before they occur',
-            solution_2_feature_3: 'Dynamic Optimization: Continuous learning improves performance over time',
-            solution_2_feature_4: 'Zero-Touch Operations: 95% reduction in manual EDI administration',
+            solution_2_title: 'Bilingual AI Toolkit',
+            solution_2_subtitle: 'French-English NLP and language solutions',
+            solution_2_content: 'Complete toolkit for building bilingual AI applications. Includes bilingual chatbot framework, translation API with business context, sentiment analysis, entity recognition, and text classification for both French and English content.',
+            solution_2_feature_1: 'Native French and English language understanding',
+            solution_2_feature_2: 'Easy integration with existing applications',
+            solution_2_feature_3: 'Government-ready compliance and data sovereignty',
+            solution_2_feature_4: 'Flexible deployment options (cloud or on-premise)',
 
-            cta_title: 'Ready to Transform Your EDI Operations?',
-            cta_content: 'Schedule a demo with our integration specialists and discover how our AI-powered solutions can reduce costs by 60% while improving accuracy and speed.',
-            cta_button: 'Request a Demo'
+            cta_title: 'Interested in Our Solutions?',
+            cta_content: 'Contact us to discuss how these solutions can be customized for your specific needs, or inquire about custom development services.',
+            cta_button: 'Get in Touch'
         },
 
         // Industries page
         industries: {
-            title: 'Industry-Specific EDI Solutions',
-            subtitle: 'Tailored integration platforms for your sector',
+            title: 'Target Markets & Sectors',
+            subtitle: 'Specialized solutions for government and enterprise',
 
-            industry_1_title: 'Retail & E-Commerce',
-            industry_1_content: 'Seamless integration with retailers and marketplaces. Support for EDI 850/855/856/810, ASN automation, inventory synchronization, and omnichannel order management. Connect with Amazon, Walmart, Target, and 10,000+ retailers.',
+            industry_1_title: 'Government & Public Sector',
+            industry_1_content: 'Quebec and Canadian government agencies at federal, provincial, and municipal levels. Legacy system modernization for critical infrastructure, bilingual citizen-facing applications meeting accessibility standards, document processing and automation for permits and forms, API development for data exchange, and secure solutions respecting Canadian data sovereignty.',
 
-            industry_2_title: 'Logistics & Transportation',
-            industry_2_content: 'Real-time shipment tracking, freight audit automation, and carrier integration. Support for EDI 204/214/990, IoT sensor data, and predictive delivery analytics. Integrate with major TMS and WMS platforms.',
+            industry_2_title: 'Healthcare & Social Services',
+            industry_2_content: 'Healthcare providers, hospitals, and social service organizations. HIPAA-compliant solutions, patient data management systems, appointment scheduling and management, bilingual patient portals and communication tools, integration with existing EMR/EHR systems, and document processing for medical records and insurance claims.',
 
-            industry_3_title: 'Healthcare & Pharma',
-            industry_3_content: 'HIPAA-compliant EDI for claims (837), remittance (835), eligibility (270/271), and chargeback processing. Support for NCPDP SCRIPT, HL7 FHIR integration, and real-time benefit verification.',
+            industry_3_title: 'Financial Services & Insurance',
+            industry_3_content: 'Banks, credit unions, insurance companies, and fintech startups. Secure transaction processing, regulatory compliance and reporting, document intelligence for claims and applications, fraud detection and risk assessment, bilingual customer service chatbots, and legacy banking system modernization.',
 
             industry_4_title: 'Manufacturing & Distribution',
-            industry_4_content: 'Supply chain orchestration with EDI 830/862/866 for demand forecasting, JIT inventory, and supplier collaboration. Integration with PLM, MES, and ERP systems for end-to-end visibility.',
+            industry_4_content: 'Manufacturers, distributors, and supply chain organizations. Inventory management and optimization, supplier and partner integration, quality control and traceability systems, predictive maintenance using AI, legacy ERP modernization, and bilingual documentation and training systems.',
 
-            industry_5_title: 'Automotive & Aerospace',
-            industry_5_content: 'Tier-1 supplier integration with OEM-specific requirements. Support for AIAG standards, ASN with VIN/serial tracking, and supplier portal automation. Connect with COVISINT, ANX, and private networks.',
+            industry_5_title: 'Professional Services',
+            industry_5_content: 'Law firms, accounting firms, consulting companies, and service providers. Document management and automation, client portal development, billing and time tracking systems, case management systems, bilingual reporting and client communications, and integration with industry-specific software.',
 
-            industry_6_title: 'Financial Services',
-            industry_6_content: 'Secure payment processing, bank reconciliation, and regulatory reporting. Support for ISO 20022, SWIFT, ACH, and wire transfer automation with fraud detection and AML compliance.'
+            industry_6_title: 'Education & Research',
+            industry_6_content: 'Universities, colleges, research institutions, and training organizations. Student information systems, learning management platforms, bilingual course content and materials, research data management and analysis, grant management systems, and integration with government reporting requirements.'
         },
 
         // Contact page
         contact: {
-            title: 'Connect With Our Integration Experts',
-            subtitle: 'Enterprise solutions for global organizations',
+            title: 'Let\'s Discuss Your Project',
+            subtitle: 'AI solutions and software development for Canadian organizations',
 
-            get_in_touch: 'Get in Touch',
+            get_in_touch: 'Contact Information',
             phone: 'Phone',
             email: 'Email',
             hours: 'Business Hours',
             hours_content: 'Monday - Thursday: 9:00 AM - 6:00 PM\nFriday: 8:00 AM - 4:00 PM\nSaturday: Closed\nSunday: 10:00 AM - 4:00 PM',
 
             who_we_are: 'About Quantum Gaze',
-            who_content: 'Quantum Gaze is a global leader in AI-powered EDI integration platforms. We serve Fortune 500 companies across retail, healthcare, manufacturing, and logistics with mission-critical integration solutions. Our agentic systems process over 1 billion transactions monthly for 500+ enterprise customers worldwide.',
+            who_content: 'Quantum Gaze Software Inc. is a Quebec-based software development company founded in 2023. With over 35 years of software engineering experience, we specialize in custom AI development, legacy system modernization, and bilingual solutions for Canadian government and enterprise clients. We combine deep technical expertise with modern AI capabilities to deliver practical, production-ready solutions.',
 
-            form_title: 'Request a Consultation',
+            form_title: 'Start a Conversation',
             first_name: 'First Name',
             last_name: 'Last Name',
-            email_label: 'Business Email',
-            message: 'Tell us about your integration challenges',
-            send: 'Request Demo',
-            success: 'Thank you! Our team will contact you within 24 hours.'
+            email_label: 'Email Address',
+            message: 'Tell us about your project or challenge',
+            send: 'Send Message',
+            success: 'Thank you! We will respond within 24 business hours.'
         },
 
         // Footer
@@ -205,182 +205,182 @@ const translations = {
             home: 'Accueil',
             services: 'Services',
             solutions: 'Solutions',
-            industries: 'Industries',
+            industries: 'Marchés',
             about: 'À propos',
             contact: 'Contact'
         },
 
         // Homepage
         home: {
-            hero_badge: 'Approuvé par les Entreprises Fortune 500',
-            hero_title: 'Transformez Votre Entreprise avec l\'Intégration EDI Intelligente',
-            hero_subtitle: 'Solutions EDI d\'entreprise alimentées par l\'IA avec systèmes agentiques, workflows intelligents et technologies d\'intégration de pointe. Reliant les outils d\'entreprise existants aux approches cloud-natives modernes.',
-            hero_cta_primary: 'Demander une Démo',
-            hero_cta: 'Découvrir Nos Solutions',
+            hero_badge: 'Basé au Québec • Excellence Bilingue • Plus de 35 ans d\'expérience',
+            hero_title: 'Solutions IA et Modernisation de Systèmes Patrimoniaux',
+            hero_subtitle: 'Plus de 35 ans d\'expertise en génie logiciel rencontre l\'IA de pointe. Nous aidons les organisations canadiennes à moderniser leurs systèmes patrimoniaux, automatiser avec l\'IA et innover avec des solutions véritablement bilingues.',
+            hero_cta_primary: 'Planifier une Consultation',
+            hero_cta: 'Découvrir Nos Services',
 
-            stat_1: 'Garantie de Disponibilité',
-            stat_2: 'Transactions Mensuelles',
-            stat_3: 'Clients Entreprise',
-            stat_4: 'Réduction des Coûts',
+            stat_1: 'Années d\'Expérience',
+            stat_2: 'Open Source',
+            stat_3: 'Langues Officielles',
+            stat_4: 'Basé au Québec',
 
-            features_title: 'Pourquoi les Leaders de l\'Industrie Choisissent Quantum Gaze',
-            features_subtitle: 'Technologie de pointe rencontre fiabilité d\'entreprise',
+            features_title: 'Trois Piliers de Services Principaux',
+            features_subtitle: 'Solutions complètes pour les défis modernes',
 
-            feature_1_title: 'Traduction EDI Alimentée par l\'IA',
-            feature_1_desc: 'Réseaux neuronaux qui comprennent le contexte, gèrent les exceptions et s\'améliorent continuellement avec une précision de 99,97%.',
-            feature_2_title: 'Architecture de Systèmes Agentiques',
-            feature_2_desc: 'Agents IA autonomes qui s\'auto-réparent, optimisent et gèrent votre infrastructure EDI sans intervention humaine.',
-            feature_3_title: 'Technologies d\'Intégration Modernes',
-            feature_3_desc: 'SDK Python, Java, .NET, Node.js avec API RESTful connectant de manière transparente les systèmes existants aux architectures cloud-natives.',
-            feature_4_title: 'Automatisation de Workflows IA',
-            feature_4_desc: 'Orchestration intelligente de workflows avec créateurs visuels, pipelines complexes de transformation et routage adaptatif.',
+            feature_1_title: 'Solutions IA Personnalisées',
+            feature_1_desc: 'Intelligence documentaire, analytique prédictive, traitement du langage naturel et vision par ordinateur. Nous développons de l\'IA qui génère un ROI mesurable, du concept au déploiement en production.',
+            feature_2_title: 'Modernisation de Systèmes Patrimoniaux',
+            feature_2_desc: 'Transformez les systèmes vieillissants en applications modernes prêtes pour le cloud. Développement d\'API, migration incrémentale et intégration avec les nouvelles technologies tout en préservant la logique métier.',
+            feature_3_title: 'Excellence IA Bilingue',
+            feature_3_desc: 'Véritables capacités IA français-anglais. Chatbots bilingues, traitement de documents et solutions de traitement du langage naturel conçues pour les exigences des organisations canadiennes et gouvernementales.',
+            feature_4_title: 'Développement Full-Stack',
+            feature_4_desc: 'Développement logiciel de bout en bout, de la conception de bases de données aux interfaces utilisateur. Applications web, API, microservices et intégration de systèmes utilisant des technologies open-source modernes.',
 
-            tech_title: 'Stack Technologique de Niveau Entreprise',
-            tech_subtitle: 'Outils d\'intégration existants rencontrent approches cloud-natives modernes',
+            tech_title: 'Stack Technologique Moderne et Open-Source',
+            tech_subtitle: 'Outils et frameworks leaders de l\'industrie',
 
-            cta_title: 'Prêt à Transformer Vos Opérations EDI?',
-            cta_subtitle: 'Rejoignez 500+ organisations d\'entreprise exploitant l\'intégration EDI alimentée par l\'IA',
-            cta_button: 'Planifier une Démo',
-            cta_button_2: 'Voir les Solutions'
+            cta_title: 'Prêt à Moderniser et Innover?',
+            cta_subtitle: 'Discutons de comment nous pouvons aider votre organisation à tirer parti de l\'IA et de la technologie moderne',
+            cta_button: 'Commencer',
+            cta_button_2: 'Voir les Études de Cas'
         },
 
         // About page
         about: {
-            title: 'Leader de l\'Avenir de l\'Intégration EDI Intelligente',
-            subtitle: 'Pionnier des solutions EDI pilotées par l\'IA pour la transformation d\'entreprise',
+            title: 'L\'Expérience Rencontre l\'Innovation',
+            subtitle: 'Plus de 35 ans d\'expertise en génie logiciel appliquée aux défis IA modernes',
 
-            mission_title: 'Notre Mission',
-            mission_content: 'Chez Quantum Gaze, nous donnons aux entreprises mondiales les moyens d\'agir grâce à des plateformes d\'intégration EDI intelligentes qui combinent l\'échange traditionnel de données électroniques avec l\'IA de pointe, les systèmes agentiques et l\'automatisation moderne. Nous transformons l\'échange complexe de données B2B en avantages concurrentiels stratégiques.',
+            mission_title: 'Notre Histoire',
+            mission_content: 'Fondée en 2023 et basée au Québec, Logiciel Quantum Gaze Inc. apporte plus de trois décennies d\'excellence en génie logiciel à l\'ère moderne de l\'IA. Dirigée par un architecte full-stack chevronné avec plus de 35 ans d\'expérience, du mainframe aux microservices, nous nous spécialisons dans l\'aide aux organisations canadiennes pour tirer parti de l\'IA et de la technologie moderne tout en respectant notre héritage et nos valeurs bilingues.',
 
-            expertise_title: 'Notre Expertise',
-            expertise_1_title: 'Traduction EDI Alimentée par l\'IA',
-            expertise_1_content: 'Analyse et transformation intelligentes des normes EDI (X12, EDIFACT, TRADACOMS) utilisant des modèles d\'apprentissage automatique formés sur des millions de transactions.',
+            expertise_title: 'Nos Capacités Principales',
+            expertise_1_title: 'Développement IA Personnalisé',
+            expertise_1_content: 'Intelligence documentaire, traitement du langage naturel, analytique prédictive et solutions de vision par ordinateur. Nous mettons en œuvre l\'IA là où elle apporte une réelle valeur commerciale, pas de l\'IA à des fins marketing.',
 
-            expertise_2_title: 'Architecture de Systèmes Agentiques',
-            expertise_2_content: 'Agents IA autonomes qui surveillent, optimisent et auto-réparent les workflows EDI sans intervention humaine, garantissant 99,9% de disponibilité.',
+            expertise_2_title: 'Modernisation de Systèmes Patrimoniaux',
+            expertise_2_content: 'Transformez les systèmes vieillissants en applications modernes. Avec plus de 35 ans d\'expérience dans les technologies de COBOL à React, nous comprenons les systèmes patrimoniaux et comment les migrer de manière sécuritaire et incrémentale.',
 
-            expertise_3_title: 'Technologies d\'Intégration Modernes',
-            expertise_3_content: 'SDK prêts pour la production en Python, Java, .NET, Node.js avec API RESTful pour une intégration transparente avec les systèmes existants et modernes.',
+            expertise_3_title: 'Solutions IA Bilingues',
+            expertise_3_content: 'Véritables capacités IA bilingues français-anglais conçues pour les besoins du gouvernement canadien et des entreprises. Pas de traduction automatique, mais une compréhension native des deux langues.',
 
-            expertise_4_title: 'Automatisation de Workflows IA',
-            expertise_4_content: 'Orchestration intelligente de workflows avec créateurs visuels, permettant la personnalisation des processus EDI sans code et un déploiement rapide.',
+            expertise_4_title: 'Développement Full-Stack',
+            expertise_4_content: 'Services complets de développement logiciel : applications web, API, bases de données, microservices et intégration de systèmes utilisant des technologies open-source modernes.',
 
-            expertise_5_title: 'Analytique et Surveillance en Temps Réel',
-            expertise_5_content: 'Tableaux de bord avancés avec analyses prédictives, détection d\'anomalies et alertes automatisées pour une gestion EDI proactive.',
+            expertise_5_title: 'Partenaire Prêt pour le Gouvernement',
+            expertise_5_content: 'Basé au Québec avec capacité bilingue, focus sécuritaire et souveraineté des données canadiennes. Prêt à travailler avec les processus et exigences d\'approvisionnement gouvernemental.',
 
-            why_title: 'Pourquoi les Leaders de l\'Industrie Nous Choisissent',
-            why_1_title: 'Fiabilité de Niveau Entreprise',
-            why_1_content: 'Infrastructure critique avec disponibilité garantie de 99,9%, supportant des milliards de transactions annuellement pour les entreprises Fortune 500.',
+            why_title: 'Pourquoi Choisir Quantum Gaze',
+            why_1_title: 'Plus de 35 Ans d\'Expérience Réelle',
+            why_1_content: 'Expertise technique approfondie à travers toute l\'évolution technologique - du mainframe et client-serveur au cloud et à l\'IA. Nous avons vu ce qui fonctionne et ce qui ne fonctionne pas.',
 
-            why_2_title: 'Évolutivité Infinie',
-            why_2_content: 'Architecture cloud native qui évolue de 100 à 10 millions de transactions par jour sans dégradation des performances.',
+            why_2_title: 'Bilingue par Conception',
+            why_2_content: 'Véritable capacité français-anglais pour l\'IA, les applications et la documentation. Essentiel pour le gouvernement canadien et le marché québécois.',
 
-            why_3_title: 'Conformité et Sécurité',
-            why_3_content: 'Certifié SOC 2 Type II, HIPAA et PCI DSS avec cryptage de bout en bout et pistes d\'audit complètes.',
+            why_3_title: 'Approche IA Pragmatique',
+            why_3_content: 'Nous nous concentrons sur les implémentations d\'IA qui génèrent un ROI mesurable. Pas de battage médiatique, pas de mots à la mode - juste des solutions pratiques qui résolvent de vrais problèmes commerciaux.',
 
-            why_4_title: 'Résultats Axés sur le ROI',
-            why_4_content: 'Réduction moyenne de 60% des coûts opérationnels EDI et traitement des transactions 85% plus rapide dans les 90 jours suivant le déploiement.',
+            why_4_title: 'Basé au Québec, Valeurs Canadiennes',
+            why_4_content: 'Entreprise locale soutenant l\'économie québécoise. Souveraineté des données canadiennes, normes d\'accessibilité et engagement envers l\'excellence bilingue.',
 
-            cta_title: 'Prêt à Découvrir l\'Intégration EDI de Première Classe?',
-            cta_subtitle: 'Découvrez comment Quantum Gaze peut transformer vos opérations EDI',
-            cta_button: 'Contacter Notre Équipe'
+            cta_title: 'Prêt à Travailler Ensemble?',
+            cta_subtitle: 'Discutons de comment notre expérience et notre expertise peuvent aider votre projet à réussir',
+            cta_button: 'Planifier une Consultation'
         },
 
         // Services page
         services: {
-            title: 'Services d\'Intégration EDI et IA d\'Entreprise',
-            subtitle: 'Solutions complètes pour l\'échange moderne de données B2B',
+            title: 'Services de Développement Logiciel et IA',
+            subtitle: 'Solutions technologiques complètes pour les organisations canadiennes',
 
-            service_1_title: 'Traduction EDI Alimentée par l\'IA',
-            service_1_content: 'Transformez les normes EDI traditionnelles (X12, EDIFACT, TRADACOMS, XML) en formats modernes utilisant des réseaux neuronaux. Notre IA comprend le contexte, gère les exceptions et améliore continuellement la précision grâce à l\'apprentissage automatique.',
+            service_1_title: 'Développement IA Personnalisé',
+            service_1_content: 'Construisez des solutions IA qui apportent une valeur commerciale mesurable : intelligence documentaire pour l\'extraction automatisée de données, traitement du langage naturel pour le service client et l\'analyse de contenu, analytique prédictive pour les prévisions, et vision par ordinateur pour l\'analyse d\'images. Du prototype au déploiement en production.',
 
-            service_2_title: 'Implémentation de Systèmes Agentiques',
-            service_2_content: 'Déployez des agents IA autonomes qui gèrent l\'ensemble de votre écosystème EDI. Ces systèmes intelligents traitent l\'intégration des partenaires, la validation des documents, la résolution d\'erreurs et la surveillance de la conformité sans intervention humaine.',
+            service_2_title: 'Modernisation de Systèmes Patrimoniaux',
+            service_2_content: 'Transformez les systèmes vieillissants en applications modernes et maintenables. Évaluation et feuille de route complètes, stratégies de migration incrémentale minimisant les risques, développement d\'API pour exposer les fonctionnalités patrimoniales, migration cloud et conteneurisation, et intégration avec les technologies modernes.',
 
-            service_3_title: 'Intégration API Python',
-            service_3_content: 'SDK Python de niveau entreprise et API RESTful pour une intégration transparente avec SAP, Oracle, Microsoft Dynamics et systèmes personnalisés. Bibliothèques prêtes pour la production avec documentation complète et support.',
+            service_3_title: 'Solutions IA Bilingues',
+            service_3_content: 'Solutions IA français-anglais spécialisées pour le gouvernement et les entreprises canadiennes. Chatbots et assistants virtuels bilingues, traitement de documents dans les deux langues officielles, traduction avec compréhension du contexte commercial, gestion des connaissances et recherche bilingues, et modération de contenu en français et anglais.',
 
-            service_4_title: 'Automatisation de Workflows n8n',
-            service_4_content: 'Créateur de workflows visuels alimenté par n8n pour la personnalisation des processus EDI sans code. Créez des pipelines complexes de transformation de données, routage conditionnel et orchestration multi-systèmes en quelques minutes.',
+            service_4_title: 'Développement Web Full-Stack',
+            service_4_content: 'Développement complet d\'applications web utilisant des frameworks modernes et les meilleures pratiques. Applications monopage (React, Vue.js), API RESTful et microservices, conception et optimisation de bases de données, implémentation d\'authentification et de sécurité, et conception responsive pour tous les appareils.',
 
-            service_5_title: 'Passerelle AS2/SFTP/API',
-            service_5_content: 'Protocoles de transmission de données sécurisés incluant AS2, SFTP, HTTPS et passerelles API modernes. Support multi-protocoles garantit la connectivité avec tout partenaire commercial mondial.',
+            service_5_title: 'Intégration de Systèmes et API',
+            service_5_content: 'Connectez des systèmes disparates et permettez le flux de données à travers votre organisation. Conception et développement d\'API (REST, GraphQL), intégration de services tiers, développement de pipelines ETL et de données, implémentation de files d\'attente de messages, et API d\'encapsulation de systèmes patrimoniaux.',
 
-            service_6_title: 'Services EDI Gérés',
-            service_6_content: 'Services gérés 24/7/365 avec spécialistes d\'intégration dédiés. Nous gérons la configuration des partenaires, les tests, la surveillance et l\'optimisation continue pendant que vous vous concentrez sur votre cœur de métier.'
+            service_6_title: 'Consultation Technique et Architecture',
+            service_6_content: 'Conseils d\'experts pour les décisions technologiques et la conception de systèmes. Sélection et évaluation de stack technologique, conception et révision d\'architecture système, révision de code et évaluation de qualité, optimisation des performances, et mentorat d\'équipe et transfert de connaissances.'
         },
 
         // Solutions page
         solutions: {
-            title: 'Portfolio de Solutions EDI Intelligentes',
-            subtitle: 'Plateformes conçues pour chaque défi d\'intégration',
+            title: 'Produits et Offres de Solutions',
+            subtitle: 'Solutions réutilisables et services packagés pour les besoins commerciaux courants',
 
-            solution_1_title: 'Moteur de Traduction EDI',
-            solution_1_subtitle: 'Transformation de documents alimentée par l\'IA à grande échelle',
-            solution_1_content: 'Notre moteur propriétaire de traduction EDI traite des millions de documents quotidiennement avec une précision de 99,97%. Les modèles d\'apprentissage automatique comprennent le contexte commercial, gèrent les cas limites et s\'adaptent automatiquement aux exigences spécifiques des partenaires.',
-            solution_1_feature_1: 'Support Multi-Standards : X12, EDIFACT, TRADACOMS, XML, JSON, CSV',
-            solution_1_feature_2: 'Traitement en Temps Réel : Latence inférieure à la seconde pour les transactions critiques',
-            solution_1_feature_3: 'Validation Intelligente : Détection d\'erreurs contextuelle et auto-correction',
-            solution_1_feature_4: 'Mappage Personnalisé : Mappeur visuel avec plus de 500 transformations pré-construites',
+            solution_1_title: 'Plateforme d\'Intelligence Documentaire',
+            solution_1_subtitle: 'Traitement et extraction de données alimentés par l\'IA',
+            solution_1_content: 'Extraction et traitement automatisés de documents commerciaux : factures, bons de commande, reçus, formulaires et contrats. Réduisez la saisie manuelle, améliorez la précision et accélérez les workflows documentaires avec OCR alimenté par l\'IA et extraction intelligente.',
+            solution_1_feature_1: 'Traitement de documents bilingue (français et anglais)',
+            solution_1_feature_2: 'API REST pour une intégration facile',
+            solution_1_feature_3: 'Modèles pré-entraînés pour types de documents courants',
+            solution_1_feature_4: 'Formation personnalisée pour formats de documents spécialisés',
 
-            solution_2_title: 'Plateforme d\'Intégration Agentique',
-            solution_2_subtitle: 'Gestion EDI autonome alimentée par l\'IA',
-            solution_2_content: 'Système agentique révolutionnaire qui opère votre infrastructure EDI de manière autonome. Les agents IA gèrent l\'intégration des partenaires, le routage des documents, la gestion des exceptions et l\'optimisation continue sans intervention humaine.',
-            solution_2_feature_1: 'Workflows Auto-Réparateurs : Détection et résolution automatiques des problèmes d\'intégration',
-            solution_2_feature_2: 'Maintenance Prédictive : Prévisions alimentées par ML préviennent les défaillances avant qu\'elles ne se produisent',
-            solution_2_feature_3: 'Optimisation Dynamique : L\'apprentissage continu améliore les performances au fil du temps',
-            solution_2_feature_4: 'Opérations Sans Contact : Réduction de 95% de l\'administration EDI manuelle',
+            solution_2_title: 'Boîte à Outils IA Bilingue',
+            solution_2_subtitle: 'Solutions de traitement du langage naturel français-anglais',
+            solution_2_content: 'Boîte à outils complète pour construire des applications IA bilingues. Inclut cadre de chatbot bilingue, API de traduction avec contexte commercial, analyse de sentiment, reconnaissance d\'entités et classification de texte pour le contenu français et anglais.',
+            solution_2_feature_1: 'Compréhension native des langues française et anglaise',
+            solution_2_feature_2: 'Intégration facile avec les applications existantes',
+            solution_2_feature_3: 'Conformité et souveraineté des données prêtes pour le gouvernement',
+            solution_2_feature_4: 'Options de déploiement flexibles (cloud ou sur site)',
 
-            cta_title: 'Prêt à Transformer Vos Opérations EDI?',
-            cta_content: 'Planifiez une démo avec nos spécialistes de l\'intégration et découvrez comment nos solutions alimentées par l\'IA peuvent réduire les coûts de 60% tout en améliorant la précision et la vitesse.',
-            cta_button: 'Demander une Démo'
+            cta_title: 'Intéressé par Nos Solutions?',
+            cta_content: 'Contactez-nous pour discuter de la façon dont ces solutions peuvent être personnalisées pour vos besoins spécifiques, ou renseignez-vous sur nos services de développement personnalisé.',
+            cta_button: 'Nous Contacter'
         },
 
         // Industries page
         industries: {
-            title: 'Solutions EDI Spécifiques à l\'Industrie',
-            subtitle: 'Plateformes d\'intégration adaptées à votre secteur',
+            title: 'Marchés Cibles et Secteurs',
+            subtitle: 'Solutions spécialisées pour le gouvernement et les entreprises',
 
-            industry_1_title: 'Commerce de Détail et E-Commerce',
-            industry_1_content: 'Intégration transparente avec les détaillants et les marchés. Support pour EDI 850/855/856/810, automatisation ASN, synchronisation des stocks et gestion omnicanale des commandes. Connexion avec Amazon, Walmart, Target et plus de 10 000 détaillants.',
+            industry_1_title: 'Gouvernement et Secteur Public',
+            industry_1_content: 'Agences gouvernementales du Québec et du Canada aux niveaux fédéral, provincial et municipal. Modernisation de systèmes patrimoniaux pour infrastructures critiques, applications bilingues pour citoyens respectant les normes d\'accessibilité, traitement et automatisation de documents pour permis et formulaires, développement d\'API pour échange de données, et solutions sécurisées respectant la souveraineté des données canadiennes.',
 
-            industry_2_title: 'Logistique et Transport',
-            industry_2_content: 'Suivi des expéditions en temps réel, automatisation de l\'audit du fret et intégration des transporteurs. Support pour EDI 204/214/990, données de capteurs IoT et analyses de livraison prédictives. Intégration avec les principales plateformes TMS et WMS.',
+            industry_2_title: 'Santé et Services Sociaux',
+            industry_2_content: 'Fournisseurs de soins de santé, hôpitaux et organisations de services sociaux. Solutions conformes HIPAA, systèmes de gestion de données patients, planification et gestion de rendez-vous, portails patients bilingues et outils de communication, intégration avec systèmes EMR/EHR existants, et traitement de documents pour dossiers médicaux et réclamations d\'assurance.',
 
-            industry_3_title: 'Santé et Pharmaceutique',
-            industry_3_content: 'EDI conforme HIPAA pour les réclamations (837), remises (835), éligibilité (270/271) et traitement des rétrofacturations. Support pour NCPDP SCRIPT, intégration HL7 FHIR et vérification des avantages en temps réel.',
+            industry_3_title: 'Services Financiers et Assurance',
+            industry_3_content: 'Banques, caisses populaires, compagnies d\'assurance et startups fintech. Traitement sécurisé des transactions, conformité et rapports réglementaires, intelligence documentaire pour réclamations et applications, détection de fraude et évaluation des risques, chatbots de service client bilingues, et modernisation de systèmes bancaires patrimoniaux.',
 
             industry_4_title: 'Fabrication et Distribution',
-            industry_4_content: 'Orchestration de la chaîne d\'approvisionnement avec EDI 830/862/866 pour les prévisions de demande, inventaire JIT et collaboration avec les fournisseurs. Intégration avec les systèmes PLM, MES et ERP pour une visibilité de bout en bout.',
+            industry_4_content: 'Fabricants, distributeurs et organisations de chaîne d\'approvisionnement. Gestion et optimisation d\'inventaire, intégration de fournisseurs et partenaires, systèmes de contrôle qualité et traçabilité, maintenance prédictive utilisant l\'IA, modernisation d\'ERP patrimonial, et systèmes de documentation et formation bilingues.',
 
-            industry_5_title: 'Automobile et Aérospatiale',
-            industry_5_content: 'Intégration des fournisseurs de niveau 1 avec exigences spécifiques OEM. Support pour les normes AIAG, ASN avec suivi VIN/série et automatisation du portail fournisseur. Connexion avec COVISINT, ANX et réseaux privés.',
+            industry_5_title: 'Services Professionnels',
+            industry_5_content: 'Cabinets d\'avocats, cabinets comptables, entreprises de consultation et fournisseurs de services. Gestion et automatisation de documents, développement de portails clients, systèmes de facturation et suivi du temps, systèmes de gestion de dossiers, rapports bilingues et communications clients, et intégration avec logiciels spécifiques à l\'industrie.',
 
-            industry_6_title: 'Services Financiers',
-            industry_6_content: 'Traitement sécurisé des paiements, rapprochement bancaire et reporting réglementaire. Support pour ISO 20022, SWIFT, ACH et automatisation des virements électroniques avec détection de fraude et conformité AML.'
+            industry_6_title: 'Éducation et Recherche',
+            industry_6_content: 'Universités, collèges, instituts de recherche et organisations de formation. Systèmes d\'information étudiants, plateformes de gestion d\'apprentissage, contenu et matériel de cours bilingues, gestion et analyse de données de recherche, systèmes de gestion de subventions, et intégration avec exigences de rapports gouvernementaux.'
         },
 
         // Contact page
         contact: {
-            title: 'Connectez-vous avec Nos Experts en Intégration',
-            subtitle: 'Solutions d\'entreprise pour organisations mondiales',
+            title: 'Discutons de Votre Projet',
+            subtitle: 'Solutions IA et développement logiciel pour organisations canadiennes',
 
-            get_in_touch: 'Nous Contacter',
+            get_in_touch: 'Coordonnées',
             phone: 'Téléphone',
             email: 'Courriel',
             hours: 'Heures d\'Ouverture',
             hours_content: 'Lundi - Jeudi : 9h00 - 18h00\nVendredi : 8h00 - 16h00\nSamedi : Fermé\nDimanche : 10h00 - 16h00',
 
             who_we_are: 'À Propos de Quantum Gaze',
-            who_content: 'Quantum Gaze est un leader mondial des plateformes d\'intégration EDI alimentées par l\'IA. Nous servons les entreprises Fortune 500 dans les secteurs du commerce de détail, de la santé, de la fabrication et de la logistique avec des solutions d\'intégration critiques. Nos systèmes agentiques traitent plus d\'un milliard de transactions mensuellement pour plus de 500 clients entreprises dans le monde.',
+            who_content: 'Logiciel Quantum Gaze Inc. est une entreprise de développement logiciel basée au Québec fondée en 2023. Avec plus de 35 ans d\'expérience en génie logiciel, nous nous spécialisons dans le développement d\'IA personnalisé, la modernisation de systèmes patrimoniaux et les solutions bilingues pour les clients gouvernementaux et entreprises canadiens. Nous combinons une expertise technique approfondie avec des capacités IA modernes pour offrir des solutions pratiques et prêtes pour la production.',
 
-            form_title: 'Demander une Consultation',
+            form_title: 'Entamer une Conversation',
             first_name: 'Prénom',
             last_name: 'Nom',
-            email_label: 'Courriel Professionnel',
-            message: 'Parlez-nous de vos défis d\'intégration',
-            send: 'Demander une Démo',
-            success: 'Merci! Notre équipe vous contactera dans les 24 heures.'
+            email_label: 'Adresse Courriel',
+            message: 'Parlez-nous de votre projet ou défi',
+            send: 'Envoyer le Message',
+            success: 'Merci! Nous répondrons dans les 24 heures ouvrables.'
         },
 
         // Footer
