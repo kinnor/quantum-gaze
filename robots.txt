@@ -1,0 +1,23 @@
+# Quantum Gaze Software Inc. - Robots.txt
+# https://quantum-gaze.ca/robots.txt
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Disallow admin/private areas (none currently)
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://quantum-gaze.ca/sitemap.xml
+
+# Crawl-delay for specific bots (optional, prevents overloading)
+# User-agent: Googlebot
+# Crawl-delay: 0
+
+# Block bad bots (optional)
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: AhrefsBot
+Crawl-delay: 10
