@@ -1,5 +1,5 @@
 # Cloudflare Workers static site configuration
-name = "quantum-gaze-website"
+name = "quantum-gaze"
 compatibility_date = "2025-11-03"
 
 [assets]
