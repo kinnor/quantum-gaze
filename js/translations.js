@@ -191,8 +191,9 @@ const translations = {
             email: 'Email',
             follow: 'Follow Us',
             who_title: 'About Our Platform',
-            who_content: 'Quantum Gaze delivers enterprise-grade EDI integration powered by AI and agentic systems. Our platform combines Python automation, n8n workflows, and machine learning to transform B2B data exchange for global organizations.',
+            who_content: 'Quantum Gaze Software Inc. delivers enterprise-grade EDI integration powered by AI and agentic systems. Our platform combines Python automation, n8n workflows, and machine learning to transform B2B data exchange for global organizations.',
             copyright: '© 2024 Quantum Gaze Software Inc. All rights reserved.',
+            neq: 'QC Business Number',
             sitemap: 'Sitemap',
             contact_us: 'Contact'
         }
@@ -389,8 +390,9 @@ const translations = {
             email: 'Courriel',
             follow: 'Suivez-nous',
             who_title: 'À Propos de Notre Plateforme',
-            who_content: 'Quantum Gaze offre une intégration EDI de niveau entreprise alimentée par l\'IA et les systèmes agentiques. Notre plateforme combine l\'automatisation Python, les workflows n8n et l\'apprentissage automatique pour transformer l\'échange de données B2B pour les organisations mondiales.',
-            copyright: '© 2024 Quantum Gaze Software Inc. Tous droits réservés.',
+            who_content: 'Logiciel Quantum Gaze Inc. offre une intégration EDI de niveau entreprise alimentée par l\'IA et les systèmes agentiques. Notre plateforme combine l\'automatisation Python, les workflows n8n et l\'apprentissage automatique pour transformer l\'échange de données B2B pour les organisations mondiales.',
+            copyright: '© 2024 Logiciel Quantum Gaze Inc. Tous droits réservés.',
+            neq: 'NEQ',
             sitemap: 'Plan du site',
             contact_us: 'Contactez-nous'
         }
