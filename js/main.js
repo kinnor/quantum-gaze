@@ -26,8 +26,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 firstName: document.getElementById('firstName').value,
                 lastName: document.getElementById('lastName').value,
                 email: document.getElementById('email').value,
-                message: document.getElementById('message').value
+                message: document.getElementById('message').value,
+                language: currentLang,
+                recaptchaToken: null
             };
+
+            // Get reCAPTCHA token if available
+            if (typeof grecaptcha !== 'undefined') {
+                try {
+                    formData.recaptchaToken = await grecaptcha.execute(
+                        window.RECAPTCHA_SITE_KEY || 'YOUR_RECAPTCHA_SITE_KEY',
+                        { action: 'contact_form' }
+                    );
+                } catch (recaptchaError) {
+                    console.warn('reCAPTCHA not available:', recaptchaError);
+                }
+            }
 
             try {
                 // Send form data to Cloudflare Pages Function

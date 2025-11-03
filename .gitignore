@@ -3,6 +3,7 @@ node_modules/
 *.log
 .env
 .env.local
+.env.*.local
 .idea/
 .vscode/
 *.swp
@@ -10,3 +11,4 @@ node_modules/
 dist/
 build/
 .wrangler/
+*.bak
