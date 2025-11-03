@@ -80,7 +80,11 @@ const translations = {
             why_3_content: 'SOC 2 Type II, HIPAA, and PCI DSS certified with end-to-end encryption and comprehensive audit trails.',
 
             why_4_title: 'ROI-Driven Results',
-            why_4_content: 'Average 60% reduction in EDI operational costs and 85% faster transaction processing within 90 days of deployment.'
+            why_4_content: 'Average 60% reduction in EDI operational costs and 85% faster transaction processing within 90 days of deployment.',
+
+            cta_title: 'Ready to Experience Best-in-Class EDI Integration?',
+            cta_subtitle: 'Discover how Quantum Gaze can transform your EDI operations',
+            cta_button: 'Contact Our Team'
         },
 
         // Services page
@@ -189,7 +193,8 @@ const translations = {
             who_title: 'About Our Platform',
             who_content: 'Quantum Gaze delivers enterprise-grade EDI integration powered by AI and agentic systems. Our platform combines Python automation, n8n workflows, and machine learning to transform B2B data exchange for global organizations.',
             copyright: '© 2024 Quantum Gaze Software Inc. All rights reserved.',
-            sitemap: 'Sitemap'
+            sitemap: 'Sitemap',
+            contact_us: 'Contact'
         }
     },
 
@@ -273,7 +278,11 @@ const translations = {
             why_3_content: 'Certifié SOC 2 Type II, HIPAA et PCI DSS avec cryptage de bout en bout et pistes d\'audit complètes.',
 
             why_4_title: 'Résultats Axés sur le ROI',
-            why_4_content: 'Réduction moyenne de 60% des coûts opérationnels EDI et traitement des transactions 85% plus rapide dans les 90 jours suivant le déploiement.'
+            why_4_content: 'Réduction moyenne de 60% des coûts opérationnels EDI et traitement des transactions 85% plus rapide dans les 90 jours suivant le déploiement.',
+
+            cta_title: 'Prêt à Découvrir l\'Intégration EDI de Première Classe?',
+            cta_subtitle: 'Découvrez comment Quantum Gaze peut transformer vos opérations EDI',
+            cta_button: 'Contacter Notre Équipe'
         },
 
         // Services page
@@ -382,7 +391,8 @@ const translations = {
             who_title: 'À Propos de Notre Plateforme',
             who_content: 'Quantum Gaze offre une intégration EDI de niveau entreprise alimentée par l\'IA et les systèmes agentiques. Notre plateforme combine l\'automatisation Python, les workflows n8n et l\'apprentissage automatique pour transformer l\'échange de données B2B pour les organisations mondiales.',
             copyright: '© 2024 Quantum Gaze Software Inc. Tous droits réservés.',
-            sitemap: 'Plan du site'
+            sitemap: 'Plan du site',
+            contact_us: 'Contactez-nous'
         }
     }
 };

@@ -1,52 +1,9 @@
 // Main JavaScript file for Quantum Gaze website
+// Note: Translation system is handled by translations.js
 
-// Language translations
-const translations = {
-    en: {
-        nav: {
-            home: 'Home',
-            services: 'Services',
-            solutions: 'Solutions',
-            industries: 'Industries',
-            about: 'About',
-            contact: 'Contact Us'
-        }
-    },
-    fr: {
-        nav: {
-            home: 'Accueil',
-            services: 'Services',
-            solutions: 'Solutions',
-            industries: 'Industries',
-            about: 'À propos',
-            contact: 'Nous joindre'
-        }
-    }
-};
-
-// Get current language from localStorage or default to 'en'
-function getCurrentLanguage() {
-    return localStorage.getItem('language') || 'en';
-}
-
-// Set language and reload page
-function setLanguage(lang) {
-    localStorage.setItem('language', lang);
-    location.reload();
-}
-
-// Initialize language on page load
+// Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
     const currentLang = getCurrentLanguage();
-
-    // Update language selector if exists
-    const langSelector = document.getElementById('languageSelector');
-    if (langSelector) {
-        langSelector.value = currentLang;
-        langSelector.addEventListener('change', function(e) {
-            setLanguage(e.target.value);
-        });
-    }
 
     // Contact form handling
     const contactForm = document.getElementById('contactForm');
