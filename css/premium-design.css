@@ -10,7 +10,7 @@
 /* Homepage Header */
 .hero.premium-hero {
     position: relative;
-    background: linear-gradient(135deg, #00D4FF 0%, #7DF9FF 100%);
+    background: linear-gradient(to top right, #5DB3FF 0%, #0856C1 100%);
     overflow: hidden;
     min-height: 225px;
     display: flex;
@@ -37,7 +37,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.92) 0%, rgba(125, 249, 255, 0.92) 100%);
+    background: linear-gradient(to top right, rgba(93, 179, 255, 0.92) 0%, rgba(8, 86, 193, 0.92) 100%);
     z-index: 0;
 }
 
@@ -138,13 +138,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.92) 0%, rgba(125, 249, 255, 0.92) 100%);
+    background: linear-gradient(to top right, rgba(93, 179, 255, 0.92) 0%, rgba(8, 86, 193, 0.92) 100%);
     z-index: 0;
 }
 
 .page-header-modern {
     position: relative;
-    background: linear-gradient(135deg, #00D4FF 0%, #7DF9FF 100%);
+    background: linear-gradient(to top right, #5DB3FF 0%, #0856C1 100%);
     overflow: hidden;
     padding: 4.5rem 0;
     min-height: 260px;
@@ -321,7 +321,7 @@
    ========================================== */
 
 .cta-banner-modern {
-    background: linear-gradient(135deg, #00D4FF 0%, #7DF9FF 100%);
+    background: linear-gradient(to top right, #5DB3FF 0%, #0856C1 100%);
     padding: 5rem 0;
     position: relative;
     overflow: hidden;
@@ -361,7 +361,7 @@
 
 .btn-light-modern {
     background: white;
-    color: #0099CC;
+    color: #1188f7;
     padding: 1rem 3rem;
     border-radius: 50px;
     font-size: 1.125rem;
