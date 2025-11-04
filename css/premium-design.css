@@ -47,12 +47,6 @@
 }
 
 /* Services Header */
-.page-header-modern.services-header {
-    position: relative;
-    overflow: hidden;
-    min-height: 350px;
-}
-
 .page-header-modern.services-header::before {
     content: '';
     position: absolute;
