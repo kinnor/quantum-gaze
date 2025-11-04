@@ -184,6 +184,9 @@ body {
     cursor: pointer;
     border: none;
     font-family: var(--body-font);
+    min-height: 48px;
+    line-height: 1.5;
+    font-size: 1rem;
 }
 
 .btn-primary {
