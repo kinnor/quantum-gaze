@@ -8,8 +8,8 @@
     position: relative;
     background: linear-gradient(135deg, #0072BB 0%, #318CE7 100%);
     overflow: hidden;
-    padding: 6rem 0;
-    min-height: 350px;
+    padding: 4.5rem 0;
+    min-height: 260px;
     display: flex;
     align-items: center;
 }
@@ -562,8 +562,8 @@
 
 @media (max-width: 768px) {
     .page-header-modern {
-        padding: 4rem 0;
-        min-height: 280px;
+        padding: 3rem 0;
+        min-height: 210px;
     }
 
     .page-header-modern h1 {
