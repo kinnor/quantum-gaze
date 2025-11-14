@@ -12,16 +12,16 @@
     font-family: 'Nunito', sans-serif;
 }
 
-/* Chat Toggle Button */
+/* Chat Toggle Button - Llama Theme with Earthy Tones */
 .ai-chat-toggle {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #D97706 0%, #F59E0B 100%); /* Warm orange/amber */
     color: white;
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 4px 20px rgba(217, 119, 6, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,11 +33,11 @@
 
 .ai-chat-toggle:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 30px rgba(102, 126, 234, 0.6);
+    box-shadow: 0 6px 30px rgba(217, 119, 6, 0.6);
 }
 
 .ai-chat-toggle.active {
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
     transform: rotate(90deg);
 }
 
@@ -116,9 +116,9 @@
     }
 }
 
-/* Chat Header */
+/* Chat Header - Llama Theme */
 .ai-chat-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #D97706 0%, #F59E0B 100%); /* Warm orange/amber */
     color: white;
     padding: 20px;
     display: flex;
@@ -251,7 +251,7 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #D97706 0%, #F59E0B 100%); /* Llama theme */
     color: white;
     display: flex;
     align-items: center;
@@ -345,18 +345,18 @@
     padding: 8px 14px;
     border-radius: 20px;
     font-size: 13px;
-    color: #667eea;
+    color: #D97706; /* Llama theme */
     cursor: pointer;
     transition: all 0.2s;
     white-space: nowrap;
 }
 
 .ai-suggestion-btn:hover {
-    background: #667eea;
+    background: linear-gradient(135deg, #D97706 0%, #F59E0B 100%); /* Llama theme */
     color: white;
-    border-color: #667eea;
+    border-color: #D97706;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
 }
 
 /* Chat Input Area */
@@ -383,15 +383,15 @@
 
 .ai-chat-input:focus {
     outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    border-color: #D97706; /* Llama theme */
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.1);
 }
 
 .ai-chat-send {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #D97706 0%, #F59E0B 100%); /* Llama theme */
     color: white;
     border: none;
     cursor: pointer;
@@ -405,7 +405,7 @@
 
 .ai-chat-send:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.4);
 }
 
 .ai-chat-send:disabled {
@@ -458,7 +458,7 @@
 }
 
 .ai-powered-by a {
-    color: #667eea;
+    color: #D97706; /* Llama theme */
     text-decoration: none;
     font-weight: 600;
 }

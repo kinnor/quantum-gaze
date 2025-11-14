@@ -1,6 +1,6 @@
 /**
  * AI Chat API - Cloudflare Pages Function
- * Handles OpenAI API calls for the chatbot
+ * Handles Llama AI via Cloudflare Workers AI
  */
 
 export async function onRequestPost(context) {
@@ -34,14 +34,16 @@ export async function onRequestPost(context) {
             });
         }
 
-        // Get OpenAI API key from environment
-        const openaiApiKey = env.OPENAI_API_KEY;
-
-        if (!openaiApiKey) {
-            console.error('OpenAI API key not configured');
+        // Check if Cloudflare AI is available
+        if (!env.AI) {
+            console.error('Cloudflare AI not available - using fallback');
             return new Response(JSON.stringify({
-                reply: "I apologize, but the AI service is not configured yet. Please contact us directly at service@quantum-gaze.com or call +1-438-738-3887.",
-                error: 'API key not configured'
+                reply: "Hello! I'm the Quantum Gaze AI Assistant powered by Llama AI. I can help you learn about our EDI solutions, AI services, and answer questions about our company.\n\nNote: The AI service is initializing. Please contact us directly at service@quantum-gaze.com or call +1-438-738-3887 for immediate assistance.",
+                suggestions: [
+                    'What services does Quantum Gaze offer?',
+                    'Tell me about AI-powered EDI',
+                    'How can I get started?'
+                ]
             }), {
                 status: 200,
                 headers: {
@@ -164,32 +166,14 @@ Important:
             content: message
         });
 
-        // Call OpenAI API
-        const openaiResponse = await fetch('https://api.openai.com/v1/chat/completions', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${openaiApiKey}`
-            },
-            body: JSON.stringify({
-                model: 'gpt-3.5-turbo', // Use gpt-3.5-turbo (faster, cheaper, works with all API keys)
-                                        // Switch to 'gpt-4' once you have access ($1+ API usage)
-                messages: messages,
-                temperature: 0.7,
-                max_tokens: 500,
-                presence_penalty: 0.6,
-                frequency_penalty: 0.3
-            })
+        // Call Cloudflare Workers AI with Llama model
+        const aiResponse = await env.AI.run('@cf/meta/llama-3.1-8b-instruct', {
+            messages: messages,
+            temperature: 0.7,
+            max_tokens: 500
         });
 
-        if (!openaiResponse.ok) {
-            const errorData = await openaiResponse.json();
-            console.error('OpenAI API error:', errorData);
-            throw new Error(`OpenAI API error: ${openaiResponse.status}`);
-        }
-
-        const data = await openaiResponse.json();
-        const aiReply = data.choices[0].message.content;
+        const aiReply = aiResponse.response || aiResponse.result?.response || "I apologize, but I'm having trouble generating a response. Please try again.";
 
         // Generate smart suggestions based on conversation
         const suggestions = generateSuggestions(message, aiReply);

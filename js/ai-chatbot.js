@@ -83,8 +83,8 @@ Please provide helpful, accurate information about our services and proven track
         widget.className = 'ai-chat-widget';
         widget.innerHTML = `
             <!-- Chat Toggle Button -->
-            <button class="ai-chat-toggle" aria-label="Open AI Chat">
-                <span class="ai-chat-icon">🤖</span>
+            <button class="ai-chat-toggle" aria-label="Open Llama AI Chat">
+                <span class="ai-chat-icon">🦙</span>
                 <span class="ai-chat-badge" style="display: none;">1</span>
             </button>
 
@@ -93,12 +93,12 @@ Please provide helpful, accurate information about our services and proven track
                 <!-- Header -->
                 <div class="ai-chat-header">
                     <div class="ai-chat-header-info">
-                        <div class="ai-chat-avatar">🤖</div>
+                        <div class="ai-chat-avatar">🦙</div>
                         <div class="ai-chat-title">
-                            <h3>Quantum AI Assistant</h3>
+                            <h3>Quantum Llama Assistant</h3>
                             <div class="ai-chat-status">
                                 <span class="ai-status-dot"></span>
-                                <span>Online - Powered by OpenAI</span>
+                                <span>Online - Powered by Llama 3.1</span>
                             </div>
                         </div>
                     </div>
@@ -125,7 +125,7 @@ Please provide helpful, accurate information about our services and proven track
 
                 <!-- Powered By -->
                 <div class="ai-powered-by">
-                    Powered by <a href="https://openai.com" target="_blank">OpenAI</a>
+                    Powered by <a href="https://ai.cloudflare.com" target="_blank">Llama AI</a> via Cloudflare Workers AI
                 </div>
             </div>
         `;
@@ -195,9 +195,9 @@ Please provide helpful, accurate information about our services and proven track
     showWelcomeMessage() {
         const welcomeHTML = `
             <div class="ai-welcome-message">
-                <div class="ai-welcome-icon">👋</div>
-                <h4>Hi! I'm your AI Assistant</h4>
-                <p>I can help you learn about our EDI solutions, AI services, and answer any questions about Quantum Gaze.</p>
+                <div class="ai-welcome-icon">🦙</div>
+                <h4>Hi! I'm your Llama AI Assistant</h4>
+                <p>Powered by Meta's Llama 3.1 model running on Cloudflare Workers AI. I can help you learn about our EDI solutions, AI services, and answer any questions about Quantum Gaze.</p>
                 <div class="ai-suggestions">
                     <button class="ai-suggestion-btn" data-prompt="What services does Quantum Gaze offer?">
                         What services do you offer?
@@ -299,7 +299,7 @@ Please provide helpful, accurate information about our services and proven track
         });
 
         messageDiv.innerHTML = `
-            <div class="ai-message-avatar">${sender === 'user' ? '👤' : '🤖'}</div>
+            <div class="ai-message-avatar">${sender === 'user' ? '👤' : '🦙'}</div>
             <div class="ai-message-content">
                 <div class="ai-message-bubble ${isError ? 'ai-error-message' : ''}">
                     ${this.formatMessage(text)}
@@ -364,7 +364,7 @@ Please provide helpful, accurate information about our services and proven track
         const typingDiv = document.createElement('div');
         typingDiv.className = 'ai-message bot ai-typing-message';
         typingDiv.innerHTML = `
-            <div class="ai-message-avatar">🤖</div>
+            <div class="ai-message-avatar">🦙</div>
             <div class="ai-message-content">
                 <div class="ai-typing-indicator">
                     <span class="ai-typing-dot"></span>
