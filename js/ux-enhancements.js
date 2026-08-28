@@ -108,13 +108,13 @@ function initSearch() {
             title: 'Home',
             url: 'index.html',
             keywords: 'AI solutions legacy modernization software development quantum gaze',
-            snippet: 'Quebec-based software development with 35+ years experience'
+            snippet: 'Quebec-based software development with 24+ years experience'
         },
         {
             title: 'About Us',
             url: 'about.html',
             keywords: 'company history team expertise experience background',
-            snippet: 'Learn about our company, team, and 35+ years of software engineering'
+            snippet: 'Learn about our company, team, and 24+ years of software engineering'
         },
         {
             title: 'Services - Custom AI Development',

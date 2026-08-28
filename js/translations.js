@@ -99,7 +99,8 @@ const translations = {
             who_content: 'Quantum Gaze Software Inc. delivers specialized enterprise integration and cloud-native modernization for logistics and customs brokerages across North America. Founded on 24+ years of proven Fortune 500 architecture leadership.',
             copyright: '© 2026 Quantum Gaze Software Inc. / Logiciel Quantum Gaze Inc. All rights reserved.',
             neq: 'QC Enterprise Number (NEQ)',
-            sitemap: 'Sitemap'
+            sitemap: 'Sitemap',
+            contact_us: 'Contact'
         }
     },
 
@@ -202,7 +203,8 @@ const translations = {
             who_content: 'Logiciel Quantum Gaze Inc. offre des services spécialisés d\'intégration d\'entreprise et de modernisation infonuagique pour la logistique et le courtage en douane en Amérique du Nord. Fondée sur plus de 24 ans de leadership en architecture auprès d\'entreprises Fortune 500.',
             copyright: '© 2026 Logiciel Quantum Gaze Inc. / Quantum Gaze Software Inc. Tous droits réservés.',
             neq: 'Numéro d\'entreprise du Québec (NEQ)',
-            sitemap: 'Plan du site'
+            sitemap: 'Plan du site',
+            contact_us: 'Contactez-nous'
         }
     },
 
@@ -232,7 +234,97 @@ const translations = {
             who_content: 'Quantum Gaze Software Inc. liefert spezialisierte Integrations- und Modernisierungslösungen für Unternehmen.',
             copyright: '© 2026 Quantum Gaze Software Inc. Alle Rechte vorbehalten.',
             neq: 'QC Unternehmensnummer (NEQ)',
-            sitemap: 'Sitemap'
+            sitemap: 'Sitemap',
+            contact_us: 'Kontaktieren Sie uns'
         }
     }
 };
+
+// Resolve a dot-separated key path (e.g. "footer.contact_us") against a
+// translations dictionary. Returns undefined if any segment is missing,
+// and never throws even if the dictionary itself is undefined.
+function resolveTranslationKey(dict, keyPath) {
+    if (!dict || typeof keyPath !== 'string') {
+        return undefined;
+    }
+    return keyPath.split('.').reduce(function(value, segment) {
+        if (value && Object.prototype.hasOwnProperty.call(value, segment)) {
+            return value[segment];
+        }
+        return undefined;
+    }, dict);
+}
+
+// Get current language
+function getCurrentLanguage() {
+    try {
+        return (typeof localStorage !== 'undefined' && localStorage.getItem('language')) || 'en';
+    } catch (e) {
+        return 'en';
+    }
+}
+
+// Set language
+function setLanguage(lang) {
+    try {
+        if (typeof localStorage !== 'undefined') {
+            localStorage.setItem('language', lang);
+        }
+    } catch (e) {
+        // Ignore storage errors (e.g. private browsing mode)
+    }
+    updatePageContent(lang);
+}
+
+// Update page content based on language. If a key is missing from the
+// selected language's dictionary (or the dictionary itself doesn't
+// exist), fall back to the English tree. Never throws.
+function updatePageContent(lang) {
+    if (typeof document === 'undefined' || !document.querySelectorAll) {
+        return;
+    }
+
+    const activeDict = translations[lang] || translations.en;
+    const fallbackDict = translations.en;
+
+    document.querySelectorAll('[data-i18n]').forEach(function(element) {
+        const key = element.getAttribute('data-i18n');
+        if (!key) {
+            return;
+        }
+
+        let value = resolveTranslationKey(activeDict, key);
+        if (typeof value !== 'string') {
+            value = resolveTranslationKey(fallbackDict, key);
+        }
+
+        if (typeof value === 'string') {
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = value;
+            } else {
+                element.textContent = value;
+            }
+        }
+    });
+
+    // Update language selector, if present on the page
+    const langSelector = document.getElementById('languageSelector');
+    if (langSelector) {
+        langSelector.value = lang;
+    }
+}
+
+// Initialize on page load
+if (typeof document !== 'undefined' && document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', function() {
+        const currentLang = getCurrentLanguage();
+        updatePageContent(currentLang);
+
+        const langSelector = document.getElementById('languageSelector');
+        if (langSelector) {
+            langSelector.addEventListener('change', function(e) {
+                setLanguage(e.target.value);
+            });
+        }
+    });
+}

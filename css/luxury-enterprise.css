@@ -453,3 +453,144 @@ body.variant-spotlight-bento .page-header-modern {
         grid-column: span 12;
     }
 }
+
+/* ==========================================================================
+   VARIANT OVERLAY FIXES
+   premium-design.css / portfolio.css paint a ~92%-opaque light gradient via
+   .page-header-modern::after on top of the header backgrounds; style.css
+   also paints a dark scrim + Unsplash image via .hero::before. Both mask the
+   Variant 1A/1B/1C backgrounds defined above, so neutralize them per-variant
+   without touching the shared files.
+   ========================================================================== */
+body.variant-cyber-grid .hero::before {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+body.variant-aurora-glow .page-header-modern::after,
+body.variant-spotlight-bento .page-header-modern::after {
+    background: transparent !important;
+}
+
+/* ==========================================================================
+   HERO LAYOUT HELPERS (Variant 1A — Home)
+   ========================================================================== */
+.hero-modern {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text-col {
+    position: relative;
+    max-width: 640px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 242, 254, 0.1);
+    border: 1px solid rgba(0, 242, 254, 0.3);
+    color: var(--accent-cyan);
+    padding: 0.45rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 1.25rem;
+}
+
+/* ==========================================================================
+   LIVE EDI SANDBOX — TABS & TWO-PANE CODE VIEWER (Variant 1A)
+   ========================================================================== */
+.sandbox-tab-btn {
+    background: rgba(15, 23, 42, 0.8);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    font-family: var(--font-sans);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.sandbox-tab-btn:hover {
+    border-color: rgba(0, 242, 254, 0.35);
+    color: var(--text-primary);
+}
+
+.sandbox-tab-btn.active {
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+    color: #030712;
+    border-color: transparent;
+    box-shadow: 0 0 18px rgba(0, 242, 254, 0.4);
+}
+
+.edi-pane {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.pane-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.65rem 1rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: rgba(15, 23, 42, 0.9);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.edi-code-view,
+.json-code-view {
+    margin: 0;
+    padding: 1.1rem;
+    min-height: 320px;
+    max-height: 420px;
+    overflow: auto;
+    background: #020409;
+    border: none;
+    color: #4ade80;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-word;
+    resize: vertical;
+}
+
+.edi-code-view:focus {
+    outline: 1px solid var(--accent-cyan);
+    outline-offset: -1px;
+}
+
+.json-code-view {
+    color: var(--text-secondary);
+    resize: none;
+}
+
+.edi-parse-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.privacy-notice {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}

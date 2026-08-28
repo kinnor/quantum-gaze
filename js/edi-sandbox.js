@@ -20,7 +20,7 @@ N4*CHICAGO*IL*60605*US~
 S5*1*CL~
 G62*37*20260901*E*0800~
 OID*PO-994821*1200*CA*45000*L~
-SE*16*0001~
+SE*15*0001~
 GE*1*1~
 IEA*1*000000001~`,
 
@@ -177,8 +177,8 @@ function initBizTalkCountdown() {
 
     if (!daysEl) return;
 
-    // Microsoft BizTalk Server 2020 Mainstream End Date: April 30, 2028
-    const targetDate = new Date('2028-04-30T00:00:00Z').getTime();
+    // Microsoft BizTalk Server 2020 Mainstream End Date: April 30, 2028 (local midnight)
+    const targetDate = new Date(2028, 3, 30).getTime();
 
     function update() {
         const now = new Date().getTime();
@@ -220,6 +220,7 @@ function initTerminalStream() {
         { text: '> Azure Logic Apps runtime active (42ms latency).', class: 'cyan' }
     ];
 
+    const MAX_TERMINAL_LINES = 40;
     let index = 0;
     setInterval(() => {
         const item = logs[index % logs.length];
@@ -228,6 +229,9 @@ function initTerminalStream() {
         const time = new Date().toISOString().substring(11, 19);
         line.textContent = `[${time}] ${item.text}`;
         terminalEl.appendChild(line);
+        while (terminalEl.children.length > MAX_TERMINAL_LINES) {
+            terminalEl.removeChild(terminalEl.firstChild);
+        }
         terminalEl.scrollTop = terminalEl.scrollHeight;
         index++;
     }, 2800);

@@ -1,0 +1,12 @@
+functions/
+node_modules/
+*.md
+*.bak
+.env*
+.git/
+.claude/
+package.json
+package-lock.json
+wrangler.toml
+.assetsignore
+.gitignore
