@@ -1,0 +1,455 @@
+/**
+ * Quantum Gaze Software Inc. — Luxury Enterprise Design System
+ * Strict Multi-Variant Enterprise Architecture Styling
+ * Inspired by Stripe, Linear, Vercel & Apple Pro
+ */
+
+:root {
+    /* Color Palette */
+    --bg-canvas: #050811;
+    --bg-surface: #0b1120;
+    --bg-surface-elevated: #0f172a;
+    --bg-card: rgba(15, 23, 42, 0.75);
+    --bg-card-hover: rgba(30, 41, 59, 0.85);
+    
+    --accent-cyan: #00f2fe;
+    --accent-blue: #147dbf;
+    --accent-teal: #10b8ce;
+    --accent-indigo: #4f46e5;
+    --accent-emerald: #10b981;
+    --accent-amber: #f59e0b;
+    
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-accent: rgba(0, 242, 254, 0.3);
+    --border-card: rgba(255, 255, 255, 0.1);
+    
+    --glow-cyan: 0 0 35px rgba(0, 242, 254, 0.22);
+    --glow-blue: 0 0 45px rgba(20, 125, 191, 0.3);
+    --glow-card: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+    
+    --font-heading: 'Libre Baskerville', Georgia, serif;
+    --font-sans: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'SF Mono', Consolas, 'Courier New', monospace;
+}
+
+/* Base Overrides */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-canvas) !important;
+    color: var(--text-secondary) !important;
+    font-family: var(--font-sans) !important;
+    overflow-x: hidden;
+    margin: 0;
+    padding-top: 100px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary) !important;
+    font-family: var(--font-heading) !important;
+    letter-spacing: -0.02em;
+}
+
+/* Navbar Overhaul */
+.navbar {
+    background: rgba(5, 8, 17, 0.85) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid var(--border-subtle) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6) !important;
+    height: 90px !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-brand img {
+    height: 52px;
+    width: auto;
+    display: block;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 1.75rem;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-menu a {
+    color: var(--text-secondary) !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.navbar .nav-menu a:hover,
+.navbar .nav-menu a.active {
+    color: var(--accent-cyan) !important;
+    text-shadow: 0 0 12px rgba(0, 242, 254, 0.5);
+}
+
+.lang-selector {
+    background: rgba(15, 23, 42, 0.9) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-subtle) !important;
+    border-radius: 8px !important;
+    padding: 0.45rem 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Luxury Buttons */
+.btn-primary-modern,
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-blue) 100%) !important;
+    color: #030712 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 0.85rem 2rem !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.35) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary-modern:hover,
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 35px rgba(0, 242, 254, 0.6) !important;
+    color: #000000 !important;
+}
+
+.btn-secondary-modern {
+    background: rgba(15, 23, 42, 0.8) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-accent) !important;
+    border-radius: 8px !important;
+    padding: 0.85rem 2rem !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease !important;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-secondary-modern:hover {
+    background: rgba(30, 41, 59, 0.9) !important;
+    border-color: var(--accent-cyan) !important;
+    color: var(--accent-cyan) !important;
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+}
+
+/* ==========================================================================
+   VARIANT 1A: CYBER-GRID & FLOATING TELEMETRY (Home & Solutions)
+   ========================================================================== */
+body.variant-cyber-grid .hero {
+    background: 
+        radial-gradient(circle at 50% 15%, rgba(0, 242, 254, 0.22) 0%, rgba(20, 125, 191, 0.08) 45%, rgba(5, 8, 17, 1) 85%),
+        linear-gradient(rgba(0, 242, 254, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 242, 254, 0.035) 1px, transparent 1px) !important;
+    background-size: 100% 100%, 48px 48px, 48px 48px !important;
+    padding: 6.5rem 0 5rem !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-grid-layout {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-title-cyber {
+    font-size: 3.6rem !important;
+    font-weight: 700;
+    line-height: 1.12;
+    margin-bottom: 1.25rem;
+    background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle-cyber {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+/* Floating Telemetry Cluster */
+.telemetry-cluster {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    position: relative;
+}
+
+.telemetry-badge-card {
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(0, 242, 254, 0.25);
+    backdrop-filter: blur(20px);
+    border-radius: 14px;
+    padding: 1.25rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 242, 254, 0.05);
+    transition: all 0.3s ease;
+}
+
+.telemetry-badge-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7), var(--glow-cyan);
+}
+
+.telemetry-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.telemetry-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+}
+
+.telemetry-value.cyan {
+    color: var(--accent-cyan);
+    text-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+}
+
+/* Split Sandbox with Glowing Center Bridge */
+.edi-sandbox-wrapper-cyber {
+    background: #060b18;
+    border: 1px solid rgba(0, 242, 254, 0.3);
+    border-radius: 20px;
+    padding: 2.25rem;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 242, 254, 0.15);
+    margin: 4rem 0 2rem;
+    position: relative;
+}
+
+.sandbox-bridge-badge {
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+    color: #030712;
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+    display: inline-block;
+}
+
+/* ==========================================================================
+   VARIANT 1B: DEEP SPACE AURORA (Services & Industries)
+   ========================================================================== */
+body.variant-aurora-glow .page-header-modern {
+    background: 
+        radial-gradient(ellipse at 25% 20%, rgba(0, 242, 254, 0.28) 0%, transparent 55%),
+        radial-gradient(ellipse at 75% 30%, rgba(16, 184, 206, 0.22) 0%, transparent 55%),
+        radial-gradient(circle at 50% 100%, rgba(79, 70, 229, 0.18) 0%, rgba(5, 8, 17, 1) 85%) !important;
+    padding: 6rem 0 4.5rem !important;
+    border-bottom: 1px solid rgba(0, 242, 254, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Interactive Visual Data Mapping Flow Widget */
+.data-mapping-visualizer {
+    background: rgba(11, 17, 32, 0.95);
+    border: 1px solid rgba(0, 242, 254, 0.25);
+    border-radius: 18px;
+    padding: 2.5rem;
+    margin: 3rem 0;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 242, 254, 0.12);
+}
+
+.mapping-flow-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.mapping-node {
+    background: #030712;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.mapping-node-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mapping-item {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    padding: 0.4rem 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
+}
+
+.mapping-arrow-bridge {
+    text-align: center;
+}
+
+.mapping-pulse-badge {
+    background: rgba(0, 242, 254, 0.12);
+    border: 1px solid rgba(0, 242, 254, 0.35);
+    color: var(--accent-cyan);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: inline-block;
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 10px rgba(0, 242, 254, 0.2); }
+    50% { box-shadow: 0 0 25px rgba(0, 242, 254, 0.5); }
+}
+
+/* ==========================================================================
+   VARIANT 1C: HIGH-CONTRAST SPOTLIGHT BENTO (About, Portfolio, FAQ, Contact)
+   ========================================================================== */
+body.variant-spotlight-bento .page-header-modern {
+    background: radial-gradient(circle at 50% 0%, rgba(0, 242, 254, 0.3) 0%, rgba(20, 125, 191, 0.06) 50%, rgba(5, 8, 17, 1) 85%) !important;
+    border-bottom: 1px solid rgba(0, 242, 254, 0.25) !important;
+    padding: 6rem 0 4.5rem !important;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.bento-tile {
+    background: #080d1a !important;
+    border: 1px solid rgba(255, 255, 255, 0.09) !important;
+    border-radius: 16px !important;
+    padding: 2rem !important;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.bento-tile:hover {
+    border-color: rgba(0, 242, 254, 0.5) !important;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 242, 254, 0.15) !important;
+    transform: translateY(-4px);
+}
+
+.bento-col-4 { grid-column: span 4; }
+.bento-col-6 { grid-column: span 6; }
+.bento-col-8 { grid-column: span 8; }
+.bento-col-12 { grid-column: span 12; }
+
+/* BizTalk Countdown Hub Widget */
+.countdown-box {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.countdown-segment {
+    background: rgba(3, 7, 18, 0.8);
+    border: 1px solid rgba(0, 242, 254, 0.25);
+    border-radius: 10px;
+    padding: 0.75rem 1.25rem;
+    text-align: center;
+    min-width: 75px;
+}
+
+.countdown-num {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    font-family: var(--font-mono);
+}
+
+.countdown-unit {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+}
+
+/* Live Terminal Log Stream */
+.terminal-stream-box {
+    background: #020409;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: #4ade80;
+    height: 160px;
+    overflow-y: auto;
+    line-height: 1.6;
+}
+
+.terminal-line {
+    margin-bottom: 0.35rem;
+}
+
+.terminal-line.cyan { color: #38bdf8; }
+.terminal-line.amber { color: #fbbf24; }
+
+/* Responsive Grid Adjustments */
+@media (max-width: 992px) {
+    .hero-grid-layout {
+        grid-template-columns: 1fr;
+    }
+    .mapping-flow-grid {
+        grid-template-columns: 1fr;
+    }
+    .bento-col-4, .bento-col-6, .bento-col-8 {
+        grid-column: span 12;
+    }
+}
