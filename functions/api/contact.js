@@ -334,7 +334,25 @@ export async function onRequestPost(context) {
         }
 
         // Verify reCAPTCHA if token provided
-        if (recaptchaToken) {
+        const recaptchaConfigured = context.env.RECAPTCHA_SECRET_KEY &&
+            context.env.RECAPTCHA_SECRET_KEY !== 'YOUR_RECAPTCHA_SECRET_KEY';
+
+        if (!recaptchaToken) {
+            if (recaptchaConfigured) {
+                // reCAPTCHA is configured server-side, so a missing token is not
+                // acceptable — reject instead of silently skipping verification.
+                return new Response(JSON.stringify({
+                    success: false,
+                    error: 'reCAPTCHA verification failed. Please try again.'
+                }), {
+                    status: 400,
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*'
+                    }
+                });
+            }
+        } else {
             const recaptchaResult = await verifyRecaptcha(
                 recaptchaToken,
                 context.env.RECAPTCHA_SECRET_KEY
