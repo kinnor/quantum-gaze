@@ -32,7 +32,7 @@ const translations = {
             feature_1_desc: 'Turn ideas into working software in 14–21 days. Full-stack AI applications, generative UIs, custom SaaS platforms, and real-time interactive dashboards engineered with modern Python, Next.js, and Vector DBs.',
 
             feature_2_title: 'Enterprise AI Transformation & Agentic Systems',
-            feature_2_desc: 'Re-engineer core business operations with autonomous multi-agent workflows (LangGraph, MCP), multi-modal document intelligence, private on-premise LLMs, and zero-hallucination enterprise RAG search.',
+            feature_2_desc: 'Re-engineer core business operations with autonomous multi-agent workflows (LangGraph, MCP), multi-modal document intelligence, private on-premise LLMs, and grounded, source-cited enterprise RAG search.',
 
             feature_3_title: 'AI Coding Consulting & Team Coaching',
             feature_3_desc: 'Empower your engineering organization to build with AI. Hands-on team training bootcamps, AI coding agent workflows, automated testing playbooks, and executive AI readiness roadmaps.',
@@ -144,7 +144,7 @@ const translations = {
             feature_1_desc: 'Transformez vos idées en logiciels fonctionnels en 14 à 21 jours. Applications IA complètes, interfaces génératives, plateformes SaaS sur mesure et tableaux de bord interactifs en temps réel.',
 
             feature_2_title: 'Transformation IA & Systèmes Agentiques',
-            feature_2_desc: 'Réingénierie des processus métier avec des flux multi-agents autonomes (LangGraph, MCP), traitement intelligent de documents, LLM privés sur site et recherche RAG d\'entreprise sans hallucination.',
+            feature_2_desc: 'Réingénierie des processus métier avec des flux multi-agents autonomes (LangGraph, MCP), traitement intelligent de documents, LLM privés sur site et recherche RAG d\'entreprise ancrée dans vos sources, avec citations.',
 
             feature_3_title: 'Coaching en Développement IA & Formation d\'Équipe',
             feature_3_desc: 'Propulsez votre équipe d\'ingénierie vers l\'ère de l\'IA. Ateliers pratiques, flux de travail avec agents de codage IA, guides de tests automatisés et feuilles de route pour dirigeants.',
@@ -249,7 +249,7 @@ const translations = {
             feature_1_title: 'AI Product Studio & Rapid Prototyping',
             feature_1_desc: 'Verwandeln Sie Ideen in 14–21 Tagen in funktionierende Software. Full-Stack-KI-Anwendungen, generative Benutzeroberflächen, maßgeschneiderte SaaS-Plattformen und interaktive Echtzeit-Dashboards – entwickelt mit modernem Python, Next.js und Vektordatenbanken.',
             feature_2_title: 'KI-Transformation für Unternehmen & agentische Systeme',
-            feature_2_desc: 'Gestalten Sie zentrale Geschäftsprozesse neu – mit autonomen Multi-Agenten-Workflows (LangGraph, MCP), multimodaler Dokumentenintelligenz, privaten On-Premise-LLMs und halluzinationsfreier RAG-Suche für Unternehmen.',
+            feature_2_desc: 'Gestalten Sie zentrale Geschäftsprozesse neu – mit autonomen Multi-Agenten-Workflows (LangGraph, MCP), multimodaler Dokumentenintelligenz, privaten On-Premise-LLMs und quellenbasierter RAG-Suche mit Zitaten für Unternehmen.',
             feature_3_title: 'KI-Coding-Beratung & Team-Coaching',
             feature_3_desc: 'Befähigen Sie Ihre Engineering-Organisation, mit KI zu entwickeln. Praxisnahe Team-Bootcamps, Workflows mit KI-Coding-Agenten, Playbooks für automatisiertes Testen und KI-Readiness-Roadmaps für die Führungsebene.',
             feature_4_title: 'Fractional AI Leadership & Cloud-Modernisierung',
