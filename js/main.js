@@ -1,6 +1,94 @@
 // Main JavaScript file for Quantum Gaze website
 // Note: Translation system is handled by translations.js
 
+// ---------------------------------------------------------------------------
+// Regeneration safety net (added 2026-08-29).
+// The page generator periodically rewrites translations.js, contact.html and
+// edi-sandbox.js and has repeatedly dropped: the i18n runtime, the reCAPTCHA
+// loader, and the terminal-stream line cap. main.js is never regenerated, so
+// the fallbacks live here. Every fallback defers to the real implementation
+// when it is present.
+// ---------------------------------------------------------------------------
+(function qgSafetyNet() {
+    // 1) i18n runtime fallback — only defined if translations.js did not.
+    function resolveKey(dict, keyPath) {
+        if (!dict || typeof keyPath !== 'string') return undefined;
+        return keyPath.split('.').reduce(function (acc, k) {
+            return acc && Object.prototype.hasOwnProperty.call(acc, k) ? acc[k] : undefined;
+        }, dict);
+    }
+    if (typeof window.getCurrentLanguage !== 'function') {
+        window.getCurrentLanguage = function () {
+            try { return localStorage.getItem('language') || 'en'; } catch (e) { return 'en'; }
+        };
+    }
+    if (typeof window.updatePageContent !== 'function') {
+        window.updatePageContent = function (lang) {
+            var all = (typeof translations !== 'undefined') ? translations : null;
+            if (!all || typeof document === 'undefined') return;
+            var dict = all[lang] || all.en;
+            document.querySelectorAll('[data-i18n]').forEach(function (el) {
+                var key = el.getAttribute('data-i18n');
+                var value = resolveKey(dict, key);
+                if (typeof value !== 'string') value = resolveKey(all.en, key);
+                if (typeof value !== 'string') return;
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') el.placeholder = value;
+                else el.textContent = value;
+            });
+            var sel = document.getElementById('languageSelector');
+            if (sel) sel.value = lang;
+        };
+    }
+    if (typeof window.setLanguage !== 'function') {
+        window.setLanguage = function (lang) {
+            try { localStorage.setItem('language', lang); } catch (e) { /* storage blocked */ }
+            window.updatePageContent(lang);
+        };
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Apply translations + wire the selector if translations.js did not.
+        if (!window.__qgI18nBound) {
+            window.__qgI18nBound = true;
+            window.updatePageContent(window.getCurrentLanguage());
+            var sel = document.getElementById('languageSelector');
+            if (sel) sel.addEventListener('change', function (e) { window.setLanguage(e.target.value); });
+        }
+
+        // 2) reCAPTCHA v3 loader fallback — only on pages with the contact form,
+        //    only if no recaptcha script tag exists. Site key comes from js/config.js.
+        if (document.getElementById('contactForm') &&
+            !document.querySelector('script[src*="recaptcha/api.js"]')) {
+            var loadRecaptcha = function () {
+                var key = window.RECAPTCHA_SITE_KEY;
+                if (!key || key === 'YOUR_RECAPTCHA_SITE_KEY') return;
+                var s = document.createElement('script');
+                s.src = 'https://www.google.com/recaptcha/api.js?render=' + encodeURIComponent(key);
+                s.async = true;
+                document.head.appendChild(s);
+            };
+            if (window.RECAPTCHA_SITE_KEY) {
+                loadRecaptcha();
+            } else if (!document.querySelector('script[src$="js/config.js"]')) {
+                var c = document.createElement('script');
+                c.src = 'js/config.js';
+                c.onload = loadRecaptcha;
+                document.head.appendChild(c);
+            } else {
+                loadRecaptcha();
+            }
+        }
+
+        // 3) Terminal stream cap fallback — trim to 40 lines regardless of edi-sandbox.js.
+        var term = document.getElementById('terminalStream');
+        if (term && typeof MutationObserver === 'function') {
+            new MutationObserver(function () {
+                while (term.children.length > 40) term.removeChild(term.firstChild);
+            }).observe(term, { childList: true });
+        }
+    });
+})();
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
     const currentLang = getCurrentLanguage();

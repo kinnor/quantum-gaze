@@ -57,6 +57,17 @@ Open the site in a browser and test:
 - Responsive design (mobile, tablet, desktop)
 - All interactive elements
 
+## Regeneration Safety (read before regenerating pages)
+
+An external generator periodically rewrites `*.html`, `js/translations.js` and `js/edi-sandbox.js` and has repeatedly dropped four things. Any template that regenerates these files MUST keep:
+
+1. The i18n runtime at the tail of `js/translations.js` (`getCurrentLanguage`, `setLanguage`, `updatePageContent`, `#languageSelector` wiring) — `js/main.js` calls `getCurrentLanguage()` on every page.
+2. `footer.contact_us` in every dictionary (`en`, `fr`, `de`) — referenced by `data-i18n` in every footer.
+3. In `contact.html`, `<script src="js/config.js">` followed by the inline reCAPTCHA v3 loader (`https://www.google.com/recaptcha/api.js?render=${window.RECAPTCHA_SITE_KEY}`).
+4. A 40-line cap on the `#terminalStream` widget in `js/edi-sandbox.js`.
+
+`js/main.js` carries a guarded fallback for 1, 3 and 4 (it defers to the real implementation when present), so a regeneration no longer breaks the language switcher or the contact form — but the fallbacks are a safety net, not a substitute. `js/main.js` itself must never be regenerated.
+
 ## Key Features
 
 ### Bilingual Support
