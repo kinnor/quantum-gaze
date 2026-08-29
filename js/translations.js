@@ -241,7 +241,62 @@ const translations = {
             hero_title: 'Enterprise KI-Transformation & Schnelles Produkt-Engineering',
             hero_subtitle: 'Vom Konzept zum funktionierenden KI-Prototyp in 2–3 Wochen. Maßgeschneiderte KI-Entwicklung, autonome Agenten-Workflows, Entwickler-Coaching und strategische Architekturberatung.',
             hero_cta_primary: 'Strategische Beratung Vereinbaren',
-            hero_cta: 'KI-Lösungen Entdecken'
+            hero_cta: 'KI-Lösungen Entdecken',
+            speed_title: 'Vom Konzept zur produktiven KI in 2–3 Wochen',
+            speed_desc: 'Mit modernen KI-Entwicklungsagenten, Full-Stack-Microservices und über 24 Jahren Architekturerfahrung verdichten wir Monate an Entwicklung zu schnellen Iterationen auf Produktionsniveau.',
+            features_title: 'Vier strategische Kernsäulen',
+            features_subtitle: 'Umfassende Kompetenzen für schnelle Innovation und skalierbares Unternehmenswachstum',
+            feature_1_title: 'AI Product Studio & Rapid Prototyping',
+            feature_1_desc: 'Verwandeln Sie Ideen in 14–21 Tagen in funktionierende Software. Full-Stack-KI-Anwendungen, generative Benutzeroberflächen, maßgeschneiderte SaaS-Plattformen und interaktive Echtzeit-Dashboards – entwickelt mit modernem Python, Next.js und Vektordatenbanken.',
+            feature_2_title: 'KI-Transformation für Unternehmen & agentische Systeme',
+            feature_2_desc: 'Gestalten Sie zentrale Geschäftsprozesse neu – mit autonomen Multi-Agenten-Workflows (LangGraph, MCP), multimodaler Dokumentenintelligenz, privaten On-Premise-LLMs und halluzinationsfreier RAG-Suche für Unternehmen.',
+            feature_3_title: 'KI-Coding-Beratung & Team-Coaching',
+            feature_3_desc: 'Befähigen Sie Ihre Engineering-Organisation, mit KI zu entwickeln. Praxisnahe Team-Bootcamps, Workflows mit KI-Coding-Agenten, Playbooks für automatisiertes Testen und KI-Readiness-Roadmaps für die Führungsebene.',
+            feature_4_title: 'Fractional AI Leadership & Cloud-Modernisierung',
+            feature_4_desc: 'Fractional CAIO/CTO-Beratung auf Führungsebene, KI-Engineering-Teams auf Abruf, Governance der SI-Umsetzung und unterbrechungsfreie Modernisierung von Altsystemen in die Cloud (Kafka, AKS, APIs sowie B2B/EDI-Integration).',
+            cta_title: 'Bereit, mit KI zu bauen oder zu transformieren?',
+            cta_subtitle: 'Buchen Sie eine Architektur-Discovery-Session mit unserem Principal, um Ihren schnellen KI-Prototyp, Ihr Team-Coaching oder Ihre Transformations-Roadmap zu besprechen.',
+            cta_button: 'Architektur-Discovery buchen',
+            cta_button_2: 'Leistungen entdecken'
+        },
+        stats: {
+            speed: '2–3 Wochen vom Konzept zum funktionierenden MVP',
+            years: '24+ Jahre Führung in der Architektur',
+            platforms: '19+ ausgelieferte Unternehmensplattformen',
+            bilingual: 'Zweisprachig & souverän (Loi 96 / NEQ 1179525945)'
+        },
+        sandbox: {
+            title: 'Interaktive Sandbox für KI-Dokumentenintelligenz & Agenten',
+            subtitle: 'Testen Sie clientseitige Dokumentenextraktion und automatisierte agentische Aufgabenstrukturierung in Echtzeit. 100 % JavaScript-Ausführung im Browser, ohne Server-Upload – für vollständige Vertraulichkeit.'
+        },
+        services: {
+            title: 'KI-Engineering, Coaching & Beratung für Unternehmen',
+            subtitle: 'Produktentwicklung mit hoher Geschwindigkeit, Engineering autonomer Prozesse und vom Principal geführte KI-Befähigung für zukunftsorientierte Organisationen',
+            service_1_title: 'Schnelles KI-Produkt-Prototyping in 2–3 Wochen & maßgeschneidertes SaaS',
+            service_2_title: 'KI-Transformation für Unternehmen & autonome agentische Workflows',
+            service_3_title: 'KI-Entwicklungscoaching & Befähigung von Engineering-Teams',
+            service_4_title: 'Strategische Beratung, Fractional CAIO/CTO & ausgelagerte Teams',
+            service_5_title: 'Modernisierung von Unternehmenssystemen, Event Streaming & Legacy-Brücke'
+        },
+        solutions: {
+            title: 'Produktionsreife KI-Frameworks & Architektur-Blueprints',
+            subtitle: 'Bewährte Software-Beschleuniger für multimodale Intelligenz, autonome Agentenausführung und Zuverlässigkeit auf Unternehmensniveau'
+        },
+        industries: {
+            title: 'Branchen & Märkte des öffentlichen Sektors',
+            subtitle: 'Wir unterstützen Organisationen aus öffentlicher Verwaltung, Fintech, Logistik, Fertigung und Gesundheitswesen mit moderner KI'
+        },
+        about: {
+            title: 'Ingenieurspräzision trifft moderne KI-Geschwindigkeit',
+            subtitle: 'Gegründet auf über 24 Jahren bewährter Softwareentwicklung, Unternehmensarchitektur und internationaler Projektumsetzung für Fortune-500-Unternehmen',
+            mission_title: 'Unsere Engineering-Philosophie',
+            mission_content: 'Bei Quantum Gaze Software Inc. verbinden wir fundierte Informatik mit modernsten KI-Entwicklungswerkzeugen. Wir sind überzeugt, dass die Einführung von KI keine Monate aufgeblähter Beratung erfordern sollte: Wir prototypisieren und validieren funktionierende Systeme in 2–3 Wochen, damit unsere Kunden dem Wettbewerb voraus sind – bei strenger Architektur und voller Datensouveränität.'
+        },
+        contact: {
+            title: 'Sprechen Sie mit unserem Principal Architect',
+            subtitle: 'Vereinbaren Sie ein strategisches Beratungsgespräch zu Ihrem KI-Prototyp in 2–3 Wochen, Ihrem Team-Coaching oder Ihren Modernisierungszielen',
+            get_in_touch: 'Direktkontakt',
+            form_title: 'Strategische Beratung anfragen'
         },
         footer: {
             contact_us: 'Kontaktieren Sie uns',
