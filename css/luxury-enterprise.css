@@ -769,3 +769,8 @@ input:focus, textarea:focus, select:focus {
 .content-section-modern h2, .content-section-modern h3, .section-intro h2 {
     color: var(--text-primary) !important;
 }
+
+/* Section rhythm: legacy sheets stacked 100px + 5rem paddings -> oversized gaps */
+.content-section-modern { padding: 72px 0 !important; }
+.content-section-modern + .content-section-modern { padding-top: 48px !important; }
+@media (max-width: 768px) { .content-section-modern { padding: 48px 0 !important; } }
