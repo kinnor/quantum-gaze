@@ -1,4 +1,5 @@
 // Quantum Gaze Software Inc. — Official Bilingual Translation Dictionary
+// AI-Native Engineering, Enterprise AI Transformation & Rapid Product Studio
 const translations = {
     en: {
         // Navigation
@@ -15,92 +16,100 @@ const translations = {
 
         // Homepage
         home: {
-            hero_badge: '24+ Years Enterprise Architecture | Montreal, QC',
-            hero_title: 'Modernizing Legacy BizTalk & Enterprise EDI for the Cloud Era',
-            hero_subtitle: 'Specialized BizTalk-to-Azure AIS migrations, intelligent freight EDI orchestration, and resilient exception triage across the Canada–US corridor. Direct principal-led delivery with zero agency layers.',
-            hero_cta_primary: 'Request Migration Assessment',
-            hero_cta: 'Explore Architecture Solutions',
+            hero_badge: '24+ Years Architectural Mastery • AI-Native Product Studio • Montreal, QC',
+            hero_title: 'Accelerate Enterprise AI Transformation & Rapid Product Engineering',
+            hero_subtitle: 'From concept to working AI prototype in 2–3 weeks. We engineer bespoke AI products, autonomous agentic workflows, and provide hands-on AI coaching and strategic architecture consulting for enterprises, scaleups, and public institutions.',
+            hero_cta_primary: 'Schedule a Strategic Consultation',
+            hero_cta: 'Explore Our AI Solutions',
 
-            features_title: 'Specialized Enterprise Integration Capabilities',
-            features_subtitle: 'Bridging legacy enterprise middleware with modern cloud-native architectures',
+            speed_title: 'From Concept to Production AI in 2–3 Weeks',
+            speed_desc: 'Harnessing modern AI development agents, full-stack microservices, and 24+ years of architectural depth to compress months of development into rapid, production-grade iterations.',
 
-            feature_1_title: 'BizTalk-to-Azure AIS Modernization',
-            feature_1_desc: 'De-risk the 2028 BizTalk sunset. We provide structured 3-week paid discovery assessments followed by wave-based Logic Apps migrations ensuring zero transaction loss.',
+            features_title: 'Four Core Strategic Pillars',
+            features_subtitle: 'Comprehensive capabilities designed for rapid innovation and scalable enterprise growth',
 
-            feature_2_title: 'Freight & Customs EDI Orchestration',
-            feature_2_desc: 'Certified X12 depth across high-volume freight (204, 214, 210, 990), customs brokerage (309, 350), and international EDIFACT standards.',
+            feature_1_title: 'AI Product Studio & Rapid Prototyping',
+            feature_1_desc: 'Turn ideas into working software in 14–21 days. Full-stack AI applications, generative UIs, custom SaaS platforms, and real-time interactive dashboards engineered with modern Python, Next.js, and Vector DBs.',
 
-            feature_3_title: 'LLM-Assisted Exception Triage',
-            feature_3_desc: 'Automated analysis and intelligent resolution for 997/999 rejections, specification-guide drift, and partner onboarding bottlenecks.',
+            feature_2_title: 'Enterprise AI Transformation & Agentic Systems',
+            feature_2_desc: 'Re-engineer core business operations with autonomous multi-agent workflows (LangGraph, MCP), multi-modal document intelligence, private on-premise LLMs, and zero-hallucination enterprise RAG search.',
 
-            feature_4_title: 'Fractional Chief Integration Architect',
-            feature_4_desc: 'Senior advisory and second-opinion architecture governance for mid-market CIOs navigating complex SI engagements and platform rationalization.',
+            feature_3_title: 'AI Coding Consulting & Team Coaching',
+            feature_3_desc: 'Empower your engineering organization to build with AI. Hands-on team training bootcamps, AI coding agent workflows, automated testing playbooks, and executive AI readiness roadmaps.',
 
-            cta_title: 'Prepare Your Enterprise for the BizTalk 2028 Sunset',
-            cta_subtitle: 'Book a 30-minute consultation with our Principal Architect to evaluate your migration readiness and de-risk your cloud transition.',
-            cta_button: 'Book Architecture Consultation',
-            cta_button_2: 'Review Service Offerings'
+            feature_4_title: 'Fractional AI Leadership & Cloud Modernization',
+            feature_4_desc: 'Fractional CAIO / CTO executive advisory, on-demand AI engineering squads, SI delivery governance, and zero-downtime legacy-to-cloud modernization (Kafka, AKS, APIs, and B2B/EDI integration).',
+
+            cta_title: 'Ready to Build or Transform with AI?',
+            cta_subtitle: 'Book an architecture discovery session with our Principal to discuss your rapid AI prototype, team coaching, or enterprise transformation roadmap.',
+            cta_button: 'Book Architecture Discovery',
+            cta_button_2: 'Explore Service Offerings'
         },
 
         // Stats
         stats: {
-            years: 'Years Architecture Leadership',
-            platforms: 'Enterprise Platforms Delivered',
-            bilingual: 'Bilingual (Bill 96 / NEQ 1179525945)',
-            biztalk: 'BizTalk Mainstream Sunset'
+            speed: '2–3 Weeks Concept to Working MVP',
+            years: '24+ Years Architecture Leadership',
+            platforms: '19+ Enterprise Platforms Delivered',
+            bilingual: 'Bilingual & Sovereign (Bill 96 / NEQ 1179525945)'
         },
 
         // Sandbox
         sandbox: {
-            title: 'Interactive EDI Architecture Sandbox',
-            subtitle: 'Test client-side X12 transaction parsing in real time. 100% in-browser JavaScript execution with zero server upload for total enterprise data privacy.'
-        },
-
-        // About page
-        about: {
-            title: 'Enterprise Integration Leadership',
-            subtitle: '24+ years of battle-tested engineering across automotive, freight forwarding, and customs brokerages worldwide',
-            mission_title: 'Our Engineering Philosophy',
-            mission_content: 'At Quantum Gaze Software Inc., we believe enterprise modernization requires deep, hands-on architectural mastery — not generic agency layers. We bridge mission-critical legacy middleware (BizTalk, MuleSoft, EDI) with modern cloud-native architectures (Azure AIS, Python, Kafka, Kubernetes) with uncompromising reliability.'
+            title: 'Interactive AI Document Intelligence & Agentic Sandbox',
+            subtitle: 'Test live client-side document extraction and automated agentic task structuring in real time. 100% in-browser JavaScript execution with zero server upload for total privacy.'
         },
 
         // Services page
         services: {
-            title: 'Enterprise Integration & Modernization Services',
-            subtitle: 'Principal-led technical execution for legacy migration, EDI orchestration, and cloud architecture'
+            title: 'Enterprise AI Engineering, Coaching & Advisory Services',
+            subtitle: 'High-velocity product development, autonomous process engineering, and principal-led AI enablement for forward-thinking organizations',
+            service_1_title: 'Rapid 2–3 Week AI Product Prototyping & Custom SaaS',
+            service_2_title: 'Enterprise AI Transformation & Autonomous Agentic Workflows',
+            service_3_title: 'AI Development Coaching & Engineering Team Enablement',
+            service_4_title: 'Strategic Consulting, Fractional CAIO/CTO & Outsourced Squads',
+            service_5_title: 'Enterprise Modernization, Event Streaming & Legacy Bridge'
         },
 
         // Solutions page
         solutions: {
-            title: 'Architectural Solutions & Blueprints',
-            subtitle: 'Battle-tested enterprise patterns engineered for reliability, zero transaction loss, and regulatory compliance'
+            title: 'Production AI Frameworks & Architecture Blueprints',
+            subtitle: 'Proven software accelerators engineered for multi-modal intelligence, autonomous agent execution, and enterprise reliability'
         },
 
         // Industries page
         industries: {
-            title: 'Industry-Specific Integration Domains',
-            subtitle: 'Proven domain depth across high-throughput supply chains, customs, and manufacturing'
+            title: 'Industry Domains & Public Sector Markets',
+            subtitle: 'Empowering enterprises across government, fintech, logistics, manufacturing, and healthcare with modern AI'
+        },
+
+        // About page
+        about: {
+            title: 'Engineering Rigor Meets Modern AI Velocity',
+            subtitle: 'Founded on 24+ years of proven software engineering, enterprise architecture, and international Fortune 500 delivery',
+            mission_title: 'Our Engineering Philosophy',
+            mission_content: 'At Quantum Gaze Software Inc., we combine deep foundational computer science with cutting-edge AI development tooling. We believe AI adoption should not take months of bloated consulting; we prototype and validate working systems in 2–3 weeks, ensuring our clients outpace competition while maintaining rigorous architecture and data sovereignty.'
         },
 
         // Contact page
         contact: {
-            title: 'Schedule an Architecture Assessment',
-            subtitle: 'Connect directly with our Principal Architect to discuss your integration objectives',
+            title: 'Connect with Our Principal Architect',
+            subtitle: 'Schedule a strategic consultation to discuss your 2–3 week AI prototype, team coaching, or enterprise modernization goals',
             get_in_touch: 'Direct Contact',
-            form_title: 'Request 30-Minute Consultation'
+            form_title: 'Request Strategic Consultation'
         },
 
         // Footer
         footer: {
+            contact_us: 'Contact',
             contact: 'Contact',
             phone: 'Phone',
             email: 'Email',
             who_title: 'About Quantum Gaze',
-            who_content: 'Quantum Gaze Software Inc. delivers specialized enterprise integration and cloud-native modernization for logistics and customs brokerages across North America. Founded on 24+ years of proven Fortune 500 architecture leadership.',
+            who_content: 'Quantum Gaze Software Inc. / Logiciel Quantum Gaze Inc. is an AI-native engineering studio and enterprise consultancy delivering rapid AI prototyping, agentic process automation, developer coaching, and strategic modernization.',
             copyright: '© 2026 Quantum Gaze Software Inc. / Logiciel Quantum Gaze Inc. All rights reserved.',
             neq: 'QC Enterprise Number (NEQ)',
-            sitemap: 'Sitemap',
-            contact_us: 'Contact'
+            sitemap: 'Sitemap'
         }
     },
 
@@ -119,92 +128,100 @@ const translations = {
 
         // Homepage
         home: {
-            hero_badge: '24+ Ans de Leadership en Architecture d\'Intégration | Montréal, QC',
-            hero_title: 'Modernisation de BizTalk & EDI d\'Entreprise pour l\'Ère Cloud',
-            hero_subtitle: 'Spécialiste de la migration BizTalk vers Azure AIS, de l\'orchestration EDI logistique et du triage intelligent des exceptions pour le corridor Canada–États-Unis. Prestation directe par architecte principal, sans couches intermédiaires.',
-            hero_cta_primary: 'Demander une Évaluation',
-            hero_cta: 'Explorer nos Solutions',
+            hero_badge: '24+ Ans de Maîtrise Architecturale • Studio de Produits IA • Montréal, QC',
+            hero_title: 'Accélérer la Transformation IA & l\'Ingénierie Rapide de Produits',
+            hero_subtitle: 'Du concept au prototype IA fonctionnel en 2 à 3 semaines. Nous concevons des produits IA sur mesure, des flux agentiques autonomes et offrons du coaching IA et du conseil stratégique pour entreprises et institutions.',
+            hero_cta_primary: 'Planifier une Consultation Stratégique',
+            hero_cta: 'Explorer nos Solutions IA',
 
-            features_title: 'Expertises Spécialisées en Intégration d\'Entreprise',
-            features_subtitle: 'Lier les intergiciels d\'entreprise historiques aux architectures infonuagiques modernes',
+            speed_title: 'Du Concept au Prototype IA en 2 à 3 Semaines',
+            speed_desc: 'Grâce aux agents de développement IA modernes, aux microservices infonuagiques et à plus de 24 ans d\'expertise architecturale, nous condensons des mois de développement en livrables rapides de niveau production.',
 
-            feature_1_title: 'Modernisation BizTalk vers Azure AIS',
-            feature_1_desc: 'Sécurisez l\'échéance BizTalk 2028. Nous fournissons une évaluation structurée de 3 semaines suivie d\'une migration par vagues vers Logic Apps sans aucune perte de transaction.',
+            features_title: 'Quatre Piliers Stratégiques Majeurs',
+            features_subtitle: 'Des capacités complètes conçues pour l\'innovation rapide et la croissance à l\'échelle de l\'entreprise',
 
-            feature_2_title: 'Orchestration EDI Transport & Douanes',
-            feature_2_desc: 'Maîtrise certifiée X12 pour le transport à fort volume (204, 214, 210, 990), le courtage en douane (309, 350) et les normes internationales EDIFACT.',
+            feature_1_title: 'Studio de Produits IA & Prototypage Rapide',
+            feature_1_desc: 'Transformez vos idées en logiciels fonctionnels en 14 à 21 jours. Applications IA complètes, interfaces génératives, plateformes SaaS sur mesure et tableaux de bord interactifs en temps réel.',
 
-            feature_3_title: 'Triage Intelligent des Exceptions EDI',
-            feature_3_desc: 'Analyse automatisée et résolution des rejets 997/999, dérives des guides d\'implémentation et accélération de l\'intégration des partenaires d\'affaires.',
+            feature_2_title: 'Transformation IA & Systèmes Agentiques',
+            feature_2_desc: 'Réingénierie des processus métier avec des flux multi-agents autonomes (LangGraph, MCP), traitement intelligent de documents, LLM privés sur site et recherche RAG d\'entreprise sans hallucination.',
 
-            feature_4_title: 'Architecte en Chef d\'Intégration Fractionnaire',
-            feature_4_desc: 'Conseil exécutif et deuxième avis d\'architecture pour les DSI naviguant des projets d\'intégrateurs majeurs et la rationalisation de plateformes.',
+            feature_3_title: 'Coaching en Développement IA & Formation d\'Équipe',
+            feature_3_desc: 'Propulsez votre équipe d\'ingénierie vers l\'ère de l\'IA. Ateliers pratiques, flux de travail avec agents de codage IA, guides de tests automatisés et feuilles de route pour dirigeants.',
 
-            cta_title: 'Préparez votre Entreprise pour la Fin de Support BizTalk 2028',
-            cta_subtitle: 'Réservez une consultation de 30 minutes avec notre architecte principal pour évaluer votre état de préparation et sécuriser votre transition infonuagique.',
-            cta_button: 'Réserver une Consultation',
-            cta_button_2: 'Voir nos Offres de Services'
+            feature_4_title: 'Direction IA Fractionnaire & Modernisation Infonuagique',
+            feature_4_desc: 'Conseil de directeur IA (CAIO) ou directeur technique (CTO) fractionnaire, escouades IA à la demande, gouvernance des intégrateurs et modernisation sans interruption (Kafka, AKS, API et EDI).',
+
+            cta_title: 'Prêt à Construire ou Transformer avec l\'IA ?',
+            cta_subtitle: 'Réservez une session découverte avec notre architecte principal pour discuter de votre prototype IA en 2–3 semaines, de coaching d\'équipe ou de modernisation.',
+            cta_button: 'Réserver une Session Découverte',
+            cta_button_2: 'Découvrir nos Services'
         },
 
         // Stats
         stats: {
-            years: 'Ans de Leadership en Architecture',
-            platforms: 'Plateformes d\'Entreprise Livrées',
-            bilingual: 'Bilingue (Loi 96 / NEQ 1179525945)',
-            biztalk: 'Fin du Support Principal BizTalk'
+            speed: '2–3 Semaines : Du Concept au MVP',
+            years: '24+ Ans de Leadership en Architecture',
+            platforms: '19+ Plateformes d\'Entreprise Livrées',
+            bilingual: 'Bilingue & Souverain (Loi 96 / NEQ 1179525945)'
         },
 
         // Sandbox
         sandbox: {
-            title: 'Bac à Sable d\'Architecture EDI Interactif',
-            subtitle: 'Testez l\'analyse de transactions X12 côté client en temps réel. Exécution 100% dans le navigateur JavaScript sans aucun téléversement de données.'
-        },
-
-        // About page
-        about: {
-            title: 'Leadership en Intégration d\'Entreprise',
-            subtitle: '24+ ans d\'ingénierie éprouvée dans les secteurs automobile, transport et courtage en douane mondial',
-            mission_title: 'Notre Philosophie d\'Ingénierie',
-            mission_content: 'Chez Logiciel Quantum Gaze Inc., nous croyons que la modernisation d\'entreprise exige une maîtrise architecturale directe et rigoureuse. Nous relions les intergiciels critiques (BizTalk, MuleSoft, EDI) aux architectures infonuagiques modernes (Azure AIS, Python, Kafka, Kubernetes) avec une fiabilité absolue.'
+            title: 'Bac à Sable d\'Extraction Intelligente de Documents & Agents IA',
+            subtitle: 'Testez l\'analyse de documents et l\'orchestration de tâches agentiques en temps réel. Exécution 100% dans le navigateur JavaScript pour une confidentialité absolue.'
         },
 
         // Services page
         services: {
-            title: 'Services d\'Intégration & de Modernisation d\'Entreprise',
-            subtitle: 'Exécution technique menée par architecte principal pour la migration, l\'EDI et l\'infonuagique'
+            title: 'Services d\'Ingénierie IA, Coaching & Conseil Stratégique',
+            subtitle: 'Développement de produits à haute vélocité, ingénierie de processus autonomes et adoption de l\'IA menée par architecte principal',
+            service_1_title: 'Prototypage Rapide de Produits IA (2–3 Semaines) & SaaS',
+            service_2_title: 'Transformation IA d\'Entreprise & Flux Agentiques Autonomes',
+            service_3_title: 'Coaching en Codage IA & Habilitation des Développeurs',
+            service_4_title: 'Conseil Stratégique, CAIO/CTO Fractionnaire & Escouades IA',
+            service_5_title: 'Modernisation des Systèmes, Diffusion Kafka & Ponts Patrimoniaux'
         },
 
         // Solutions page
         solutions: {
-            title: 'Solutions & Modèles d\'Architecture',
-            subtitle: 'Modèles d\'entreprise éprouvés pour la fiabilité, zéro perte de transaction et la conformité réglementaire'
+            title: 'Cadres IA de Production & Modèles d\'Architecture',
+            subtitle: 'Accélérateurs logiciels éprouvés pour l\'intelligence multimodale, l\'exécution agentique et la fiabilité d\'entreprise'
         },
 
         // Industries page
         industries: {
-            title: 'Domaines d\'Intégration Sectoriels',
-            subtitle: 'Expertise approfondie en logistique, chaînes d\'approvisionnement, douanes et industrie manufacturière'
+            title: 'Secteurs d\'Activité & Marchés Publics',
+            subtitle: 'Accompagnement des organisations du secteur public, fintech, logistique, manufacturier et santé avec l\'IA moderne'
+        },
+
+        // About page
+        about: {
+            title: 'Rigueur de l\'Ingénierie & Vélocité de l\'IA Moderne',
+            subtitle: 'Fondée sur plus de 24 ans d\'ingénierie logicielle, d\'architecture d\'entreprise et de réalisations internationales Fortune 500',
+            mission_title: 'Notre Philosophie d\'Ingénierie',
+            mission_content: 'Chez Logiciel Quantum Gaze Inc., nous allions les fondements de l\'informatique théorique à la puissance des outils de développement IA modernes. Nous croyons que l\'adoption de l\'IA ne doit pas nécessiter des mois de consulting coûteux : nous prototypons et validons des systèmes fonctionnels en 2 à 3 semaines, garantissant rapidité, robustesse et souveraineté des données.'
         },
 
         // Contact page
         contact: {
-            title: 'Planifier une Évaluation d\'Architecture',
-            subtitle: 'Échangez directement avec notre architecte principal pour discuter de vos objectifs d\'intégration',
+            title: 'Échangez avec notre Architecte Principal',
+            subtitle: 'Planifiez une consultation stratégique pour discuter de votre prototype IA en 2–3 semaines, de coaching d\'équipe ou de modernisation',
             get_in_touch: 'Contact Direct',
-            form_title: 'Demander une Consultation de 30 Minutes'
+            form_title: 'Demander une Consultation Stratégique'
         },
 
         // Footer
         footer: {
+            contact_us: 'Contactez-nous',
             contact: 'Contact',
             phone: 'Téléphone',
             email: 'Courriel',
             who_title: 'À Propos de Quantum Gaze',
-            who_content: 'Logiciel Quantum Gaze Inc. offre des services spécialisés d\'intégration d\'entreprise et de modernisation infonuagique pour la logistique et le courtage en douane en Amérique du Nord. Fondée sur plus de 24 ans de leadership en architecture auprès d\'entreprises Fortune 500.',
+            who_content: 'Logiciel Quantum Gaze Inc. est un studio d\'ingénierie IA et un cabinet conseil d\'entreprise offrant du prototypage rapide, de l\'automatisation agentique, du coaching de développeurs et de la modernisation stratégique.',
             copyright: '© 2026 Logiciel Quantum Gaze Inc. / Quantum Gaze Software Inc. Tous droits réservés.',
             neq: 'Numéro d\'entreprise du Québec (NEQ)',
-            sitemap: 'Plan du site',
-            contact_us: 'Contactez-nous'
+            sitemap: 'Plan du site'
         }
     },
 
@@ -220,22 +237,22 @@ const translations = {
             contact: 'Kontakt'
         },
         home: {
-            hero_badge: '24+ Jahre Enterprise Architektur | Montreal, QC',
-            hero_title: 'Modernisierung von Legacy BizTalk & Enterprise EDI für das Cloud-Zeitalter',
-            hero_subtitle: 'Spezialisierte BizTalk-zu-Azure AIS Migrationen und EDI-Orchestrierung für Logistik und Zollabfertigung.',
-            hero_cta_primary: 'Migrationsanalyse Anfordern',
-            hero_cta: 'Lösungen Entdecken'
+            hero_badge: '24+ Jahre Erfahrung • KI-Studio & Architektur • Montreal, QC',
+            hero_title: 'Enterprise KI-Transformation & Schnelles Produkt-Engineering',
+            hero_subtitle: 'Vom Konzept zum funktionierenden KI-Prototyp in 2–3 Wochen. Maßgeschneiderte KI-Entwicklung, autonome Agenten-Workflows, Entwickler-Coaching und strategische Architekturberatung.',
+            hero_cta_primary: 'Strategische Beratung Vereinbaren',
+            hero_cta: 'KI-Lösungen Entdecken'
         },
         footer: {
+            contact_us: 'Kontaktieren Sie uns',
             contact: 'Kontakt',
             phone: 'Telefon',
             email: 'E-Mail',
             who_title: 'Über Quantum Gaze',
-            who_content: 'Quantum Gaze Software Inc. liefert spezialisierte Integrations- und Modernisierungslösungen für Unternehmen.',
+            who_content: 'Quantum Gaze Software Inc. liefert schnelles KI-Prototyping, autonome Prozessautomatisierung, Entwickler-Coaching und strategische Architekturberatung.',
             copyright: '© 2026 Quantum Gaze Software Inc. Alle Rechte vorbehalten.',
             neq: 'QC Unternehmensnummer (NEQ)',
-            sitemap: 'Sitemap',
-            contact_us: 'Kontaktieren Sie uns'
+            sitemap: 'Sitemap'
         }
     }
 };
