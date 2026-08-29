@@ -114,9 +114,9 @@ function initTerminalStream() {
     const logs = [
         { text: '> Quantum Gaze AI Engine Initialized... OK', class: 'cyan' },
         { text: '> Rapid 2-Week AI MVP Sprint Pipeline: ACTIVE', class: 'cyan' },
-        { text: '> Agentic Multi-Agent orchestrator dispatched 4 tasks in parallel', class: '' },
-        { text: '> Azure AKS microservice cluster active (32ms latency)', class: '' },
-        { text: '> Kafka event stream: 36,000 events/sec processed without loss', class: 'amber' },
+        { text: '> Agentic multi-agent orchestrator dispatching tasks in parallel', class: '' },
+        { text: '> Azure AKS microservice cluster active — health checks passing', class: '' },
+        { text: '> Kafka event stream consuming with exactly-once delivery guarantees', class: 'amber' },
         { text: '> Developer AI Coaching Toolchain integrated into corporate repo', class: 'cyan' },
         { text: '> Canadian Data Sovereignty & Protected B compliance VERIFIED', class: '' }
     ];
