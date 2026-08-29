@@ -84,24 +84,24 @@
                     <!-- Right Telemetry Cluster -->
                     <div class="telemetry-cluster">
                         <div class="telemetry-badge-card">
-                            <div class="telemetry-label">Rapid Prototyping Velocity</div>
-                            <div class="telemetry-value cyan">2–3 Wks</div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">Concept to Working MVP</div>
+                            <div class="telemetry-label" data-i18n="index.telemetry_velocity_label">Rapid Prototyping Velocity</div>
+                            <div class="telemetry-value cyan" data-i18n="index.telemetry_velocity_value">2–3 Wks</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;" data-i18n="index.telemetry_velocity_sub">Concept to Working MVP</div>
                         </div>
                         <div class="telemetry-badge-card">
-                            <div class="telemetry-label">Architecture Mastery</div>
-                            <div class="telemetry-value">24+ Yrs</div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">M.Eng. & Fortune 500 Proven</div>
+                            <div class="telemetry-label" data-i18n="index.telemetry_architecture_label">Architecture Mastery</div>
+                            <div class="telemetry-value" data-i18n="index.telemetry_architecture_value">24+ Yrs</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;" data-i18n="index.telemetry_architecture_sub">M.Eng. & Fortune 500 Proven</div>
                         </div>
                         <div class="telemetry-badge-card">
-                            <div class="telemetry-label">Major Platforms Delivered</div>
+                            <div class="telemetry-label" data-i18n="index.telemetry_platforms_label">Major Platforms Delivered</div>
                             <div class="telemetry-value cyan">19+</div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">BMW, Tier-1 Logistics, Cloud</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;" data-i18n="index.telemetry_platforms_sub">BMW, Tier-1 Logistics, Cloud</div>
                         </div>
                         <div class="telemetry-badge-card">
-                            <div class="telemetry-label">Canadian Compliance</div>
+                            <div class="telemetry-label" data-i18n="index.telemetry_compliance_label">Canadian Compliance</div>
                             <div class="telemetry-value" style="color: var(--accent-emerald);">ProServices</div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">Bill 96 • NEQ: 1179525945 • Protected B</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;" data-i18n="index.telemetry_compliance_sub">Bill 96 • NEQ: 1179525945 • Protected B</div>
                         </div>
                     </div>
                 </div>
@@ -115,36 +115,36 @@
                     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.25rem;">
                         <div style="display: flex; align-items: center; gap: 1rem;">
                             <h3 style="margin: 0; font-size: 1.5rem;" data-i18n="sandbox.title">Interactive AI Document Intelligence & Agentic Sandbox</h3>
-                            <span class="sandbox-bridge-badge">100% In-Browser JavaScript</span>
+                            <span class="sandbox-bridge-badge" data-i18n="index.sandbox_badge">100% In-Browser JavaScript</span>
                         </div>
                         <div style="display: flex; gap: 0.5rem; align-items: center;">
-                            <span style="font-size: 0.75rem; color: var(--text-muted); margin-right: 0.5rem;">SELECT PLAYGROUND:</span>
-                            <button class="sandbox-tab-btn active" data-sample="invoice">Document Extraction</button>
-                            <button class="sandbox-tab-btn" data-sample="agent_task">Agentic Task Dispatch</button>
-                            <button class="sandbox-tab-btn" data-sample="gov_manifest">Government Manifest</button>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); margin-right: 0.5rem;" data-i18n="index.sandbox_select_label">SELECT PLAYGROUND:</span>
+                            <button class="sandbox-tab-btn active" data-sample="invoice" data-i18n="index.sandbox_tab_invoice">Document Extraction</button>
+                            <button class="sandbox-tab-btn" data-sample="agent_task" data-i18n="index.sandbox_tab_agent">Agentic Task Dispatch</button>
+                            <button class="sandbox-tab-btn" data-sample="gov_manifest" data-i18n="index.sandbox_tab_gov">Government Manifest</button>
                         </div>
                     </div>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                         <div class="edi-pane">
                             <div class="pane-header">
-                                <span>Input Payload / Specification</span>
-                                <span style="color: var(--accent-cyan);">Live Editable</span>
+                                <span data-i18n="index.sandbox_input_header">Input Payload / Specification</span>
+                                <span style="color: var(--accent-cyan);" data-i18n="index.sandbox_input_badge">Live Editable</span>
                             </div>
                             <textarea id="rawEdiInput" class="edi-code-view" spellcheck="false"></textarea>
                         </div>
                         <div class="edi-pane">
                             <div class="pane-header">
-                                <span>Structured AI Execution Output</span>
-                                <span style="color: #4ade80;">Validated JSON Schema</span>
+                                <span data-i18n="index.sandbox_output_header">Structured AI Execution Output</span>
+                                <span style="color: #4ade80;" data-i18n="index.sandbox_output_badge">Validated JSON Schema</span>
                             </div>
                             <pre id="jsonOutput" class="json-code-view"></pre>
                         </div>
                     </div>
 
                     <div class="edi-parse-action">
-                        <span class="privacy-notice">🔒 Evaluated entirely in your local browser runtime (Zero server upload & 100% private)</span>
-                        <button id="parseEdiBtn" class="btn btn-primary-modern" style="padding: 0.6rem 1.75rem !important;">Re-Execute AI Parser</button>
+                        <span class="privacy-notice" data-i18n="index.sandbox_privacy">🔒 Evaluated entirely in your local browser runtime (Zero server upload & 100% private)</span>
+                        <button id="parseEdiBtn" class="btn btn-primary-modern" style="padding: 0.6rem 1.75rem !important;" data-i18n="index.sandbox_run_button">Re-Execute AI Parser</button>
                     </div>
                 </div>
             </div>
@@ -163,28 +163,28 @@
                         <div style="font-size: 2.5rem; margin-bottom: 1rem;">🚀</div>
                         <h3 data-i18n="home.feature_1_title">AI Product Studio & Rapid Prototyping</h3>
                         <p data-i18n="home.feature_1_desc">Turn ideas into working software in 14–21 days. Full-stack AI applications, generative UIs, custom SaaS platforms, and real-time interactive dashboards engineered with modern Python, Next.js, and Vector DBs.</p>
-                        <a href="services.html" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 1rem;">Explore Rapid Prototyping →</a>
+                        <a href="services.html" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 1rem;" data-i18n="index.pillar_1_link">Explore Rapid Prototyping →</a>
                     </div>
                     <!-- Pillar 2: Enterprise AI Transformation -->
                     <div class="feature-card-modern" style="padding: 2.5rem;">
                         <div style="font-size: 2.5rem; margin-bottom: 1rem;">🤖</div>
                         <h3 data-i18n="home.feature_2_title">Enterprise AI Transformation & Agentic Systems</h3>
                         <p data-i18n="home.feature_2_desc">Re-engineer core business operations with autonomous multi-agent workflows (LangGraph, MCP), multi-modal document intelligence, private on-premise LLMs, and grounded, source-cited enterprise RAG search.</p>
-                        <a href="services.html" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 1rem;">View Agentic AI Solutions →</a>
+                        <a href="services.html" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 1rem;" data-i18n="index.pillar_2_link">View Agentic AI Solutions →</a>
                     </div>
                     <!-- Pillar 3: AI Coding Consulting & Coaching -->
                     <div class="feature-card-modern" style="padding: 2.5rem;">
                         <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎓</div>
                         <h3 data-i18n="home.feature_3_title">AI Coding Consulting & Team Coaching</h3>
                         <p data-i18n="home.feature_3_desc">Empower your engineering organization to build with AI. Hands-on team training bootcamps, AI coding agent workflows, automated testing playbooks, and executive AI readiness roadmaps.</p>
-                        <a href="services.html" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 1rem;">Inquire About Coaching →</a>
+                        <a href="services.html" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 1rem;" data-i18n="index.pillar_3_link">Inquire About Coaching →</a>
                     </div>
                     <!-- Pillar 4: Fractional Leadership & Modernization -->
                     <div class="feature-card-modern" style="padding: 2.5rem;">
                         <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏛️</div>
                         <h3 data-i18n="home.feature_4_title">Fractional AI Leadership & Cloud Modernization</h3>
                         <p data-i18n="home.feature_4_desc">Fractional CAIO / CTO executive advisory, on-demand AI engineering squads, SI delivery governance, and zero-downtime legacy-to-cloud modernization (Kafka, AKS, APIs, and B2B/EDI integration).</p>
-                        <a href="solutions.html" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 1rem;">Explore Modernization & Retainers →</a>
+                        <a href="solutions.html" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 1rem;" data-i18n="index.pillar_4_link">Explore Modernization & Retainers →</a>
                     </div>
                 </div>
             </div>
@@ -198,13 +198,13 @@
                         <div style="max-width: 680px;">
                             <div class="hero-badge" style="margin-bottom: 1rem;">
                                 <span>⚡</span>
-                                <span>The Quantum Gaze Velocity Advantage</span>
+                                <span data-i18n="index.speed_badge">The Quantum Gaze Velocity Advantage</span>
                             </div>
                             <h2 style="font-size: 2.2rem; margin-bottom: 1rem;" data-i18n="home.speed_title">From Concept to Production AI in 2–3 Weeks</h2>
                             <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7;" data-i18n="home.speed_desc">Harnessing modern AI development agents, full-stack microservices, and 24+ years of architectural depth to compress months of development into rapid, production-grade iterations.</p>
                         </div>
                         <div>
-                            <a href="contact.html" class="btn btn-primary-modern" style="padding: 1rem 2.25rem !important; font-size: 1.1rem;">Launch a 2-Week AI Sprint</a>
+                            <a href="contact.html" class="btn btn-primary-modern" style="padding: 1rem 2.25rem !important; font-size: 1.1rem;" data-i18n="index.speed_cta">Launch a 2-Week AI Sprint</a>
                         </div>
                     </div>
                 </div>
@@ -215,8 +215,8 @@
         <section class="content-section-modern alt-bg">
             <div class="container">
                 <div class="section-intro">
-                    <h2>Proven Engineering Track Record</h2>
-                    <p>Over two decades delivering mission-critical platforms for Fortune 500 multinationals and high-growth organizations</p>
+                    <h2 data-i18n="index.track_title">Proven Engineering Track Record</h2>
+                    <p data-i18n="index.track_subtitle">Over two decades delivering mission-critical platforms for Fortune 500 multinationals and high-growth organizations</p>
                 </div>
 
                 <div class="card-grid-modern" style="margin-bottom: 2rem;">
@@ -225,10 +225,10 @@
                             <img src="https://images.unsplash.com/photo-1617886322207-baaf787f5e6a?w=800&h=500&fit=crop&q=80" alt="Automotive Enterprise Integration" loading="lazy">
                         </div>
                         <div style="padding: 2rem;">
-                            <h3 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Multi-Year Engagement</h3>
-                            <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem;">Global Automotive OEM Integration</h4>
-                            <p style="margin-bottom: 0.5rem;"><strong>Domain:</strong> Automotive & Supply Chain Systems</p>
-                            <p style="color: var(--text-secondary);">Delivered distributed system integration and middleware workflows for BMW, adhering to rigorous Fortune 500 reliability, security, and delivery benchmarks.</p>
+                            <h3 style="color: var(--accent-cyan); margin-bottom: 0.5rem;" data-i18n="index.case_auto_tag">Multi-Year Engagement</h3>
+                            <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem;" data-i18n="index.case_auto_title">Global Automotive OEM Integration</h4>
+                            <p style="margin-bottom: 0.5rem;"><strong data-i18n="index.case_auto_domain_label">Domain:</strong> <span data-i18n="index.case_auto_domain">Automotive & Supply Chain Systems</span></p>
+                            <p style="color: var(--text-secondary);" data-i18n="index.case_auto_desc">Delivered distributed system integration and middleware workflows for BMW, adhering to rigorous Fortune 500 reliability, security, and delivery benchmarks.</p>
                         </div>
                     </div>
 
@@ -237,10 +237,10 @@
                             <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=500&fit=crop&q=80" alt="Freight Forwarding Modernization" loading="lazy">
                         </div>
                         <div style="padding: 2rem;">
-                            <h3 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Cloud-Native Microservices</h3>
-                            <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem;">Top-5 Canadian Freight Forwarder</h4>
-                            <p style="margin-bottom: 0.5rem;"><strong>Domain:</strong> Real-Time TMS & Event-Driven Logistics</p>
-                            <p style="color: var(--text-secondary);">Architected and built modular microservices platform on Azure AKS with Kafka and FastAPI, modernizing core TMS workflows with 75% delivery acceleration.</p>
+                            <h3 style="color: var(--accent-cyan); margin-bottom: 0.5rem;" data-i18n="index.case_freight_tag">Cloud-Native Microservices</h3>
+                            <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem;" data-i18n="index.case_freight_title">Top-5 Canadian Freight Forwarder</h4>
+                            <p style="margin-bottom: 0.5rem;"><strong data-i18n="index.case_freight_domain_label">Domain:</strong> <span data-i18n="index.case_freight_domain">Real-Time TMS & Event-Driven Logistics</span></p>
+                            <p style="color: var(--text-secondary);" data-i18n="index.case_freight_desc">Architected and built modular microservices platform on Azure AKS with Kafka and FastAPI, modernizing core TMS workflows with 75% delivery acceleration.</p>
                         </div>
                     </div>
 
@@ -249,16 +249,16 @@
                             <img src="https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?w=800&h=500&fit=crop&q=80" alt="Customs Brokerage Automation" loading="lazy">
                         </div>
                         <div style="padding: 2rem;">
-                            <h3 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">70% Fewer Delays</h3>
-                            <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem;">Customs Brokerage API & Integration Gateway</h4>
-                            <p style="margin-bottom: 0.5rem;"><strong>Domain:</strong> Regulatory Customs Clearance</p>
-                            <p style="color: var(--text-secondary);">Engineered modern integration gateways and automated customs messaging, standardizing cross-border communication and reducing customs clearance bottlenecks by 70%.</p>
+                            <h3 style="color: var(--accent-cyan); margin-bottom: 0.5rem;" data-i18n="index.case_customs_tag">70% Fewer Delays</h3>
+                            <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem;" data-i18n="index.case_customs_title">Customs Brokerage API & Integration Gateway</h4>
+                            <p style="margin-bottom: 0.5rem;"><strong data-i18n="index.case_customs_domain_label">Domain:</strong> <span data-i18n="index.case_customs_domain">Regulatory Customs Clearance</span></p>
+                            <p style="color: var(--text-secondary);" data-i18n="index.case_customs_desc">Engineered modern integration gateways and automated customs messaging, standardizing cross-border communication and reducing customs clearance bottlenecks by 70%.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="text-center" style="margin-top: 2.5rem;">
-                    <a href="portfolio.html" class="btn btn-secondary-modern">Explore Complete Project Portfolio (19+ Platforms) →</a>
+                    <a href="portfolio.html" class="btn btn-secondary-modern" data-i18n="index.track_portfolio_cta">Explore Complete Project Portfolio (19+ Platforms) →</a>
                 </div>
             </div>
         </section>
@@ -299,11 +299,11 @@
             </div>
             <div class="footer-bottom">
                 <p>
-                    <span>&copy; 2026 Quantum Gaze Software Inc. / Logiciel Quantum Gaze Inc. All rights reserved.</span>
+                    <span data-i18n="index.footer_copyright">&copy; 2026 Quantum Gaze Software Inc. / Logiciel Quantum Gaze Inc. All rights reserved.</span>
                     <span class="footer-separator"> | </span>
-                    <span>QC Enterprise Number (NEQ): 1179525945</span>
+                    <span data-i18n="index.footer_neq">QC Enterprise Number (NEQ): 1179525945</span>
                 </p>
-                <a href="https://quantum-gaze.ca/sitemap.xml" target="_blank">Sitemap</a>
+                <a href="https://quantum-gaze.ca/sitemap.xml" target="_blank" data-i18n="index.footer_sitemap">Sitemap</a>
             </div>
         </div>
     </footer>
