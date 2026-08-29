@@ -65,6 +65,9 @@ An external generator periodically rewrites `*.html`, `js/translations.js` and `
 2. `footer.contact_us` in every dictionary (`en`, `fr`, `de`) — referenced by `data-i18n` in every footer.
 3. In `contact.html`, `<script src="js/config.js">` followed by the inline reCAPTCHA v3 loader (`https://www.google.com/recaptcha/api.js?render=${window.RECAPTCHA_SITE_KEY}`).
 4. A 40-line cap on the `#terminalStream` widget in `js/edi-sandbox.js`.
+5. **Versioned asset URLs** — every `css/*.css` and `js/*.js` reference in the HTML carries `?v=<date-letter>` (e.g. `?v=20260829d`). Bump the value whenever CSS/JS changes; `_headers` serves assets with `max-age=86400, must-revalidate` (never restore the old 1-year `immutable` policy — visitors kept a stale stylesheet with new HTML).
+6. **`data-i18n` on every visible text block** (352 keys per language in `js/translations.js`, en = fr = de). Mixed-markup blocks are split into `<strong data-i18n>` + `<span data-i18n>` so the switcher's `textContent` replacement keeps the markup.
+7. **The dark-theme override blocks at the tail of `css/luxury-enterprise.css`** ("Dark theme unification", "Section rhythm", "Navbar", "Stat numerals"). Legacy sheets still paint white surfaces; without these blocks card titles become invisible (1.05:1). Keep `luxury-enterprise.css` as the LAST stylesheet on every page.
 
 `js/main.js` carries a guarded fallback for 1, 3 and 4 (it defers to the real implementation when present), so a regeneration no longer breaks the language switcher or the contact form — but the fallbacks are a safety net, not a substitute. `js/main.js` itself must never be regenerated.
 
