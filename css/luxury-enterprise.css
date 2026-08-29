@@ -594,3 +594,178 @@ body.variant-spotlight-bento .page-header-modern::after {
     font-size: 0.78rem;
     color: var(--text-muted);
 }
+
+
+/* =====================================================================
+   Dark theme unification (2026-08-29)
+   Legacy sheets (pages-modern, premium-design, portfolio, ux-enhancements)
+   still paint white surfaces while this theme forces light text — which
+   made card titles/captions invisible (1.05:1). Every light surface is
+   re-skinned here as dark glass so text contrast is >= 4.5:1 site-wide.
+   ===================================================================== */
+:root {
+    --text-muted: #8b9bb4;             /* was #64748b (3.8:1 on cards) -> 6.1:1 */
+    --bg-card-solid: #0f172a;
+    --bg-card-glass: rgba(15, 23, 42, 0.82);
+    --bg-input: rgba(2, 6, 23, 0.85);
+}
+
+/* Sections */
+.content-section-modern,
+.content-section-modern.alt-bg,
+.section-modern,
+.alt-bg {
+    background: transparent !important;
+}
+.content-section-modern.alt-bg {
+    background: linear-gradient(180deg, rgba(11, 17, 32, 0.55) 0%, rgba(5, 8, 17, 0) 100%) !important;
+}
+.content-section-modern.alt-bg::before {
+    background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent) !important;
+    opacity: 0.35 !important;
+}
+
+/* Cards & tiles */
+.card-modern,
+.benefit-card-modern,
+.industry-card-modern,
+.service-item-modern,
+.solution-card-modern,
+.feature-card,
+.service-card,
+.solution-card,
+.industry-card,
+.project-card,
+.tech-category-card,
+.client-item,
+.faq-item,
+.quick-info-card,
+.contact-form-wrapper-modern,
+.info-card-modern,
+.stat-card,
+.testimonial-card {
+    background: var(--bg-card-glass) !important;
+    border: 1px solid var(--border-card) !important;
+    box-shadow: var(--glow-card) !important;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: var(--text-secondary) !important;
+}
+.tech-item {
+    background: rgba(30, 41, 59, 0.7) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-subtle) !important;
+}
+.card-modern:hover,
+.benefit-card-modern:hover,
+.industry-card-modern:hover,
+.service-item-modern:hover,
+.solution-card-modern:hover,
+.feature-card:hover,
+.service-card:hover,
+.solution-card:hover,
+.industry-card:hover,
+.project-card:hover,
+.tech-category-card:hover,
+.faq-item:hover,
+.quick-info-card:hover {
+    background: var(--bg-card-hover) !important;
+    border-color: var(--border-accent) !important;
+    box-shadow: var(--glow-card), var(--glow-cyan) !important;
+}
+.card-modern::before {
+    background: linear-gradient(90deg, var(--accent-cyan) 0%, var(--accent-blue) 100%) !important;
+}
+
+/* Text inside cards */
+.card-modern h3, .benefit-card-modern h3, .industry-card-modern h3, .service-item-modern h3,
+.solution-card-modern h3, .feature-card h3, .service-card h3, .solution-card h3, .industry-card h3,
+.project-card h3, .tech-category-card h3, .faq-item h3, .quick-info-card h3,
+.card-modern h4, .service-card h4, .solution-card h4, .project-card h4 {
+    color: var(--text-primary) !important;
+}
+.card-modern h4, .benefit-card-modern h4, .industry-card-modern h4, .service-item-modern h4 {
+    color: var(--accent-cyan) !important;
+}
+.card-modern p, .benefit-card-modern p, .industry-card-modern p, .service-item-modern p,
+.solution-card-modern p, .feature-card p, .service-card p, .solution-card p, .industry-card p,
+.project-card p, .tech-category-card p, .faq-item p, .quick-info-card p,
+.card-modern li, .service-card li, .solution-card li, .industry-card li, .project-card li,
+.faq-answer, .faq-answer p {
+    color: var(--text-secondary) !important;
+}
+.card-modern ul li::before, .service-card li::before, .solution-card li::before {
+    color: var(--accent-cyan) !important;
+}
+.card-modern strong, .service-card strong, .solution-card strong, .industry-card strong,
+.project-card strong, .faq-item strong {
+    color: var(--text-primary) !important;
+}
+
+/* Captions, labels, small print */
+small, .caption, .tech-badge, .badge, .label-caption, .stat-label, .card-label, .eyebrow {
+    color: var(--text-muted) !important;
+}
+.tech-badge {
+    background: rgba(0, 242, 254, 0.08) !important;
+    border: 1px solid var(--border-accent) !important;
+    color: var(--accent-cyan) !important;
+}
+
+/* Forms */
+.form-group-modern input,
+.form-group-modern textarea,
+.form-group-modern select,
+.contact-form-wrapper-modern input,
+.contact-form-wrapper-modern textarea,
+.contact-form-wrapper-modern select,
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    background: var(--bg-input) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-card) !important;
+    border-radius: 10px !important;
+}
+.form-group-modern input:focus,
+.form-group-modern textarea:focus,
+input:focus, textarea:focus, select:focus {
+    border-color: var(--accent-cyan) !important;
+    box-shadow: 0 0 0 3px rgba(0, 242, 254, 0.18) !important;
+    outline: none !important;
+}
+.form-group-modern label, .contact-form-wrapper-modern label, label {
+    color: var(--text-primary) !important;
+}
+::placeholder { color: var(--text-muted) !important; opacity: 1; }
+
+/* Sticky navbar after scroll must stay dark, not white */
+.navbar.scrolled, .header.scrolled, header.scrolled {
+    background: rgba(5, 8, 17, 0.92) !important;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8) !important;
+    border-bottom: 1px solid var(--border-subtle) !important;
+}
+.search-results {
+    background: var(--bg-surface-elevated) !important;
+    color: var(--text-secondary) !important;
+    border: 1px solid var(--border-card) !important;
+}
+.search-results a, .search-results h4 { color: var(--text-primary) !important; }
+
+/* Light button variant -> outlined glass */
+.btn-light-modern {
+    background: rgba(15, 23, 42, 0.8) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-accent) !important;
+}
+
+/* FAQ accordion */
+.faq-question { color: var(--text-primary) !important; }
+.faq-item.active, .faq-item[open] { border-color: var(--border-accent) !important; }
+
+/* Generic dark-safe body copy for any remaining light-themed text colours */
+.content-section-modern p, .content-section-modern li,
+.section-intro p, .section-subtitle, .lead {
+    color: var(--text-secondary) !important;
+}
+.content-section-modern h2, .content-section-modern h3, .section-intro h2 {
+    color: var(--text-primary) !important;
+}
