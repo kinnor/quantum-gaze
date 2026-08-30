@@ -57,6 +57,10 @@ Open the site in a browser and test:
 - Responsive design (mobile, tablet, desktop)
 - All interactive elements
 
+## Deployment Model (important)
+
+The site is a Cloudflare **Worker** named `quantum-gaze` (static assets + `src/worker.js`), NOT a Pages project. Custom domains: quantum-gaze.ca, www.quantum-gaze.ca, quantum-gaze.com, www.quantum-gaze.com. Pushes to `main` deploy through Workers Builds; `npx wrangler deploy` works too. The Pages-only `functions/` folder is **not executed by itself** — `src/worker.js` imports the handlers and routes `/api/*` to them (`run_worker_first`). Keep `functions/`, `src/`, `.wrangler/` in `.assetsignore` so source never ships as public assets. Mail goes through the `EMAIL` (Email Sending) binding — see `CONTACT_FORM_SETUP.md`. `quantum-gaze.com` inbound mail is on Zoho: never enable Cloudflare Email Routing on that zone.
+
 ## Regeneration Safety (read before regenerating pages)
 
 An external generator periodically rewrites `*.html`, `js/translations.js` and `js/edi-sandbox.js` and has repeatedly dropped four things. Any template that regenerates these files MUST keep:
