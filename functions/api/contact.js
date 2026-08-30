@@ -260,12 +260,48 @@ function generateAutoReplyEmail(formData, language) {
     };
 }
 
-// Send email via MailChannels
-async function sendEmail(from, to, subject, html, context) {
+// Plain-text fallback for HTML bodies (clients that ignore HTML; better spam scores)
+function htmlToText(html) {
+    return String(html)
+        .replace(/<style[\s\S]*?<\/style>/gi, '')
+        .replace(/<br\s*\/?>/gi, '\n')
+        .replace(/<\/(p|div|h[1-6]|li|tr)>/gi, '\n')
+        .replace(/<[^>]+>/g, '')
+        .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+}
+
+// Send email — Cloudflare Email Service binding (env.EMAIL) first; legacy MailChannels only
+// when an API key is explicitly configured.
+async function sendEmail(from, to, subject, html, context, replyTo) {
+    const env = context.env || {};
+    if (env.EMAIL && typeof env.EMAIL.send === 'function') {
+        const msg = {
+            to,
+            from: { email: from, name: 'Quantum Gaze Software Inc.' },
+            subject,
+            html,
+            text: htmlToText(html)
+        };
+        if (replyTo) msg.replyTo = replyTo;
+        return env.EMAIL.send(msg);
+    }
+    if (!env.MAILCHANNELS_API_KEY) {
+        const err = new Error('No email transport configured: add the send_email binding (EMAIL) and onboard the sending domain, or set MAILCHANNELS_API_KEY');
+        err.code = 'E_NO_TRANSPORT';
+        throw err;
+    }
+    return sendEmailMailChannels(from, to, subject, html, context);
+}
+
+// Legacy transport (MailChannels now requires a paid API key)
+async function sendEmailMailChannels(from, to, subject, html, context) {
     const response = await fetch('https://api.mailchannels.net/tx/v1/send', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'X-Api-Key': context.env.MAILCHANNELS_API_KEY
         },
         body: JSON.stringify({
             personalizations: [
@@ -375,32 +411,35 @@ export async function onRequestPost(context) {
         // Generate notification email for admin
         const notificationEmail = generateNotificationEmail(formData, language);
 
-        // Send notification email to admin
+        // Send notification email to admin (Reply-To = the visitor, so replying just works)
         await sendEmail(
             'noreply@quantum-gaze.ca',
-            'service@quantum-gaze.com',
+            context.env.CONTACT_TO || 'service@quantum-gaze.com',
             notificationEmail.subject,
             notificationEmail.html,
-            context
+            context,
+            email
         );
 
-        // Generate and send auto-reply email to user
+        // Auto-reply to the visitor — best effort; the submission already reached the team
         const autoReplyEmail = generateAutoReplyEmail(formData, language);
-        await sendEmail(
-            'noreply@quantum-gaze.ca',
-            email,
-            autoReplyEmail.subject,
-            autoReplyEmail.html,
-            context
-        );
-
-        // Send webhook notification (Slack/Discord)
-        if (context.env.WEBHOOK_URL) {
-            await sendWebhookNotification(
-                context.env.WEBHOOK_URL,
-                formData,
-                language
+        try {
+            await sendEmail(
+                'noreply@quantum-gaze.ca',
+                email,
+                autoReplyEmail.subject,
+                autoReplyEmail.html,
+                context,
+                context.env.CONTACT_TO || 'service@quantum-gaze.com'
             );
+        } catch (autoReplyError) {
+            console.error('Auto-reply failed:', autoReplyError && autoReplyError.code, autoReplyError && autoReplyError.message);
+        }
+
+        // Webhook notification (Slack/Discord) — best effort, does not block the response
+        if (context.env.WEBHOOK_URL) {
+            const hook = sendWebhookNotification(context.env.WEBHOOK_URL, formData, language);
+            if (typeof context.waitUntil === 'function') context.waitUntil(hook); else await hook;
         }
 
         // Return success response
@@ -416,12 +455,13 @@ export async function onRequestPost(context) {
         });
 
     } catch (error) {
-        console.error('Contact form error:', error);
+        console.error('Contact form error:', error && error.code, error && error.message);
 
+        // Never echo provider error bodies to the client; expose only a stable code.
         return new Response(JSON.stringify({
             success: false,
             error: 'Failed to send email. Please try again later.',
-            details: error.message
+            code: (error && error.code) || 'E_SEND_FAILED'
         }), {
             status: 500,
             headers: {
