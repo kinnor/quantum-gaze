@@ -7,6 +7,7 @@
  * handlers and lets everything else fall through to the static assets binding.
  */
 import { onRequestPost as contactPost } from '../functions/api/contact.js';
+import { onRequestPost as stripeWebhookPost } from '../functions/api/stripe-webhook.js';
 
 const JSON_HEADERS = { 'Content-Type': 'application/json' };
 
@@ -39,6 +40,15 @@ export default {
                 const h = new Headers(res.headers);
                 for (const [k, v] of Object.entries(corsHeaders)) h.set(k, v);
                 return new Response(res.body, { status: res.status, headers: h });
+            }
+
+            if (url.pathname === '/api/stripe/webhook') {
+                // Server-to-server from Stripe: no CORS headers, POST only,
+                // raw body must reach the handler untouched for HMAC verification.
+                if (request.method !== 'POST') {
+                    return new Response(JSON.stringify({ success: false, error: 'Method not allowed' }), { status: 405, headers: JSON_HEADERS });
+                }
+                return stripeWebhookPost({ request, env, waitUntil: (p) => ctx.waitUntil(p) });
             }
 
             // Retired endpoints (e.g. the old /api/ai-chat proxy) are not exposed.
