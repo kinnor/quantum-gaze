@@ -90,7 +90,8 @@ async function verifyRecaptcha(token, secretKey, env, request) {
         }
         const res = await fetch(url, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            // Referer satisfies an API key restricted to HTTP referrers (the site's own domain).
+            headers: { 'Content-Type': 'application/json', 'Referer': env.RECAPTCHA_REFERER || 'https://quantum-gaze.ca/' },
             body: JSON.stringify({ event })
         });
         const a = await res.json();
