@@ -24,6 +24,10 @@ RECAPTCHA_SITE_KEY = "6LfZV58tAAAAAG4pAjBnCjGv_Ps8kCaEy4uTM0j_"   # reCAPTCHA En
 #   RECAPTCHA_PROJECT_ID + RECAPTCHA_API_KEY  alternative: Enterprise Assessments API (Google Cloud project + API key)
 #   WEBHOOK_URL           optional Slack/Discord notification webhook
 #   MAILCHANNELS_API_KEY  optional legacy fallback transport
+#   STRIPE_SECRET_KEY     Stripe API key (set 2026-08-30) — session verification in /api/stripe/webhook
+#   STRIPE_WEBHOOK_SECRET whsec_… from the Stripe webhook endpoint config; handler fails closed (503) without it
+#   GITHUB_FULFILLMENT_TOKEN  optional fine-grained token for private pro-repo invites
+# Optional [vars] for fulfillment: FULFILLMENT_NOTIFY (owner email), GITHUB_PRO_REPO (owner/repo)
 
 [observability]
 enabled = true
