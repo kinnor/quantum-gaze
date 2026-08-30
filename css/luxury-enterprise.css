@@ -829,8 +829,18 @@ input:focus, textarea:focus, select:focus {
 .footer-logo .brand-lockup { height: 56px !important; width: auto !important; max-width: none !important; }
 @media (max-width: 768px) { .nav-brand .brand-lockup { height: 40px !important; } }
 
-/* Ladder/mapping rows: label column + description (flex was collapsing the gap) */
-.mapping-item { gap: 1rem; align-items: flex-start; }
-.mapping-item > span:first-child { flex: 0 0 9rem; color: var(--accent-cyan); font-weight: 600; }
-.mapping-item > span:last-child { flex: 1 1 auto; text-align: left; }
-@media (max-width: 640px) { .mapping-item { flex-direction: column; gap: 0.2rem; } .mapping-item > span:first-child { flex-basis: auto; } }
+/* Restored logo contract/expand on scroll (original .scrolled hook from js/ux-enhancements.js,
+   original 0.3s ease-in-out timing from css/ux-enhancements.css; sizes adapted to the fixed navbar) */
+.navbar { transition: height 0.3s ease-in-out; }
+.navbar.scrolled { height: 66px !important; }
+.brand-mark { transition: width 0.3s ease-in-out, height 0.3s ease-in-out; }
+.brand-wordmark { transition: font-size 0.3s ease-in-out; }
+.navbar.scrolled .nav-brand img { height: 36px; }
+.navbar.scrolled .nav-brand .brand-mark { width: 36px; height: 36px; }
+.navbar.scrolled .brand-wordmark { font-size: 0.95rem; }
+.navbar.scrolled .brand-wordmark small { display: none; }
+
+/* Brand mark at-rest sizing (as in previous production): wins over the lockup-era height:auto reset */
+.nav-brand .brand-mark { width: 48px; height: 48px; }
+.footer-logo .brand-mark { width: 52px; height: 52px; }
+.navbar.scrolled .nav-brand .brand-mark { width: 36px; height: 36px; }
