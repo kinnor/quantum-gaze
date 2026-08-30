@@ -24,9 +24,10 @@ The contact form posts JSON to `/api/contact`, handled by the Cloudflare **Worke
    - Dashboard: *Compute & AI → Email Service → Email Sending → Onboard domain → quantum-gaze.ca → Add records and onboard*
    - CLI (token needs Email Sending permissions): `npx wrangler email sending enable quantum-gaze.ca`
    - This adds SPF/DKIM records only. **Do not enable Email Routing on `quantum-gaze.com`** — that domain's inbox is on Zoho (MX/SPF/DKIM) and Routing would replace its MX records.
-2. **reCAPTCHA secret** (site key is public in `js/config.js`; the secret is never committed):
-   `npx wrangler secret put RECAPTCHA_SECRET_KEY --name quantum-gaze`
-   When unset, verification is skipped; when set, submissions without a token are rejected (400).
+2. **reCAPTCHA Enterprise** (score-based key `6LfZV58t…` created in Google Cloud project `my-project-20240212-414113`; public site key in `js/config.js` and `wrangler.toml [vars]`; pages load `recaptcha/enterprise.js`). The Worker verifies via the Assessments API and needs two secrets (values pasted at the prompt — the word after `put` is the NAME, never the value):
+   `npx wrangler secret put RECAPTCHA_PROJECT_ID --name quantum-gaze` → the Google Cloud project ID that owns the key
+   `npx wrangler secret put RECAPTCHA_API_KEY --name quantum-gaze` → an API key from that project restricted to *reCAPTCHA Enterprise API* (referrer-restricted keys work: the Worker sends `Referer: https://quantum-gaze.ca/`)
+   The key **must** live in the same project as `RECAPTCHA_PROJECT_ID`, or Google answers "project number does not own the given recaptcha key". Legacy path: `RECAPTCHA_SECRET_KEY` + classic `siteverify` (only for classic keys or an Enterprise key's "legacy secret"). When nothing is configured, verification is skipped; when configured, submissions without a valid token are rejected (400). Threshold: score ≥ 0.5.
 3. Optional: `npx wrangler secret put WEBHOOK_URL --name quantum-gaze` (Slack/Discord), `CONTACT_TO` var to change the recipient (default `service@quantum-gaze.com`).
 
 ## Deploy
