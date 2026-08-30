@@ -17,7 +17,7 @@ name = "EMAIL"
 
 # Public (non-secret) configuration
 [vars]
-RECAPTCHA_SITE_KEY = "6LepUp8tAAAAAL6XQyO_4s7ifsPqTL9XLoanAoZf"   # reCAPTCHA Enterprise site key (same as js/config.js)
+RECAPTCHA_SITE_KEY = "6LfZV58tAAAAAG4pAjBnCjGv_Ps8kCaEy4uTM0j_"   # reCAPTCHA Enterprise site key (same as js/config.js)
 
 # Secrets (set with `npx wrangler secret put <NAME> --name quantum-gaze`), never in this file:
 #   RECAPTCHA_SECRET_KEY  legacy/classic secret for siteverify (Enterprise keys: "Use legacy key" in Google Cloud console)
