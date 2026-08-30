@@ -851,3 +851,22 @@ input:focus, textarea:focus, select:focus {
 .brand:focus-visible .brand-mark { transform: scale(1.15); box-shadow: 0 0 28px rgba(0, 242, 254, 0.65); }
 .brand:hover .brand-wordmark { color: #ffffff !important; text-shadow: 0 0 14px rgba(0, 242, 254, 0.35); }
 .brand:focus-visible { outline: 2px solid var(--accent-cyan); outline-offset: 4px; border-radius: 10px; }
+
+/* Original large-logo navbar restored (0b4b43b proportions: 125px bar, 104px-class logo on load,
+   40px when scrolled, 0.3s ease-in-out; 78px-class on mobile). Frame = the mark's own tile ring. */
+body { padding-top: 125px !important; }
+.navbar { height: 125px !important; }
+.nav-brand .brand-mark { width: 96px; height: 96px; border-radius: 22px; }
+.brand-wordmark { font-size: 1.35rem; }
+.brand-wordmark small { font-size: 0.7rem; }
+.brand-mark { transition: width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+.navbar.scrolled { height: 64px !important; }
+.navbar.scrolled .nav-brand .brand-mark { width: 40px; height: 40px; border-radius: 10px; }
+.navbar.scrolled .brand-wordmark { font-size: 0.95rem; }
+@media (max-width: 768px) {
+  body { padding-top: 108px !important; }
+  .navbar { height: 108px !important; }
+  .nav-brand .brand-mark { width: 78px; height: 78px; border-radius: 18px; }
+  .navbar.scrolled { height: 58px !important; }
+  .navbar.scrolled .nav-brand .brand-mark { width: 36px; height: 36px; }
+}
