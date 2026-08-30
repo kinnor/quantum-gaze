@@ -844,3 +844,10 @@ input:focus, textarea:focus, select:focus {
 .nav-brand .brand-mark { width: 48px; height: 48px; }
 .footer-logo .brand-mark { width: 52px; height: 52px; }
 .navbar.scrolled .nav-brand .brand-mark { width: 36px; height: 36px; }
+
+/* Logo hover/focus: grow + focus glow (also while scrolled) */
+.brand-mark { transition: width 0.3s ease-in-out, height 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+.brand:hover .brand-mark,
+.brand:focus-visible .brand-mark { transform: scale(1.15); box-shadow: 0 0 28px rgba(0, 242, 254, 0.65); }
+.brand:hover .brand-wordmark { color: #ffffff !important; text-shadow: 0 0 14px rgba(0, 242, 254, 0.35); }
+.brand:focus-visible { outline: 2px solid var(--accent-cyan); outline-offset: 4px; border-radius: 10px; }
