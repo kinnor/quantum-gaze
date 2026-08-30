@@ -85,10 +85,19 @@ async function verifyRecaptcha(token, secretKey) {
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
-        body: `secret=${secretKey}&response=${token}`
+        body: `secret=${encodeURIComponent(secretKey)}&response=${encodeURIComponent(token)}`
     });
 
-    return await response.json();
+    const result = await response.json();
+    // Diagnostic log (visible in `wrangler tail` / dashboard logs): never includes the secret or token.
+    console.log('recaptcha siteverify', JSON.stringify({
+        success: result.success,
+        score: result.score,
+        action: result.action,
+        hostname: result.hostname,
+        errors: result['error-codes'] || []
+    }));
+    return result;
 }
 
 // Send notification to Slack/Discord
