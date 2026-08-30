@@ -76,14 +76,22 @@ const EMAIL_TEMPLATES = {
 //  - Enterprise (preferred when RECAPTCHA_PROJECT_ID + RECAPTCHA_API_KEY are set): Assessments API,
 //    site key comes from the RECAPTCHA_SITE_KEY var (public value, wrangler.toml [vars])
 //  - Classic / legacy secret: siteverify with RECAPTCHA_SECRET_KEY
-async function verifyRecaptcha(token, secretKey, env) {
+async function verifyRecaptcha(token, secretKey, env, request) {
     env = env || {};
     if (env.RECAPTCHA_PROJECT_ID && env.RECAPTCHA_API_KEY && env.RECAPTCHA_SITE_KEY) {
         const url = `https://recaptchaenterprise.googleapis.com/v1/projects/${encodeURIComponent(env.RECAPTCHA_PROJECT_ID)}/assessments?key=${encodeURIComponent(env.RECAPTCHA_API_KEY)}`;
+        const event = { token, siteKey: env.RECAPTCHA_SITE_KEY, expectedAction: 'contact_form' };
+        // Recommended by Google for better detection (user agent + client IP from Cloudflare)
+        if (request && request.headers) {
+            const ua = request.headers.get('User-Agent');
+            const ip = request.headers.get('CF-Connecting-IP') || (request.headers.get('X-Forwarded-For') || '').split(',')[0].trim();
+            if (ua) event.userAgent = ua;
+            if (ip) event.userIpAddress = ip;
+        }
         const res = await fetch(url, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ event: { token, siteKey: env.RECAPTCHA_SITE_KEY, expectedAction: 'contact_form' } })
+            body: JSON.stringify({ event })
         });
         const a = await res.json();
         const tp = a.tokenProperties || {};
@@ -421,7 +429,8 @@ export async function onRequestPost(context) {
             const recaptchaResult = await verifyRecaptcha(
                 recaptchaToken,
                 context.env.RECAPTCHA_SECRET_KEY,
-                context.env
+                context.env,
+                context.request
             );
 
             if (!recaptchaResult.success || (recaptchaResult.score && recaptchaResult.score < 0.5)) {
