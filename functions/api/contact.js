@@ -72,8 +72,27 @@ const EMAIL_TEMPLATES = {
     }
 };
 
-// Verify reCAPTCHA token
-async function verifyRecaptcha(token, secretKey) {
+// Verify a reCAPTCHA token.
+//  - Enterprise (preferred when RECAPTCHA_PROJECT_ID + RECAPTCHA_API_KEY are set): Assessments API,
+//    site key comes from the RECAPTCHA_SITE_KEY var (public value, wrangler.toml [vars])
+//  - Classic / legacy secret: siteverify with RECAPTCHA_SECRET_KEY
+async function verifyRecaptcha(token, secretKey, env) {
+    env = env || {};
+    if (env.RECAPTCHA_PROJECT_ID && env.RECAPTCHA_API_KEY && env.RECAPTCHA_SITE_KEY) {
+        const url = `https://recaptchaenterprise.googleapis.com/v1/projects/${encodeURIComponent(env.RECAPTCHA_PROJECT_ID)}/assessments?key=${encodeURIComponent(env.RECAPTCHA_API_KEY)}`;
+        const res = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ event: { token, siteKey: env.RECAPTCHA_SITE_KEY, expectedAction: 'contact_form' } })
+        });
+        const a = await res.json();
+        const tp = a.tokenProperties || {};
+        const ok = !!tp.valid && (!tp.action || tp.action === 'contact_form');
+        const score = a.riskAnalysis ? a.riskAnalysis.score : undefined;
+        console.log('recaptcha enterprise assessment', JSON.stringify({ valid: tp.valid, action: tp.action, hostname: tp.hostname, invalidReason: tp.invalidReason, score, reasons: a.riskAnalysis && a.riskAnalysis.reasons, error: a.error && a.error.message }));
+        return { success: ok, score: typeof score === 'number' ? score : (ok ? 1 : 0), 'error-codes': ok ? [] : [tp.invalidReason || (a.error && a.error.status) || 'assessment-failed'] };
+    }
+
     if (!secretKey || secretKey === 'YOUR_RECAPTCHA_SECRET_KEY') {
         // Skip verification if not configured
         console.warn('reCAPTCHA not configured, skipping verification');
@@ -379,8 +398,9 @@ export async function onRequestPost(context) {
         }
 
         // Verify reCAPTCHA if token provided
-        const recaptchaConfigured = context.env.RECAPTCHA_SECRET_KEY &&
-            context.env.RECAPTCHA_SECRET_KEY !== 'YOUR_RECAPTCHA_SECRET_KEY';
+        const recaptchaConfigured = (context.env.RECAPTCHA_SECRET_KEY &&
+            context.env.RECAPTCHA_SECRET_KEY !== 'YOUR_RECAPTCHA_SECRET_KEY') ||
+            (context.env.RECAPTCHA_PROJECT_ID && context.env.RECAPTCHA_API_KEY);
 
         if (!recaptchaToken) {
             if (recaptchaConfigured) {
@@ -400,7 +420,8 @@ export async function onRequestPost(context) {
         } else {
             const recaptchaResult = await verifyRecaptcha(
                 recaptchaToken,
-                context.env.RECAPTCHA_SECRET_KEY
+                context.env.RECAPTCHA_SECRET_KEY,
+                context.env
             );
 
             if (!recaptchaResult.success || (recaptchaResult.score && recaptchaResult.score < 0.5)) {

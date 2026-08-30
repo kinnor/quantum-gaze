@@ -58,12 +58,12 @@
         // 2) reCAPTCHA v3 loader fallback — only on pages with the contact form,
         //    only if no recaptcha script tag exists. Site key comes from js/config.js.
         if (document.getElementById('contactForm') &&
-            !document.querySelector('script[src*="recaptcha/api.js"]')) {
+            !document.querySelector('script[src*="recaptcha/api.js"], script[src*="recaptcha/enterprise.js"]')) {
             var loadRecaptcha = function () {
                 var key = window.RECAPTCHA_SITE_KEY;
                 if (!key || key === 'YOUR_RECAPTCHA_SITE_KEY') return;
                 var s = document.createElement('script');
-                s.src = 'https://www.google.com/recaptcha/api.js?render=' + encodeURIComponent(key);
+                s.src = 'https://www.google.com/recaptcha/enterprise.js?render=' + encodeURIComponent(key);
                 s.async = true;
                 document.head.appendChild(s);
             };
@@ -122,7 +122,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // Get reCAPTCHA token if available
             if (typeof grecaptcha !== 'undefined') {
                 try {
-                    formData.recaptchaToken = await grecaptcha.execute(
+                    // reCAPTCHA Enterprise exposes grecaptcha.enterprise; classic v3 uses grecaptcha directly.
+                    const rc = (grecaptcha.enterprise && typeof grecaptcha.enterprise.execute === 'function') ? grecaptcha.enterprise : grecaptcha;
+                    await new Promise(function (resolve) { rc.ready(resolve); });
+                    formData.recaptchaToken = await rc.execute(
                         window.RECAPTCHA_SITE_KEY || 'YOUR_RECAPTCHA_SITE_KEY',
                         { action: 'contact_form' }
                     );
