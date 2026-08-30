@@ -791,3 +791,24 @@ input:focus, textarea:focus, select:focus {
 
 /* Stat numerals: allow wrapping for long locales (e.g. "2–3 Wochen") instead of clipping */
 .stat-number { white-space: normal !important; overflow-wrap: anywhere; font-size: clamp(1.7rem, 2.6vw, 2.5rem) !important; }
+
+/* Brand: Q-eye mark + text wordmark (2026-08-29) */
+.brand { display: inline-flex; align-items: center; gap: 0.75rem; text-decoration: none !important; }
+.brand-mark { width: 48px; height: 48px; border-radius: 12px; box-shadow: 0 0 18px rgba(0, 242, 254, 0.35); flex: 0 0 auto; }
+.brand-wordmark { display: flex; flex-direction: column; line-height: 1.05; font-family: var(--font-heading); font-weight: 700; font-size: 1.15rem; color: var(--text-primary) !important; letter-spacing: 0.01em; white-space: nowrap; }
+.brand-wordmark small { font-family: var(--font-sans); font-weight: 600; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-cyan); margin-top: 3px; }
+.brand-footer .brand-mark { width: 52px; height: 52px; }
+.nav-brand img, .footer-logo img { height: auto; }
+@media (max-width: 768px) { .brand-wordmark { font-size: 1rem; } .brand-wordmark small { display: none; } }
+
+/* Footer: legacy style.css paints it white with a photo and an elliptical white mask */
+.footer { background: linear-gradient(180deg, rgba(11, 17, 32, 0.6) 0%, var(--bg-canvas) 100%) !important; color: var(--text-secondary) !important; padding: 72px 0 2rem !important; margin-top: 0 !important; border-top: 1px solid var(--border-subtle); }
+.footer::before, .footer::after { display: none !important; content: none !important; }
+.footer-logo { max-width: none !important; }
+.footer-nav a { color: var(--text-secondary) !important; text-decoration: none !important; }
+.footer-nav a:hover { color: var(--accent-cyan) !important; }
+.footer-bottom { border-top: 1px solid var(--border-subtle) !important; color: var(--text-muted) !important; }
+.footer-bottom a { color: var(--text-secondary) !important; }
+.footer-bottom a:hover { color: var(--accent-cyan) !important; }
+.footer p, .footer li, .footer span { color: var(--text-secondary); }
+.footer .brand-wordmark { color: var(--text-primary) !important; }
