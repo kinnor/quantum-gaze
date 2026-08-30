@@ -22,6 +22,12 @@
     --text-primary: #f8fafc;
     --text-secondary: #94a3b8;
     --text-muted: #64748b;
+
+    /* Brand tokens (Neural Aperture palette) */
+    --obsidian: #050811;
+    --cyan: #00f2fe;
+    --sapphire: #147dbf;
+    --titanium: #cbd5e1;
     
     --border-subtle: rgba(255, 255, 255, 0.08);
     --border-accent: rgba(0, 242, 254, 0.3);
@@ -812,3 +818,13 @@ input:focus, textarea:focus, select:focus {
 .footer-bottom a:hover { color: var(--accent-cyan) !important; }
 .footer p, .footer li, .footer span { color: var(--text-secondary); }
 .footer .brand-wordmark { color: var(--text-primary) !important; }
+
+/* Brand lockup (approved Neural Aperture Q vector, 580x100) */
+.brand-lockup { height: 48px; width: auto; display: block; filter: drop-shadow(0 0 10px rgba(0, 242, 254, 0.25)); }
+.brand-footer .brand-lockup { height: 56px; }
+@media (max-width: 768px) { .brand-lockup { height: 40px; } }
+
+/* Lockup sizing must win over legacy .nav-brand img / .footer-logo img rules */
+.nav-brand .brand-lockup { height: 48px !important; width: auto !important; max-width: none !important; }
+.footer-logo .brand-lockup { height: 56px !important; width: auto !important; max-width: none !important; }
+@media (max-width: 768px) { .nav-brand .brand-lockup { height: 40px !important; } }
