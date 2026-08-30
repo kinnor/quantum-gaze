@@ -1,6 +1,24 @@
-# Cloudflare Workers static site configuration
-name = "quantum-gaze-website"
+# Cloudflare Worker: static site + /api routes
+# Name must match the deployed Worker ("quantum-gaze": custom domains quantum-gaze.ca / .com).
+name = "quantum-gaze"
+main = "src/worker.js"
 compatibility_date = "2025-11-03"
 
 [assets]
 directory = "."
+binding = "ASSETS"
+# /api/* must reach the Worker even though "." also contains files; everything else is served as assets.
+run_worker_first = ["/api/*"]
+
+# Cloudflare Email Service (Email Sending) — no API key needed.
+# Requires the sending domain to be onboarded once:  npx wrangler email sending enable quantum-gaze.ca
+[[send_email]]
+name = "EMAIL"
+
+# Secrets (set with `npx wrangler secret put <NAME>`), never in this file:
+#   RECAPTCHA_SECRET_KEY  reCAPTCHA v3 secret (site key lives in js/config.js)
+#   WEBHOOK_URL           optional Slack/Discord notification webhook
+#   MAILCHANNELS_API_KEY  optional legacy fallback transport
+
+[observability]
+enabled = true
