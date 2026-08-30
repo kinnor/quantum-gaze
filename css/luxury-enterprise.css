@@ -828,3 +828,19 @@ input:focus, textarea:focus, select:focus {
 .nav-brand .brand-lockup { height: 48px !important; width: auto !important; max-width: none !important; }
 .footer-logo .brand-lockup { height: 56px !important; width: auto !important; max-width: none !important; }
 @media (max-width: 768px) { .nav-brand .brand-lockup { height: 40px !important; } }
+
+/* Restored logo contract/expand on scroll (original .scrolled hook from js/ux-enhancements.js,
+   original 0.3s ease-in-out timing from css/ux-enhancements.css; sizes adapted to the fixed navbar) */
+.navbar { transition: height 0.3s ease-in-out; }
+.navbar.scrolled { height: 66px !important; }
+.brand-mark { transition: width 0.3s ease-in-out, height 0.3s ease-in-out; }
+.brand-wordmark { transition: font-size 0.3s ease-in-out; }
+.navbar.scrolled .nav-brand img { height: 36px; }
+.navbar.scrolled .nav-brand .brand-mark { width: 36px; height: 36px; }
+.navbar.scrolled .brand-wordmark { font-size: 0.95rem; }
+.navbar.scrolled .brand-wordmark small { display: none; }
+
+/* Brand mark at-rest sizing (as in previous production): wins over the lockup-era height:auto reset */
+.nav-brand .brand-mark { width: 48px; height: 48px; }
+.footer-logo .brand-mark { width: 52px; height: 52px; }
+.navbar.scrolled .nav-brand .brand-mark { width: 36px; height: 36px; }
