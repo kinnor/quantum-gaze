@@ -828,3 +828,9 @@ input:focus, textarea:focus, select:focus {
 .nav-brand .brand-lockup { height: 48px !important; width: auto !important; max-width: none !important; }
 .footer-logo .brand-lockup { height: 56px !important; width: auto !important; max-width: none !important; }
 @media (max-width: 768px) { .nav-brand .brand-lockup { height: 40px !important; } }
+
+/* Ladder/mapping rows: label column + description (flex was collapsing the gap) */
+.mapping-item { gap: 1rem; align-items: flex-start; }
+.mapping-item > span:first-child { flex: 0 0 9rem; color: var(--accent-cyan); font-weight: 600; }
+.mapping-item > span:last-child { flex: 1 1 auto; text-align: left; }
+@media (max-width: 640px) { .mapping-item { flex-direction: column; gap: 0.2rem; } .mapping-item > span:first-child { flex-basis: auto; } }
