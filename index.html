@@ -25,11 +25,11 @@
     <meta property="og:locale:alternate" content="fr_CA">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css?v=20260830i">
-    <link rel="stylesheet" href="css/pages-modern.css?v=20260830i">
-    <link rel="stylesheet" href="css/premium-design.css?v=20260830i">
-    <link rel="stylesheet" href="css/ux-enhancements.css?v=20260830i">
-    <link rel="stylesheet" href="css/luxury-enterprise.css?v=20260830i">
+    <link rel="stylesheet" href="css/style.css?v=20260905a">
+    <link rel="stylesheet" href="css/pages-modern.css?v=20260905a">
+    <link rel="stylesheet" href="css/premium-design.css?v=20260905a">
+    <link rel="stylesheet" href="css/ux-enhancements.css?v=20260905a">
+    <link rel="stylesheet" href="css/luxury-enterprise.css?v=20260905a">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -120,18 +120,19 @@
             </div>
         </section>
 
-        <!-- Interactive In-Browser AI Document & Agent Sandbox -->
-        <section class="content-section-modern" style="padding-top: 2rem;">
+        <!-- Interactive In-Browser AI Document & Agent Sandbox — deep link: /#demo -->
+        <section id="demo" class="content-section-modern" style="padding-top: 2rem;" aria-labelledby="sandboxTitle">
             <div class="container">
                 <div class="edi-sandbox-wrapper-cyber">
                     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.25rem;">
                         <div style="display: flex; align-items: center; gap: 1rem;">
-                            <h3 style="margin: 0; font-size: 1.5rem;" data-i18n="sandbox.title">Interactive AI Document Intelligence & Agentic Sandbox</h3>
+                            <h3 id="sandboxTitle" style="margin: 0; font-size: 1.5rem;" data-i18n="sandbox.title">Interactive AI Document Intelligence & Agentic Sandbox</h3>
                             <span class="sandbox-bridge-badge" data-i18n="index.sandbox_badge">100% In-Browser JavaScript</span>
                         </div>
                         <div style="display: flex; gap: 0.5rem; align-items: center;">
                             <span style="font-size: 0.75rem; color: var(--text-muted); margin-right: 0.5rem;" data-i18n="index.sandbox_select_label">SELECT PLAYGROUND:</span>
-                            <button class="sandbox-tab-btn active" data-sample="invoice" data-i18n="index.sandbox_tab_invoice">Document Extraction</button>
+                            <button class="sandbox-tab-btn active sandbox-tab-featured" data-sample="customs_preflight" data-i18n="index.sandbox_tab_preflight">Customs Document Preflight</button>
+                            <button class="sandbox-tab-btn" data-sample="invoice" data-i18n="index.sandbox_tab_invoice">Document Extraction</button>
                             <button class="sandbox-tab-btn" data-sample="agent_task" data-i18n="index.sandbox_tab_agent">Agentic Task Dispatch</button>
                             <button class="sandbox-tab-btn" data-sample="gov_manifest" data-i18n="index.sandbox_tab_gov">Government Manifest</button>
                         </div>
@@ -152,6 +153,16 @@
                             </div>
                             <pre id="jsonOutput" class="json-code-view"></pre>
                         </div>
+                    </div>
+
+                    <!-- Visual discrepancy layer: boxes drawn around mismatched values across the three documents -->
+                    <div id="preflightVisual" class="preflight-visual" hidden>
+                        <div class="pane-header">
+                            <span data-i18n="index.sandbox_visual_header">Visual discrepancy detection — Commercial Invoice × Bill of Lading × Packing List</span>
+                            <span id="preflightSummary" class="preflight-summary" aria-live="polite"></span>
+                        </div>
+                        <div id="preflightDocs" class="preflight-docs"></div>
+                        <p class="privacy-notice pf-governance" data-i18n="index.sandbox_visual_note">Synthetic sample documents — edit any value on the left and re-run. ClearanceGuard AI recommends; your authorized customs specialist decides. No automated filing, no tariff classification, no legal advice.</p>
                     </div>
 
                     <div class="edi-parse-action">
@@ -318,9 +329,9 @@
         </div>
     </footer>
 
-    <script src="js/translations.js?v=20260830i"></script>
-    <script src="js/main.js?v=20260830i"></script>
-    <script src="js/ux-enhancements.js?v=20260830i"></script>
-    <script src="js/edi-sandbox.js?v=20260830i"></script>
+    <script src="js/translations.js?v=20260905a"></script>
+    <script src="js/main.js?v=20260905a"></script>
+    <script src="js/ux-enhancements.js?v=20260905a"></script>
+    <script src="js/edi-sandbox.js?v=20260905a"></script>
 </body>
 </html>
