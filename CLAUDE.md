@@ -67,7 +67,7 @@ An external generator periodically rewrites `*.html`, `js/translations.js` and `
 
 1. The i18n runtime at the tail of `js/translations.js` (`getCurrentLanguage`, `setLanguage`, `updatePageContent`, `#languageSelector` wiring) — `js/main.js` calls `getCurrentLanguage()` on every page.
 2. `footer.contact_us` in every dictionary (`en`, `fr`, `de`) — referenced by `data-i18n` in every footer.
-3. In `contact.html`, `<script src="js/config.js">` followed by the inline reCAPTCHA v3 loader (`https://www.google.com/recaptcha/api.js?render=${window.RECAPTCHA_SITE_KEY}`).
+3. In `contact.html`, `<script src="js/config.js">` followed by the inline reCAPTCHA loader — currently the Enterprise script (`https://www.google.com/recaptcha/enterprise.js?render=${window.RECAPTCHA_SITE_KEY}`; older builds used `recaptcha/api.js`). Checks must accept either filename.
 4. A 40-line cap on the `#terminalStream` widget in `js/edi-sandbox.js`.
 5. **Versioned asset URLs** — every `css/*.css` and `js/*.js` reference in the HTML carries `?v=<date-letter>` (e.g. `?v=20260829d`). Bump the value whenever CSS/JS changes; `_headers` serves assets with `max-age=86400, must-revalidate` (never restore the old 1-year `immutable` policy — visitors kept a stale stylesheet with new HTML).
 6. **`data-i18n` on every visible text block** (352 keys per language in `js/translations.js`, en = fr = de). Mixed-markup blocks are split into `<strong data-i18n>` + `<span data-i18n>` so the switcher's `textContent` replacement keeps the markup.
