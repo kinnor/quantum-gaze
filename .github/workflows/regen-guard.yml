@@ -1,0 +1,20 @@
+name: Regeneration guard
+
+# Blocks a merge when a site regeneration dropped the i18n runtime,
+# the reCAPTCHA loader or footer.contact_us (CLAUDE.md -> Regeneration Safety).
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  regen-guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check guarded pieces
+        run: bash scripts/check-regeneration.sh

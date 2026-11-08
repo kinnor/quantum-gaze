@@ -77,6 +77,8 @@ An external generator periodically rewrites `*.html`, `js/translations.js` and `
 
 `js/main.js` carries a guarded fallback for 1, 3 and 4 (it defers to the real implementation when present), so a regeneration no longer breaks the language switcher or the contact form — but the fallbacks are a safety net, not a substitute. `js/main.js` itself must never be regenerated.
 
+**Automated check (since 2026-11-08):** `.github/workflows/regen-guard.yml` runs `scripts/check-regeneration.sh` on every pull request and on pushes to `main`, and fails if items 1–3 are missing. Run it locally with `bash scripts/check-regeneration.sh`. Items 4–9 are still checked by hand during audits.
+
 ## Key Features
 
 ### Bilingual Support
