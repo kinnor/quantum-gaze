@@ -325,7 +325,7 @@ DKIM_PRIVATE_KEY=your_dkim_key
 
 ```bash
 # Start local development server
-cd "D:\Data Files\Project\web-quantum-gaze\GitHub\quantum-gaze"
+cd "D:\DataFiles\Project\quantum-gaze\GitHub\quantum-gaze"
 wrangler pages dev . --port 8788
 
 # Open in browser
