@@ -12,3 +12,10 @@ dist/
 build/
 .wrangler/
 *.bak
+
+# secrets (added 2026-10-04)
+secrets/
+client_secret*
+*API key*
+.dev.vars
+stripe secret/
